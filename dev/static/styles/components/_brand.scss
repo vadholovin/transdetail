@@ -1,0 +1,43 @@
+/*------------------------------------*\
+  #BRAND & LOGO
+\*------------------------------------*/
+
+.brand {
+
+  &--header {
+    margin-right: 70px;
+  }
+
+  &--footer {
+    margin-right: 34px;
+    margin-bottom: 30px;
+  }
+}
+
+.logo {
+  flex: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+
+  &-text {
+    margin-left: 25px;
+
+    &--top {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+
+      b {
+        font-weight: 800;
+      }
+    }
+
+    &--bottom {
+      font-size: rem(12);
+    }
+  }
+}

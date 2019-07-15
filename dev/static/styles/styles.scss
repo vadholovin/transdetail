@@ -1,0 +1,39 @@
+@charset 'UTF-8';
+
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+@import 'vendor/bootstrap-grid';
+
+@import 'vendor-extensions/bootstrap';
+
+
+// @import 'base/fonts';
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/helpers';
+
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/main-content';
+@import 'layout/schemes-list';
+@import 'layout/categories-list';
+@import 'layout/goods-list';
+@import 'layout/categories';
+@import 'layout/footer';
+
+@import 'components/button-group';
+@import 'components/button';
+@import 'components/brand';
+@import 'components/icon';
+@import 'components/catalog-toggler';
+@import 'components/search-form';
+@import 'components/socials';
+@import 'components/breadcrumb';
+@import 'components/titles';
+@import 'components/status';
+
+@import 'pages/catalog';
+

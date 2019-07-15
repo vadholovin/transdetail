@@ -1,0 +1,45 @@
+/*------------------------------------*\
+  #TITLES
+\*------------------------------------*/
+
+.page-title {
+  font-weight: bold;
+  font-size: rem(32);
+  margin-bottom: 32px;
+}
+
+.section-title {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: rem(24);
+
+  &--value {
+    align-items: baseline;
+  }
+
+  &--dash {
+    align-items: center;
+  
+    &::after {
+      content: '';
+      display: block;
+      flex: 1;
+      height: 1px;
+      margin-left: 30px;
+      border-top: 1px solid #ededed;
+    }
+  }
+
+  &__value {
+    display: block;
+    margin-left: auto;
+    font-weight: normal;
+    font-size: rem(14);
+
+    b {
+      font-weight: 600;
+    }
+  }
+}

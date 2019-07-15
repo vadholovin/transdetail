@@ -1,0 +1,78 @@
+extends template/main
+
+block variables
+  - var title = 'Карточка'
+  - var pageClass = 'card-page'
+
+mixin product-feature(name, value)
+  .product-feature
+    span.product-feature__name= name
+    span.product-feature__value= value
+
+mixin gallery-item(img)
+  .gallery__item
+    img(src=`static/images/content/card/${img}.jpg`, alt='')
+
+mixin gallery-thumb(img, status)
+  .gallery-thumb(class=status)
+    img(src=`static/images/content/card/${img}.jpg`, alt='')
+
+block content
+  .product__wrapper
+    .row
+      .col.col-lg-7.product-image
+        .product-image__inner
+          .gallery.js-gallery
+            +gallery-item('img-1')
+          .gallery-thumbs.js-gallery-thumbs
+            +gallery-thumb('img-1', 'is-active')
+      .col.col-lg-5.product-content
+        .product-content__inner
+          h1.product-content__title
+            | Барабан в сборе со ступицей
+          .product-content__meta
+            .product-rating
+              span.product-rating-stars
+              span.product-rating-stars
+            a.product-reviews(href='#')
+              b 5
+              | отзывов
+          .product-features
+            +product-feature('Тех. описание:', '6T40E')
+            +product-feature('Состояние:', 'Новый')
+            +product-feature('Артикул:', 'R144550BKH')
+            +product-feature('Номер запчасти:', '144550KH-2')
+            +product-feature('Производитель:', 'GM')
+            +product-feature('Вес нетто:', '5,15 кг.')
+          .product-nums
+            .product-cost
+              span.product-cost__now
+                | 3 700 
+                span.icon.icon-ruble
+              span.product-cost__last 7 400
+            .goods-item__quantity
+              button.goods-item__quantity-btn -
+              input.goods-item__quantity-input(type='text', readonly='', value='1шт.')
+              button.goods-item__quantity-btn +
+          .product-btns
+            .goods-item__controls
+              button.goods-item__control.goods-item__control--to-cart(title='Добавить в корзину')
+                | Добавить в корзину
+              button.goods-item__control.goods-item__control--to-wish(title='Добавить в желания')
+          .product-desc
+            p.product-desc__title
+            .product-desc__text
+              p
+                | В каталогах нашего интернет-магазина
+                | вы можете найти запасные части и ремонтные
+                | комплекты для автоматических трансмиссий
+                | только наилучшего качества. Мы развиваем
+                | активную маркетинговую B2C политику,
+                | нацеленную на конечного потребителя.
+    .product-details
+      .product-details__controls
+        button.product-details__control.is-active Варианты написания номера
+        button.product-details__control Видео
+        button.product-details__control Отзывы (5 отзывов)
+      .product-details__content
+        .product-details__desc

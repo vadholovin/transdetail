@@ -1,0 +1,38 @@
+.header__main
+  .container
+    .header__content
+      .brand.brand--header
+        a.logo(href='/')
+          img(src='static/images/general/logo.png', alt='', width='55', height='59')
+          .logo-text
+            p.logo-text--top
+              | TRANS
+              b DETAIL
+            span.logo-text--bottom
+              | Продажа деталей для АКПП
+      .header-info
+        .header-info__item
+          .header-info__item-content
+            span.header-info__item-label Ваш город:
+            .header-info__item-value.header-info__item-value--city
+              a.header-info__item-link(href='#')
+                span.link-dashed Санкт-Петербург
+        .header-info__item.header-info__item--schedule
+          span.header-info__item-icon
+            span.icon.icon-phone
+          .header-info__item-content
+            span.header-info__item-label Пн-Пт: 9 -19, Сб: 10 - 15
+            .header-info__item-value
+              a.header-info__item-link.header-info__item-link--phone(href='tel:+74957967996')
+                | +7 (495) 796-799-6
+      ul.header-controls
+        li.header-controls__item
+          span.icon.icon-heart
+          .header-controls__item-text
+            span.header-controls__item-label Нравится
+            span.header-controls__item-value 4 товара
+        li.header-controls__item
+          span.icon.icon-cart
+          .header-controls__item-text
+            span.header-controls__item-label В корзине
+            span.header-controls__item-value 2 товара, 10 000Р

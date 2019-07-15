@@ -1,0 +1,112 @@
+extends template/main
+
+block variables
+  - var title = 'Каталог'
+  - var pageClass = 'catalog-page'
+
+block content
+  .schemes-list
+    .row
+      .col.col-xl-2.schemes-cell
+        a.schemes-item(href='#')
+          .schemes-item__image
+            img(src='static/images/content/schemes/scheme-1.jpg', alt='')
+          .schemes-item__title
+            span.schemes-item__title-name Hubs/Center Support
+      .col.col-xl-2.schemes-cell
+        a.schemes-item(href='#')
+          .schemes-item__image
+            img(src='static/images/content/schemes/scheme-2.jpg', alt='')
+          .schemes-item__title
+            span.schemes-item__title-name Case
+      .col.col-xl-2.schemes-cell
+        a.schemes-item(href='#')
+          .schemes-item__image
+            img(src='static/images/content/schemes/scheme-3.jpg', alt='')
+          .schemes-item__title
+            span.schemes-item__title-name Pump/Drums
+      .col.col-xl-2.schemes-cell
+        a.schemes-item(href='#')
+          .schemes-item__image
+            img(src='static/images/content/schemes/scheme-4.jpg', alt='')
+          .schemes-item__title
+            span.schemes-item__title-name Gear Train
+      .col.col-xl-2.schemes-cell
+        a.schemes-item(href='#')
+          .schemes-item__image
+            img(src='static/images/content/schemes/scheme-5.jpg', alt='')
+          .schemes-item__title
+            span.schemes-item__title-name Output Shaft
+  .categories-list
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-1.jpg', alt='')
+        span.categories-item__title
+          | Комплекты прокладок, фрикционных
+          br
+          | дисков, стальных дисков
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-2.jpg', alt='')
+        span.categories-item__title Фрикционные, стальные, опорные диски
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-3.jpg', alt='')
+        span.categories-item__title Поршни
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-4.jpg', alt='')
+        span.categories-item__title Фильтра, прокладки поддона
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-4.jpg', alt='')
+        span.categories-item__title
+          | Сальники, уплотнительные 
+          br
+          | кольца, прокладки
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-5.jpg', alt='')
+        span.categories-item__title Втулки, шайбы, подшипники
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-6.jpg', alt='')
+        span.categories-item__title Гидравлические блоки управления
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-7.jpg', alt='')
+        span.categories-item__title Электрические компоненты
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-8.jpg', alt='')
+        span.categories-item__title Железо
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-9.jpg', alt='')
+        span.categories-item__title Гидротрансформаторы
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-10.jpg', alt='')
+        span.categories-item__title Радиаторы охлаждения и прочее
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-11.jpg', alt='')
+        span.categories-item__title SONNAX
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-12.jpg', alt='')
+        span.categories-item__title Инструмент
+    a.categories-item(href='#')
+      .categories-item__content
+        img(src='static/images/content/categories/image-13.jpg', alt='')
+        span.categories-item__title Присадки, смазки, герметик
+  section.goods-list__wrapper
+    h2.section-title.section-title--value
+      | Железо
+      span.section-title__value
+        | Всего 
+        b 256
+        | товаров
+    ul.goods-list
+      include modules/goods-item/goods-item
+      include modules/goods-item/goods-item

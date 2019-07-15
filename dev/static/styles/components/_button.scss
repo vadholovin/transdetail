@@ -1,0 +1,51 @@
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+.button {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: top;
+  user-select: none;
+  border: 0;
+  padding: 1em;
+  font-family: inherit;
+  font-size: rem(14);
+  line-height: 1.15;
+  font-weight: normal;
+  cursor: pointer;
+
+
+  &--block {
+    display: block;
+  }
+
+
+  &--primary {
+    color: #ffffff;
+    background-color: $orange;
+    transition: background-color 0.25s ease-out;
+
+    &:hover {
+      background-color: mix(#000, $orange, 12%);
+    }
+
+    &:focus {
+      background-color: mix(#000, $orange, 8%);
+    }
+  }
+
+
+  &--outline {
+    color: inherit;
+    border: 1px solid #2c2f38;
+    background-color: rgba(0, 0, 0, 0);
+    transition: color 0.25s ease-out, background-color 0.25s ease-out;
+
+    &:hover {
+      color: #fff;
+      background-color: $orange;
+    }
+  }
+}

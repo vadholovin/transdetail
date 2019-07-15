@@ -1,0 +1,150 @@
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.footer {
+  border-top: 1px solid #ededed;
+
+  &__top {
+
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    &-left,
+    &-right {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 50px;
+    }
+
+    &-left {
+      position: relative;
+      padding-top: 60px;
+      padding-right: 60px !important;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 99999px;
+        height: 100%;
+        background-color: #f4f4f4;
+        z-index: -1;
+      }
+    }
+
+    &-right {
+      padding-left: 60px !important;
+      padding-top: 54px;
+    }
+  }
+
+
+  &__about {
+    flex: 1;
+    font-style: italic;
+    font-size: rem(14);
+    line-height: 1.8;
+    color: $greyM;
+
+    p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+
+  &-module {
+
+    &--nav {
+      margin-right: 70px;
+    }
+
+    &--contact {
+      flex: 1;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      font-size: rem(20);
+    }
+  }
+
+
+  &-nav {
+
+    &__link {
+      display: block;
+      font-weight: bold;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+
+  &-contact {
+    display: inline-block;
+    vertical-align: top;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    &--1 {
+      margin-right: 30px;
+    }
+
+    &__heading {
+      margin-bottom: 20px;
+      font-size: rem(14);
+      color: $greyL;
+    }
+
+    &__phone {
+      display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__email {
+      font-weight: bold;
+      color: $orange;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+
+
+  &__bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $greyM;
+    background-color: #0f121a;
+
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+
+  &__policy {
+    border-bottom: 1px solid rgba(112, 115, 131, 0.3);
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}

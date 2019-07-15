@@ -1,0 +1,38 @@
+/*------------------------------------*\
+  #STATUS
+\*------------------------------------*/
+
+.status {
+  padding: 8px 20px;
+  font-size: 0;
+  color: #ffffff;
+
+  .icon {
+    display: inline-block;
+  }
+
+  &__text {
+    margin-left: 10px;
+    font-size: rem(12);
+    line-height: 1.15;
+  }
+
+  &--goods {
+    margin-left: auto;
+  }
+
+  &--cust {
+    padding-left: 35px;
+    padding-right: 35px;
+
+    .status__text {
+      margin-left: 12px;
+      font-weight: 600;
+      font-size: rem(14);
+    }
+  }
+
+  &--in-stock {
+    background-color: $blue;
+  }
+}

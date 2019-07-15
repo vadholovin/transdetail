@@ -1,0 +1,38 @@
+extends template/main
+
+block variables
+  - var title = 'Категории'
+  - var pageClass = 'categories-page'
+
+block content
+  h2.page-title Категории
+  .categories
+    .row
+      .col.col-lg-3.category
+        a.category__tile(href='#')
+          .category__image
+            img(src='static/images/content/categories/image-big-1.jpg', alt='')
+          .category__title
+            span.category__title-name
+              | Фрикционные, стальные, опорные диски
+      .col.col-lg-3.category
+        a.category__tile(href='#')
+          .category__image
+            img(src='static/images/content/categories/image-big-2.jpg', alt='')
+          .category__title
+            span.category__title-name
+              | Сальники, уплотнительные кольца, прокладки
+      .col.col-lg-3.category
+        a.category__tile(href='#')
+          .category__image
+            img(src='static/images/content/categories/image-big-3.jpg', alt='')
+          .category__title
+            span.category__title-name
+              | Поршни
+      .col.col-lg-3.category
+        a.category__tile(href='#')
+          .category__image
+            img(src='static/images/content/categories/image-big-4.jpg', alt='')
+          .category__title
+            span.category__title-name
+              | Фильтра, прокладки поддона

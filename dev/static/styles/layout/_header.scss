@@ -1,0 +1,153 @@
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.header {
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+  &__top {
+    background-color: #0f121a;
+
+    .button--outline {
+      padding: rem(16) rem(36);
+      color: #fff;
+    }
+
+    .button--primary {
+      padding: rem(17) rem(36);
+    }
+  }
+
+
+  &__main {
+    padding-top: 32px;
+    padding-bottom: 30px;
+  }
+
+
+  &-info {
+    position: relative;
+    top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+
+    &__item {
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      &--schedule {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      &-label {
+        display: block;
+        margin-bottom: 6px;
+        font-size: rem(12);
+        color: $greyL;
+      }
+
+      &-icon {
+        position: relative;
+        top: 2px;
+        flex: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 38px;
+        height: 38px;
+        margin-right: 16px;
+        border: 1px solid $orange;
+        border-radius: 50%;
+      }
+
+      &-value {
+
+        &--city::before {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 5px;
+          width: 11px;
+          height: 15px;
+          background: url(../images/icons/place.png) no-repeat 0 0;
+        }
+      }
+
+      &-link {
+        font-weight: 600;
+        font-size: rem(14.4);
+        white-space: nowrap;
+
+        &--phone::after {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 4px;
+          width: 8px;
+          height: 4px;
+          background: url(../images/icons/arrow-bottom-sm.png) no-repeat 0 0;
+        }
+      }
+    }
+  }
+
+
+  &-controls {
+    position: relative;
+    top: 9px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      .icon {
+        position: relative;
+        top: 2px;
+        margin-right: 16px;
+      }
+
+      &-label {
+        display: block;
+        font-weight: 600;
+        font-size: rem(14);
+      }
+
+      &-value {
+        display: block;
+        font-size: rem(12);
+      }
+    }
+  }
+
+
+  &__bottom {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+
+    &-left {
+      flex: none;
+      margin-right: 20px;
+    }
+
+    &-right {
+      flex: 1;
+    }
+  }
+}

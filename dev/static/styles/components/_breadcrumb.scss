@@ -1,0 +1,30 @@
+/*------------------------------------*\
+  #BREADCRUMBS
+\*------------------------------------*/
+
+.breadcrumbs {
+  margin-bottom: 65px;
+  font-size: 0;
+
+  &__item,
+  &__arrow {
+    display: inline-block;
+  }
+
+  &__arrow {
+    width: 3px;
+    height: 7px;
+    margin-right: 12px;
+    margin-left: 12px;
+    background: url(../images/icons/arrow-left-sm.png) no-repeat 50% 50%;
+  }
+
+  &__item {
+    font-size: rem(12);
+    color: $greyL;
+
+    &--active {
+      color: $greyD;
+    }
+  }
+}

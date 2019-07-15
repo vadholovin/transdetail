@@ -1,0 +1,18 @@
+.header__bottom
+  .container
+    .header__content
+      .header__bottom-left
+        button.catalog-toggler.js-catalog-toggler(tabindex='0')
+          .catalog-toggler__content
+            span.catalog-toggler__text Каталог
+            span.catalog-toggler__hamburger
+      .header__bottom-right
+        form.search-form(action='')
+          .search-form__inner
+            .search-form__input-wrapper
+              input.search-form__input(autocomplete='off', name='search-text', type='text', placeholder='Поиск по сайту')
+            .search-form__select-wrapper
+              select#search-select.search-form__select(name='search-select')
+                option(value='По артикулу или названию') По артикулу или названию
+                option(value='По цвету') По цвету
+          button.button(type='submit') Найти
