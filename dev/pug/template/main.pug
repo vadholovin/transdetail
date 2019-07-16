@@ -11,6 +11,9 @@ html(lang="ru-RU")
     <![endif]-->
     meta(name="viewport" content="width=device-width,initial-scale=1")
     meta(name="keywords" content="")
+    
+    link(rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic")
+    link(rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css")
     link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
 
     <!--[if lt IE 9]>
@@ -20,10 +23,10 @@ html(lang="ru-RU")
     include ../modules/header/header
     .main-content
       .container
-        include ../modules/breadcrumbs/breadcrumbs
         block content
     include ../modules/footer/footer
     script(src="static/js/jquery-3.3.1.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
     script(src="static/js/libs.min.js")
     script(src="static/js/main.js")
     block script

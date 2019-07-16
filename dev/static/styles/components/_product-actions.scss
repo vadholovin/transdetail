@@ -1,0 +1,55 @@
+/*------------------------------------*\
+  #PRODUCT-ACTIONS
+\*------------------------------------*/
+
+.product-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    margin-right: 15px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--goods {
+    flex: none;
+
+  }
+
+  &__btn {
+    width: 41px;
+    height: 41px;
+    border: 0;
+    cursor: pointer;
+
+    &--to-cart {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: $orange;
+    }
+  
+    &--to-wish {
+      border: 1px solid #ededed;
+      background: #fff url(../images/icons/heart-outline-grey.png) no-repeat 50% 50%;
+    }
+  }
+
+  &--product {
+    margin-bottom: 36px;
+
+    .product-actions__btn--to-cart {
+      justify-content: space-between;
+      width: 245px;
+      padding-left: 24px;
+      padding-right: 24px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}

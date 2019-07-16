@@ -9,34 +9,62 @@ mixin product-feature(name, value)
     span.product-feature__name= name
     span.product-feature__value= value
 
-mixin gallery-item(img)
-  .gallery__item
+mixin product-slider-item(img)
+  .product-slider__item
     img(src=`static/images/content/card/${img}.jpg`, alt='')
 
-mixin gallery-thumb(img, status)
-  .gallery-thumb(class=status)
+mixin product-slider-navitem(img, status)
+  .product-slider__nav-item(class=status)
     img(src=`static/images/content/card/${img}.jpg`, alt='')
 
 block content
+  .breadcrumbs
+    .breadcrumbs__item
+      a.breadcrumbs__title(href='#') Главная
+    span.breadcrumbs__arrow
+    .breadcrumbs__item
+      a.breadcrumbs__title(href='#') Каталог
+    span.breadcrumbs__arrow
+    .breadcrumbs__item
+      a.breadcrumbs__title(href='#') Железо
+    span.breadcrumbs__arrow
+    .breadcrumbs__item.breadcrumbs__item--active
+      span.breadcrumbs__title Барабан в сборе со ступицей
+
   .product__wrapper
-    .row
-      .col.col-lg-7.product-image
-        .product-image__inner
-          .gallery.js-gallery
-            +gallery-item('img-1')
-          .gallery-thumbs.js-gallery-thumbs
-            +gallery-thumb('img-1', 'is-active')
-      .col.col-lg-5.product-content
-        .product-content__inner
-          h1.product-content__title
+    .product__top
+      .product-image
+        .product-slider__wrapper
+          .status.status--product.status--in-stock
+            span.icon.icon-check
+            span.status__text
+              | Товар в наличии
+          .product-slider.js-product-slider
+            +product-slider-item('img-1')
+            +product-slider-item('img-1')
+            +product-slider-item('img-1')
+            +product-slider-item('img-1')
+        .product-slider__nav.js-product-slider-nav
+          +product-slider-navitem('img-1', 'is-active')
+          +product-slider-navitem('img-1', '')
+          +product-slider-navitem('img-1', '')
+          +product-slider-navitem('img-1', '')
+      
+      .product-info
+        .product-info__inner
+          h1.product-info__title
             | Барабан в сборе со ступицей
-          .product-content__meta
+          .product-meta
             .product-rating
-              span.product-rating-stars
-              span.product-rating-stars
-            a.product-reviews(href='#')
-              b 5
-              | отзывов
+              span.icon.icon-star
+              span.icon.icon-star
+              span.icon.icon-star
+              span.icon.icon-star
+              span.icon.icon-star-empty
+            a.product-meta__reviews(href='#')
+              .icon.icon-review
+              span.product-meta__reviews-text
+                <b>5</b> отзывов
           .product-features
             +product-feature('Тех. описание:', '6T40E')
             +product-feature('Состояние:', 'Новый')
@@ -49,19 +77,21 @@ block content
               span.product-cost__now
                 | 3 700 
                 span.icon.icon-ruble
-              span.product-cost__last 7 400
-            .goods-item__quantity
-              button.goods-item__quantity-btn -
-              input.goods-item__quantity-input(type='text', readonly='', value='1шт.')
-              button.goods-item__quantity-btn +
-          .product-btns
-            .goods-item__controls
-              button.goods-item__control.goods-item__control--to-cart(title='Добавить в корзину')
-                | Добавить в корзину
-              button.goods-item__control.goods-item__control--to-wish(title='Добавить в желания')
-          .product-desc
-            p.product-desc__title
-            .product-desc__text
+              span.product-cost__last
+                | 7 400
+
+            include modules/product-quantity/product-quantity
+
+          .product-actions.product-actions--product
+            button.product-actions__btn.product-actions__btn--to-cart(title='Добавить в корзину')
+              | Добавить в корзину
+              span.icon.icon-cart-white
+            button.product-actions__btn.product-actions__btn--to-wish(title='Добавить в желания')
+
+          .product-about
+            p.product-about__title
+              | Коротко о товаре
+            .product-about__text
               p
                 | В каталогах нашего интернет-магазина
                 | вы можете найти запасные части и ремонтные
@@ -69,10 +99,24 @@ block content
                 | только наилучшего качества. Мы развиваем
                 | активную маркетинговую B2C политику,
                 | нацеленную на конечного потребителя.
-    .product-details
-      .product-details__controls
-        button.product-details__control.is-active Варианты написания номера
-        button.product-details__control Видео
-        button.product-details__control Отзывы (5 отзывов)
-      .product-details__content
-        .product-details__desc
+    
+    .product-bottom
+      include pages/card/product-tabs
+
+  section.goods-list__wrapper.mb-3-5
+    h2.section-title.section-title--dash
+      | Аналоги
+    ul.goods-list
+      include modules/goods-item/goods-item
+      include modules/goods-item/goods-item
+      
+  section.goods-list__wrapper.mb-4-5
+    h2.section-title.section-title--dash
+      | Состав комплекта
+    ul.goods-list
+      include modules/goods-item/goods-item-sm
+
+  section.product-recent-viewed
+    h2.section-title.section-title--dash
+      | Вы недавно смотрели
+    include pages/card/product-carousel

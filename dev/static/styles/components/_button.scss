@@ -37,6 +37,21 @@
   }
 
 
+  &--secondary {
+    color: #ffffff;
+    background-color: $blue;
+    transition: background-color 0.25s ease-out;
+
+    &:hover {
+      background-color: mix(#000, $blue, 12%);
+    }
+
+    &:focus {
+      background-color: mix(#000, $blue, 8%);
+    }
+  }
+
+
   &--outline {
     color: inherit;
     border: 1px solid #2c2f38;
@@ -46,6 +61,18 @@
     &:hover {
       color: #fff;
       background-color: $orange;
+    }
+  }
+
+  &--outline.button--outline-secondary {
+    color: inherit;
+    border: 1px solid $blue;
+    background-color: rgba(0, 0, 0, 0);
+    transition: color 0.25s ease-out, background-color 0.25s ease-out;
+
+    &:hover {
+      color: #fff;
+      background-color: $blue;
     }
   }
 }

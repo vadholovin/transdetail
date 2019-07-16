@@ -20,9 +20,15 @@
   }
 
   &-cart {
-    width: 35px;
+    width:35px;
     height: 30px;
     background-image: url(../images/icons/cart-outline-orange.png);
+  }
+
+  &-cart-white {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icons/cart-outline-white.png);
   }
 
   &-vk {
@@ -48,4 +54,29 @@
     height: 7px;
     background-image: url(../images/icons/check-white.png);
   }
+
+  &-ruble {
+    width: 11px;
+    height: 15px;
+    background-image: url(../images/icons/ruble.png);
+  }
+
+  &-star {
+    width: 21px;
+    height: 20px;
+    background-image: url(../images/icons/star.png);
+  }
+
+  &-star-empty {
+    width: 21px;
+    height: 20px;
+    background-image: url(../images/icons/star-empty.png);
+  }
+
+  &-review {
+    width: 22px;
+    height: 20px;
+    background-image: url(../images/icons/review.png);
+  }
+
 }

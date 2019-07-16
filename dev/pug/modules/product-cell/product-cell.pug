@@ -1,0 +1,45 @@
+.product-cell
+  .product-cell__img-wrapper
+    .product-cell__slider.js-product-cell-slider
+      .product-cell__slide
+        img(
+          src='static/images/content/card/img-1.jpg',
+          alt=''
+        )
+      .product-cell__slide
+        img(
+          src='static/images/content/card/img-1.jpg',
+          alt=''
+        )
+    .product-cell__slider-nav
+      button.product-cell__slider-btn.product-cell__slider-btn--prev
+      button.product-cell__slider-btn.product-cell__slider-btn--next
+  .product-cell__body
+    a.product-cell__title(href='#')
+      | Барабан в сборе  со ступицей
+    .product-cell__features
+      .product-cell__feature
+        span.product-cell__feature-name
+          | Производитель:
+        span.product-cell__feature-value
+          | GM
+      .product-cell__feature
+        span.product-cell__feature-name
+          | Состояние:
+        span.product-cell__feature-value
+          | Новый
+      .product-cell__feature
+        span.product-cell__feature-name
+          | Количество:
+        span.product-cell__feature-value
+          | В наличии
+      .product-cell__feature
+        span.product-cell__feature-name
+          | Цена:
+        span.product-cell__feature-value
+          | 4 500 Р
+  .product-cell__actions
+    a.button.button--outline.button--outline-secondary(href='#')
+      | Подробнее
+    a.button.button--secondary(href='#')
+      span.icon.icon-cart-white

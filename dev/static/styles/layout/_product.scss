@@ -1,0 +1,281 @@
+/*------------------------------------*\
+  #PRODUCT
+\*------------------------------------*/
+
+.product {
+
+  &__wrapper {
+    margin-bottom: 75px;
+  }
+
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+
+
+  &-image {
+    width: 100%;
+    flex: 1 1 auto;
+    max-width: 59.649%;
+  }
+
+
+  &-info {
+    width: 100%;
+    flex: 1 1 auto;
+    max-width:40.351%;
+
+    &__inner {
+      padding-top: 30px;
+      padding-left: 68px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+      font-weight: bold;
+      font-size: rem(24);
+    }
+  }
+
+
+  &-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 36px;
+
+    &__reviews {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      b {
+        font-weight: 600;
+      }
+
+      & > *:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+
+  &-rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 30px;
+
+    .icon + .icon {
+      margin-left: 10px;
+    }
+  }
+
+
+  &-features {
+    margin-bottom: 40px;
+
+    & > * {
+      margin-bottom: 12px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+  &-feature {
+    display: table;
+    width: 100%;
+    font-size: rem(14);
+
+    & > * {
+      display: table-cell;
+      vertical-align: top;
+      line-height: 1.15;
+    }
+
+    &__name {
+      width: 176px;
+      color: $shuttle-gray;
+    }
+
+    &__value {
+      font-weight: 600;
+    }
+  }
+
+
+  &-nums {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+
+    & > * {
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+  &-cost {
+
+    &__now {
+      display: block;
+      font-weight: bold;
+      font-size: rem(22);
+      white-space: nowrap;
+    }
+
+    &__last {
+      display: inline-block;
+      position: relative;
+      font-size: rem(14);
+      color: $shuttle-gray;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 105%;
+        height: 0;
+        border-bottom: 1px solid $shuttle-gray;
+        transform: rotate(-20deg);
+      }
+    }
+
+    .icon {
+      display: inline-block;
+    }
+  }
+
+
+  &-about {
+    max-width: 360px;
+    font-size: rem(14);
+
+    &__title {
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    &__text {
+      line-height: 1.85;
+      color: $abbey;
+
+      p + p {
+        margin-top: 12px;
+      }
+    }
+  }
+
+
+  &-tabs {
+
+    &__nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+  
+      &::after {
+        content: '';
+        display: block;
+        flex: 1;
+        height: 1px;
+        margin-left: 25px;
+        border-top: 1px solid $gallery;
+      }
+
+      &-item {
+        height: 48px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border: 1px solid $gallery;
+        font-weight: bold;
+        font-size: rem(14);
+        line-height: 48px;
+        text-align: center;
+        color: $greyL;
+        white-space: nowrap;
+        background-color: #fff;
+        cursor: pointer;
+        transition: background-color 0.25s ease-out, color 0.25s ease-out, border-color 0.25s ease-out;
+  
+        &:hover {
+          color: #ffffff;
+          background-color: $blue;
+          border-color: $blue;
+        }
+  
+        &.is-active {
+          color: #ffffff;
+          background-color: $blue;
+          border-color: $blue;
+        }
+  
+        &--1 {
+          padding-left: 26px;
+          padding-right: 26px;
+        }
+      }
+    }
+  }
+
+
+  &-tab {
+    display: none;
+    padding-top: 40px;
+
+    &.is-active {
+      display: block;
+    }
+
+    &__table {
+      display: inline-block;
+      font-size: rem(14);
+
+      &-head,
+      &-tr {
+        display: table;
+        width: 100%;
+      }
+
+      &-head {
+        padding-bottom: 6px;
+        border-bottom: 1px solid $gallery;
+        color: $greyL;
+      }
+
+      &-tr {
+        padding-top: 16px;
+        text-transform: uppercase;
+      }
+
+      &-td {
+        display: table-cell;
+        vertical-align: top;
+        line-height: 1.15;
+
+        &:first-child {
+          width: 110px;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+
+
+  &-recent-viewed {
+    margin-bottom: 30px;
+  }
+}

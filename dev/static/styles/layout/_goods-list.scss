@@ -25,13 +25,13 @@
       display: flex;
       flex-wrap: wrap;
       padding-bottom: 30px;
-      border-bottom: 1px solid #ededed;
     }
 
     &-bottom {
       display: flex;
       flex-wrap: wrap;
       padding-top: 15px;
+      border-top: 1px solid #ededed;
     }
   }
 
@@ -192,6 +192,36 @@
     &--to-wish {
       border: 1px solid #ededed;
       background: url(../images/icons/heart-outline-grey.png) no-repeat 50% 50%;
+    }
+  }
+}
+
+.goods-item--sm {
+
+  .goods-item__content {
+    padding-bottom: 34px;
+
+    &-top {
+      padding-bottom: 0;
+    }
+  }
+
+  .goods-item__info-cell {
+
+    &--1 {
+      width: 180px;
+    }
+
+    &--2 {
+      width: 125px;
+    }
+
+    &--3 {
+      width: 160px;
+    }
+
+    &--4 {
+      width: auto;
     }
   }
 }

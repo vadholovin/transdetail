@@ -1,0 +1,223 @@
+/*------------------------------------*\
+  #PRODUCT-CAROUSEL
+\*------------------------------------*/
+
+.product-carousel {
+  margin-bottom: 42px;
+
+  .slick-slide {
+    margin-right: 30px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__btn {
+    width: 38px;
+    height: 39px;
+    border: 1px solid $mercury;
+    background-color: $wild-sand;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 7px 15px;
+    cursor: pointer;
+
+    &--prev{
+      margin-right: 20px;
+      background-image: url(../images/icons/arrow-l-carousel.png);
+    }
+
+    &--next{
+      background-image: url(../images/icons/arrow-r-carousel.png);
+    }
+  }
+}
+
+.product-cell {
+  display: flex;
+  flex-direction: column;
+
+  &__img-wrapper {
+    position: relative;
+    display: block;
+    border: 1px solid $alto;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      padding-top: 84.29%;
+      z-index: -1;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    height: 100%;
+
+    .slick-slide {
+      margin: 0;
+    }
+
+    .slick-dots {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+
+      li {
+        display: inline-block;
+        background-color: #d8dce4;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        cursor: pointer;
+
+        &.slick-active {
+          background-color: #494d56;
+        }
+
+        & + li {
+          margin-left: 9px;
+        }
+
+        button {
+          padding: 0;
+          border: 0;
+          font-size: 0;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  &__slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 15px;
+    height: 30px;
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.25s ease-out;
+    cursor: pointer;
+    z-index: 10;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &--prev {
+      left: 22px;
+      background-image: url(../images/icons/arrow-r-lg.png);
+    }
+
+    &--next {
+      right: 22px;
+      background-image: url(../images/icons/arrow-l-lg.png);
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    padding: 24px 25px 25px 30px;
+    border-left: 1px solid $alto;
+    border-right: 1px solid $alto;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: rem(14);
+  }
+
+  &__features {
+    margin-top: auto;
+  }
+
+  &__feature {
+    display: table;
+    width: 100%;
+    font-size: rem(12);
+
+    & + .product-cell__feature {
+      margin-top: 8px;
+    }
+
+    &:last-child {
+      margin-top: 12px;
+
+      .product-cell__feature-value {
+        font-weight: bold;
+      }
+    }
+
+    span {
+      display: table-cell;
+      line-height: 1.3;
+    }
+
+    &-name {
+      width: 116px;
+      padding-right: 10px;
+      color: $greyL;
+    }
+  }
+
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .button {
+      width: 50%;
+      height: 40px;
+      padding: 0 0.5rem;
+      border: 1px solid $blue;
+      font-size: 12px;
+      line-height: 40px;
+      color: $blue;
+      text-align: center;
+
+      .icon {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.product-cell:hover {
+
+  .product-cell__img-wrapper,
+  .product-cell__body {
+    border-color: $silver;
+  }
+
+  .product-cell__slider-btn,
+  .slick-dots {
+    opacity: 1;
+  }
+}
