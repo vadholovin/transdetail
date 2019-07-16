@@ -1,0 +1,207 @@
+.cart-form__top
+  .cart-form__row
+    .cart-select__cell
+      .form-select__wrapper.form-select__wrapper--highlight
+        select.form-select.form-select--cart#select-profile
+          option(
+            disabled,
+            selected
+          ) Выберите профиль
+          option(value="") Хлеб
+          option(value="") Кефир
+          option(value="") Яйца
+    .cart-fields__grid
+      .cart-fields__cell
+        .form-input__wrapper
+          label.form-label.form-label--require(
+            for="user-name"
+          ) ФИО
+          input.form-input(
+            type="text",
+            id="user-name"
+          )
+      .cart-fields__cell
+        .form-input__wrapper
+          label.form-label.form-label--require(
+            for="user-phone"
+          ) Телефон
+          input.form-input(
+            type="tel",
+            id="user-phone"
+          )
+      .cart-fields__cell
+        .form-input__wrapper
+          label.form-label(
+            for="user-email"
+          ) Email
+          input.form-input(
+            type="email",
+            id="user-email"
+          )
+      .cart-fields__cell
+        .form-input__wrapper
+          label.form-label.form-label--require(
+            for="user-passport"
+          ) Серия и номер паспорта
+          input.form-input(
+            type="text",
+            id="user-passport"
+          )
+      .cart-fields__cell
+        .form-select__wrapper.form-select__wrapper--require
+          select.form-select#select-placement
+            option(
+              disabled,
+              selected
+            ) Местоположение
+            option(value="") Москва
+            option(value="") Питер
+            option(value="") Воронеж
+      .cart-fields__cell
+        .form-input__wrapper
+          label.form-label.form-label--require(
+            for="user-address"
+          ) Адрес доставки
+          input.form-input(
+            type="text",
+            id="user-address"
+          )
+      .cart-fields__cell.cart-fields__cell--full
+        .form-input__wrapper
+          label.form-label(
+            for="user-comment"
+          ) Оставить комментарий
+          textarea.form-textarea(
+            id="user-comment",
+            rows="1"
+          )
+
+  .cart-form__row
+    h2.cart-form__title Способ оплаты:
+    .cart-checkbox__grid
+      .cart-checkbox__cell.cart-checkbox__cell--1-2
+        .form-checkbox__wrapper
+          input.form-radio.visuallyhidden(
+            type="radio",
+            id="payment-on-delivery",
+            name="payment",
+            value="on-delivery"
+          )
+          label.form-checkbox__label(
+            for="payment-on-delivery"
+          )
+            .form-checkbox__mask
+            .form-checkbox__label-content
+              span.form-checkbox__label-title
+                | Оплата при получении
+              span.form-checkbox__label-text
+                | Оплата заказа наличными курьеру при получении заказа.
+                | Курьер принимает оплату заказа наличными или банковской картой.
+      .cart-checkbox__cell.cart-checkbox__cell--1-2
+        .form-checkbox__wrapper
+          input.form-radio.visuallyhidden(
+            type="radio",
+            id="payment-card",
+            name="payment",
+            value="card"
+          )
+          label.form-checkbox__label(
+            for="payment-card"
+          )
+            .form-checkbox__mask
+            .form-checkbox__label-content
+              span.form-checkbox__label-title
+                | Оплата банковской картой
+              span.form-checkbox__label-text
+                | Вы будете перенаправлены на сайт банка, чтобы произвести
+                | оплату с вашей банковской карты.
+
+  .cart-form__row
+    h2.cart-form__title Способ доставки:
+    .cart-checkbox__grid
+      .cart-checkbox__cell
+        .form-checkbox__wrapper
+          input.form-radio.visuallyhidden(
+            type="radio",
+            id="delivery-self",
+            name="delivery",
+            value="self"
+          )
+          label.form-checkbox__label(
+            for="delivery-self"
+          )
+            .form-checkbox__mask
+            .form-checkbox__label-content
+              span.form-checkbox__label-title
+                | СДЭК (Самовывоз)
+              span.form-checkbox__label-text
+                | 2-3 дня, самый дешёвый.
+      .cart-checkbox__cell
+        .form-checkbox__wrapper
+          input.form-radio.visuallyhidden(
+            type="radio",
+            id="delivery-courier",
+            name="delivery",
+            value="courier"
+          )
+          label.form-checkbox__label(
+            for="delivery-courier"
+          )
+            .form-checkbox__mask
+            .form-checkbox__label-content
+              span.form-checkbox__label-title
+                | СДЭК (Курьером до двери)
+              span.form-checkbox__label-text
+                | 2-3 дня
+      .cart-checkbox__cell
+        .form-checkbox__wrapper
+          input.form-radio.visuallyhidden(
+            type="radio",
+            id="delivery-dpd",
+            name="delivery",
+            value="dpd"
+          )
+          label.form-checkbox__label(
+            for="delivery-dpd"
+          )
+            .form-checkbox__mask
+            .form-checkbox__label-content
+              span.form-checkbox__label-title
+                | DPD (Consumer - курьером до двери)
+              span.form-checkbox__label-text
+                | 2-3 дня
+      .cart-checkbox__cell
+        .form-checkbox__wrapper
+          input.form-radio.visuallyhidden(
+            type="radio",
+            id="delivery-russia-post",
+            name="delivery",
+            value="russia-post"
+          )
+          label.form-checkbox__label(
+            for="delivery-russia-post"
+          )
+            .form-checkbox__mask
+            .form-checkbox__label-content
+              span.form-checkbox__label-title
+                | Почта России (отправление 1-го класса)
+              span.form-checkbox__label-text
+                | 2-3 дня
+      .cart-checkbox__cell
+        .form-checkbox__wrapper
+          input.form-radio.visuallyhidden(
+            type="radio",
+            id="delivery-ems",
+            name="delivery",
+            value="ems"
+          )
+          label.form-checkbox__label(
+            for="delivery-ems"
+          )
+            .form-checkbox__mask
+            .form-checkbox__label-content
+              span.form-checkbox__label-title
+                | EMS Почты России
+              span.form-checkbox__label-text
+                | 2-3 дня
+

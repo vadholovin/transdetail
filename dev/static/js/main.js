@@ -36,8 +36,6 @@ $(document).ready(function () {
     $('.js-product-slider-nav .slick-slide:not(.slick-cloned)').eq(0).addClass('slick-current');
   };
 
-  productSlider();
-
 
   /**
    * Product Tabs
@@ -65,8 +63,6 @@ $(document).ready(function () {
     }
   };
 
-  productTabs();
-
 
   /**
    * Product carousel
@@ -79,8 +75,6 @@ $(document).ready(function () {
       nextArrow: $('.product-carousel__btn--next'),
     });
   };
-
-  productCarousel();
 
 
   /**
@@ -109,6 +103,38 @@ $(document).ready(function () {
     });
   };
 
-  productCellSlider();
+
+  /**
+   * Hiding form labels
+   */
+  let hideLabel = function () {
+    $('.form-input, .form-textarea').focus(function () {
+      $(this).siblings('.form-label').hide();
+    });
+
+    $('.form-input, .form-textarea').blur(function () {
+      if (! $(this).val()) {
+        $(this).siblings('.form-label').show();
+      }
+    });
+  };
+
+
+  /**
+   * Replacing selects
+   */
+  $('#select-profile').selectmenu();
+  $('#select-placement').selectmenu();
+  // $('#cart-placement').selectmenu();
   
+
+  
+
+  
+  productSlider();
+  productTabs();
+  productCarousel();
+  productCellSlider();
+  hideLabel();
+
 });

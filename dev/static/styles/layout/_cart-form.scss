@@ -1,0 +1,156 @@
+/*------------------------------------*\
+  #CART
+\*------------------------------------*/
+
+.cart {
+
+  &-content {
+    padding-top: 65px;
+  }
+
+  &-form__row {
+    margin-bottom: 25px;
+  }
+
+  &-select__cell {
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 40px;
+  }
+
+  &-fields__grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 980px;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    & > * {
+      margin-bottom: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &-fields__cell {
+    width: 100%;
+    flex: 1 1 50%;
+    max-width: 50%;
+
+    &--full {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+
+  &-form__title {
+    font-weight: 600;
+    font-size: rem(18);
+    color: $greyL;
+    margin-bottom: 26px;
+  }
+
+  &-checkbox__grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-checkbox__cell {
+    margin-bottom: 40px;
+    padding-right: 70px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &--1-2 {
+      width: 100%;
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+  }
+
+  &-form__bottom {
+    padding-top: 60px;
+    margin-bottom: 30px;
+    border-top: 1px solid $gallery;
+  }
+}
+
+
+.cart-products {
+  margin-bottom: 50px;
+  font-size: rem(14);
+
+  &__head,
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $gallery;
+  }
+
+  &__head {
+    padding-bottom: 24px;
+    color: $greyL;
+    align-items: baseline;
+  }
+
+  &__row {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    min-height: 180px;
+  }
+
+  &__cell {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex: 1 1 20%;
+    max-width: 20%;
+
+    &:first-child {
+      justify-content: flex-start;
+    }
+
+    &--main {
+      font-weight: bold;
+      font-size: rem(32);
+      color: $greyD;
+    }
+
+    img {
+      max-height: 156px;
+      max-width: auto;
+      height: auto;
+    }
+  }
+}
+
+.cart-total__line {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  .button {
+    padding: 16px 65px;
+  }
+}
+
+.cart-total {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 56px;
+
+  & > * {
+    margin-right: 48px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

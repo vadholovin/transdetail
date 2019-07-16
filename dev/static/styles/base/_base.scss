@@ -88,6 +88,18 @@ img {
   flex-wrap: wrap;
 }
 
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.negative-h-margins {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .d-inline-block {
   display: inline-block !important;
 }
