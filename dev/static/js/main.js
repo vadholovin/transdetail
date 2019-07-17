@@ -41,8 +41,8 @@ $(document).ready(function () {
    * Product Tabs
    */
   let productTabs = function () { 
-    let tabBtn = $('.product-tabs__nav-item'),
-        tabContent = $('.product-tab'),
+    let tabBtn = $('.js-tabs-nav button'),
+        tabContent = $('.tab'),
         tabName;
     
     tabBtn.click(function () {

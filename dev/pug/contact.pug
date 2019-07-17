@@ -1,0 +1,104 @@
+extends template/main
+
+block variables
+  - var title = 'Контакты'
+  - var pageClass = 'contact-page'
+
+block content
+  .breadcrumbs
+    .breadcrumbs__item
+      a.breadcrumbs__title(href='#') Главная
+    span.breadcrumbs__arrow
+    .breadcrumbs__item
+      a.breadcrumbs__title(href='#') О магазине
+    span.breadcrumbs__arrow
+    .breadcrumbs__item.breadcrumbs__item--active
+      span.breadcrumbs__title Контакты
+
+  h1.page-title Контакты
+  .contact-content
+    .contact-tabs
+      .contact-tabs__nav.js-tabs-nav
+        button.contact-tabs__nav-item.is-active(
+          data-tab-name="tab-1"
+        )
+          | На карте
+        button.contact-tabs__nav-item(
+          data-tab-name="tab-2"
+        )
+          | Обратная связь
+      
+      .contact-tabs__content
+        .contact-tab.tab.tab-1.is-active
+          .contact-tab__content
+
+        .contact-tab.tab.tab-2
+          .contact-tab__content
+            .contact-grid
+              .contact-grid__cell
+                form.contact-form
+                  .form-input__wrapper
+                    label.form-label.form-label--require(
+                      for="user-name"
+                    ) Имя
+                    input.form-input(
+                      type="text",
+                      id="user-name"
+                    )
+                  .form-input__wrapper
+                    label.form-label.form-label--require(
+                      for="user-email"
+                    ) Ваш E-mail
+                    input.form-input(
+                      type="email",
+                      id="user-email"
+                    )
+                  .form-input__wrapper.form-input__wrapper--textarea
+                    label.form-label.form-label--require(
+                      for="user-comment"
+                    ) Сообщение
+                    textarea.form-textarea(
+                      id="user-comment"
+                    )
+                  button.button.button--primary(
+                    type="submit"
+                  )
+                    | Отправить
+
+              .contact-grid__cell
+                .contact-info
+                  .contact-info__title
+                    | Контакты интернет-магазина
+                  ul.contact-info__list
+                    li.contact-info__item
+                      span.contact-info__item-heading
+                        | Телефон:
+                      span.contact-info__item-text
+                        a.contact-info__item-link(
+                          href="tel:+74957967996"
+                        )
+                          | +7 (495) 796-799-6
+                        a.contact-info__item-link(
+                          href="tel:+74957447224"
+                        )
+                          | +7 (495) 744-722-4
+                    li.contact-info__item
+                      span.contact-info__item-heading
+                        | E-mail:
+                      span.contact-info__item-text
+                        a.contact-info__item-link(
+                          href="mailto:info@transdetail.ru"
+                        )
+                          | info@transdetail.ru
+                    li.contact-info__item
+                      span.contact-info__item-heading
+                        | График работы:
+                      span.contact-info__item-text
+                        | пн-пт 9:00 - 19:00
+                        br
+                        | сб 10:00 - 15:00
+
+            
+
+
+
