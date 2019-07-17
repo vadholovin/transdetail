@@ -1,0 +1,163 @@
+/*------------------------------------*\
+  #PROFILE-TABS
+\*------------------------------------*/
+
+.profile-tabs {
+
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    & > * {
+      
+    }
+  }
+
+  &__col {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &--aside {
+      flex: 1 1 25%;
+      max-width: 25%;
+    }
+
+    &--main {
+      flex: 1 1 75%;
+      max-width: 75%;
+    }
+  }
+
+
+  &__nav {
+
+    &-item {
+      display: block;
+      margin-bottom: 16px;
+      padding: 0;
+      border: 0;
+      font-size: rem(12);
+      color: inherit;
+      background-color: transparent;
+      cursor: pointer;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:focus {
+        outline: 0;
+        color: $greyL;
+      }
+
+      &.is-active {
+        color: $orange;
+      }
+    }
+  }
+}
+
+
+.profile-tab {
+
+  &__heading {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      border-top: 1px solid $gallery;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    padding-bottom: 16px;
+    border: 0;
+    border-bottom: 2px solid $orange;
+    font-weight: 600;
+    font-size: rem(18);
+    color: $orange;
+    background-color: transparent;
+  }
+
+  &__body {
+    padding-top: 40px;
+  }
+
+  &__form {
+    font-size: rem(14);
+
+    hr {
+      height: 0;
+      margin-bottom: 40px;
+      border-top: 1px solid $gallery;
+    }
+
+    [type=submit] {
+      width: 210px;
+      padding: 16px;
+    }
+  }
+
+  &__form-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form-cell {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 1 1 33.33333334%;
+    max-width: 33.33333334%;
+
+    &--date {
+      display: flex;
+      flex: 1 1 66.6666666%;
+      max-width: 66.666666%;
+
+      & > * {
+        margin-right: 20px;
+        
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .form-select__wrapper:nth-child(1),
+      .form-select__wrapper:nth-child(3) {
+        width: 80px;
+      }
+
+      .form-select__wrapper:nth-child(2) {
+        width: 120px;
+      }
+
+      .form-select {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+  }
+
+  &__form-radios {
+    display: flex;
+  }
+}

@@ -39,6 +39,20 @@
   }
 }
 
+.form-control-btn {
+  color: inherit;
+  border: 1px solid #d1d1d1;
+  padding: 8px;
+  min-width: 118px;
+  background-color: #fff;
+}
+
+[type=radio]:checked ~ .form-control-btn {
+  color: #fff;
+  border-color: $orange;
+  background-color: $orange;
+}
+
 .form-checkbox__label {
   display: flex;
   flex-wrap: wrap;

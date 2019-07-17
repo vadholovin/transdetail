@@ -27,12 +27,9 @@
     background-color: $orange;
     transition: background-color 0.25s ease-out;
 
-    &:hover {
-      background-color: mix(#000, $orange, 12%);
-    }
-
+    &:hover,
     &:focus {
-      background-color: mix(#000, $orange, 8%);
+      background-color: #E82609;
     }
   }
 

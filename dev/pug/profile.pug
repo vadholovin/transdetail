@@ -1,0 +1,60 @@
+extends template/main
+
+block variables
+  - var title = 'Профиль'
+  - var pageClass = 'profile-page'
+
+block content
+  h1.page-title Здравствуйте,
+  .profile-tabs
+    .profile-tabs__grid
+      .profile-tabs__col.profile-tabs__col--aside
+        .profile-tabs__nav.js-tabs-nav
+          button.profile-tabs__nav-item.is-active(
+            data-tab-name="tab-1"
+          )
+            | Мои заказы
+          button.profile-tabs__nav-item(
+            data-tab-name="tab-2"
+          )
+            | Избранное
+          button.profile-tabs__nav-item(
+            data-tab-name="tab-3"
+          )
+            | Мои данные
+          button.profile-tabs__nav-item(
+            data-tab-name="tab-4"
+          )
+            | Отзывы
+          button.profile-tabs__nav-item(
+            data-tab-name="tab-5"
+          )
+            | Программа лояльности
+        
+      
+      .profile-tabs__col.profile-tabs__col--main
+        .profile-tabs__content
+          .profile-tab.tab.tab-1.is-active
+            .profile-tab__content
+              include ./pages/profile/profile-tab-orders
+
+          .profile-tab.tab.tab-2
+            .profile-tab__content
+              include ./pages/profile/profile-tab-favs
+
+          .profile-tab.tab.tab-3
+            .profile-tab__content
+              include ./pages/profile/profile-tab-data
+
+          .profile-tab.tab.tab-4
+            .profile-tab__content
+              include ./pages/profile/profile-tab-reviews
+
+          .profile-tab.tab.tab-5
+            .profile-tab__content
+              include ./pages/profile/profile-tab-loyalty
+
+
+
+
+
