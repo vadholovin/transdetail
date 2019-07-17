@@ -1,0 +1,108 @@
+extends template/main
+
+block variables
+  - var title = 'Схемы'
+  - var pageClass = 'schemes-page'
+
+block content
+  .breadcrumbs
+    .breadcrumbs__item
+      a.breadcrumbs__title(href='#') Главная
+    span.breadcrumbs__arrow
+    .breadcrumbs__item
+      a.breadcrumbs__title(href='#') Каталог
+    span.breadcrumbs__arrow
+    .breadcrumbs__item
+      a.breadcrumbs__title(href='#') Железо
+    span.breadcrumbs__arrow
+    .breadcrumbs__item.breadcrumbs__item--active
+      span.breadcrumbs__title Схемы
+
+  h1.page-title Схемы
+  .schemes-list.schemes-grid
+    .schemes-cell
+      a.schemes-item(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-1.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Hubs/Center Support
+    .schemes-cell
+      a.schemes-item(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-2.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Case
+    .schemes-cell
+      a.schemes-item(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-3.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Pump/Drums
+    .schemes-cell
+      a.schemes-item(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-4.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Gear Train
+    .schemes-cell
+      a.schemes-item(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-5.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Output Shaft
+    .schemes-cell
+      a.schemes-item(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-1.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Hubs/Center Support
+    .schemes-cell
+      a.schemes-item(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-2.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Case
+    .schemes-cell
+      a.schemes-item(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-3.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Pump/Drums
+    .schemes-cell
+      a.schemes-item(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-4.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Gear Train
+    .schemes-cell
+      a.schemes-item(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-5.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Output Shaft
+    .schemes-cell
+      a.schemes-item.is-active(href='#')
+        .schemes-item__image
+          img(src='static/images/content/schemes/scheme-6.jpg', alt='')
+        .schemes-item__title
+          span.schemes-item__title-name Pump and Clutch
+
+  .schemes-preview
+    img(
+      src="static/images/content/schemes/scheme-6.jpg",
+      alt=""
+    )
+  
+  section.goods-list__wrapper
+    h2.section-title.section-title--dash
+      | 26
+    ul.goods-list
+      include modules/goods-item/goods-item
+      
+  section.goods-list__wrapper
+    h2.section-title.section-title--dash
+      | 361
+    ul.goods-list
+      include modules/goods-item/goods-item
+
+

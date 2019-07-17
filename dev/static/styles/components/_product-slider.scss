@@ -5,6 +5,7 @@
 .product-slider {
   margin-bottom: 10px;
   border: 1px solid #ededed;
+  overflow: hidden;
 
   &__wrapper {
     position: relative;

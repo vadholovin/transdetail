@@ -6,6 +6,10 @@
   margin-bottom: 20px;
   border: 1px solid #dadada;
   transition: border-color 0.25s ease-out;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:hover {
     border-color: $blue;

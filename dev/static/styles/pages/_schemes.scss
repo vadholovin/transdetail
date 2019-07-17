@@ -1,0 +1,27 @@
+/*------------------------------------*\
+  #
+\*------------------------------------*/
+
+.schemes-page {
+
+  .schemes-list {
+    margin-bottom: 60px;
+  }
+
+  .goods-list__wrapper {
+    margin-bottom: 65px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.schemes-preview {
+  margin-bottom: 76px;
+  text-align: center;
+
+  img {
+    max-width: 810px;
+  }
+}
