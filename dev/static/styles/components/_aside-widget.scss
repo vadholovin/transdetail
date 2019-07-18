@@ -1,0 +1,51 @@
+/*------------------------------------*\
+  #ASIDE-WIDGET
+\*------------------------------------*/
+
+.aside-widget {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  &__title {
+    margin-bottom: 24px;
+    font-size: rem(18);
+    color: $greyL;
+  }
+}
+
+.newslist__item {
+  margin-bottom: 12px;
+  border: 1px solid $gallery;
+  transition: box-shadow 0.25s ease-out;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 118px;
+    padding: 18px;
+    text-decoration: none !important;
+  }
+
+  &-title {
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+
+  &-meta {
+    display: block;
+    margin-top: auto;
+    font-size: rem(12);
+    color: #7c7c7c;
+  }
+}
