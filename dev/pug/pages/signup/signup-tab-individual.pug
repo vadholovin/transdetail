@@ -1,0 +1,124 @@
+p.signup-tab__lead
+  | <a href="#">Физическое лицо</a> — субъект гражданского права, являющийся одним человеком. Как и любой другой субъект права, физическое лицо имеет права и обязанности.
+form.signup-tab__form
+  .signup-tab__form-block
+    h2.signup-tab__form-heading Общая информация
+    .signup-tab__grid
+      .signup-tab__cell
+        .form-input__wrapper
+          label.form-label.form-label--require(
+            for="user-lastname"
+          ) Фамилия
+          input.form-input(
+            type="text",
+            id="user-lastname"
+          )
+      .signup-tab__cell
+        .form-input__wrapper
+          label.form-label.form-label--require(
+            for="user-firstname"
+          ) Имя
+          input.form-input(
+            type="text",
+            id="user-firstname"
+          )
+      .signup-tab__cell
+        .form-input__wrapper
+          label.form-label(
+            for="user-patronymic"
+          ) Отчество
+          input.form-input(
+            type="text",
+            id="user-patronymic"
+          )
+      .signup-tab__cell
+        .form-input__wrapper
+          label.form-label(
+            for="user-city"
+          ) Город
+          input.form-input(
+            type="text",
+            id="user-city"
+          )
+      .signup-tab__cell
+        .form-select__wrapper
+          select.form-select.js-select
+            option(
+              disabled,
+              selected
+            ) Сфера деятельности
+            option(value="") Хлеб
+            option(value="") Кефир
+            option(value="") Яйца
+
+  .signup-tab__form-block
+    h2.signup-tab__form-heading Контакты
+    .signup-tab__grid
+      .signup-tab__cell
+        .form-input__wrapper
+          label.form-label.form-label--require(
+            for="user-phone"
+          ) Номер телефона
+          input.form-input(
+            type="text",
+            id="user-phone"
+          )
+      .signup-tab__cell
+        button.button.button--primary
+          | Подтвердить
+      .signup-tab__cell
+        .form-input__wrapper
+          label.form-label(
+            for="user-sms-code"
+          ) Код из SMS
+          input.form-input(
+            type="text",
+            id="user-sms-code"
+          )
+
+  .signup-tab__form-block
+    h2.signup-tab__form-heading Защита аккаунта
+    .signup-tab__grid
+      .signup-tab__cell
+        .form-input__wrapper
+          label.form-label.form-label--require(
+            for="user-password"
+          ) Пароль
+          input.form-input(
+            type="text",
+            id="user-password"
+          )
+      .signup-tab__cell
+        .form-input__wrapper
+          label.form-label.form-label--require(
+            for="user-r-password"
+          ) Подтверждение пароля
+          input.form-input(
+            type="text",
+            id="user-r-password"
+          )
+  .signup-tab__form-bottom-text
+    .form-checkbox__wrapper
+      input.form-checkbox.visuallyhidden(
+        type="checkbox",
+        id="user-agreement-2",
+        name="agreement",
+        value="ok"
+      )
+      label.form-checkbox__label(
+        for="user-agreement-2"
+      )
+        .form-checkbox__mask
+        .form-checkbox__label-content
+          | Я прочитал и принимаю условия <a href="#">пользовательского соглашения</a> в полном объеме.
+  button.button.button--primary(type="submit") Создать аккаунт
+
+
+
+
+
+
+
+
+
+

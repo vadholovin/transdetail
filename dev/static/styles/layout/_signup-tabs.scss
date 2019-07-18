@@ -1,0 +1,107 @@
+/*------------------------------------*\
+  #SIGNUP-TABS
+\*------------------------------------*/
+
+.signup-tabs {
+
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      display: block;
+      flex: 1 1 0%;
+      max-width: 100%;
+      padding: 16px 12px;
+      border: 0;
+      font-family: inherit;
+      font-size: rem(14);
+      line-height: 1.15;
+      cursor: pointer;
+      color: $greyL;
+      text-transform: uppercase;
+      text-align: center;
+      white-space: nowrap;
+      user-select: none;
+      background-color: $gallery;
+
+      &:focus {
+        outline: 0;
+        background-color: $mercury;
+      }
+
+      &.is-active {
+        font-weight: bold;
+        color: #fff;
+        background-color: $orange;
+      }
+    }
+  }
+
+
+  &__content {
+    padding-top: 46px;
+
+    a {
+      color: $cerulean;
+      text-decoration: underline;
+
+      &:hover {
+        color: $blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.signup-tab {
+
+
+  &__lead {
+    margin-bottom: 50px;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 950px;
+
+    &-heading {
+      font-weight: 600;
+      font-size: rem(18);
+      color: $greyL;
+      margin-bottom: 40px;
+    }
+
+    &-bottom-text {
+      margin-bottom: 50px;
+    }
+
+    .button {
+      padding: 16px 30px;
+    }
+
+    [type=submit] {
+      width: 250px;
+    }
+  }
+
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+
+  &__cell {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    flex: 1 1 50%;
+    max-width: 50%;
+    margin-bottom: 40px;
+  }
+}

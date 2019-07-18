@@ -151,6 +151,7 @@ $(document).ready(function () {
    */
   $('#select-profile').selectmenu();
   $('#select-placement').selectmenu();
+  $('.js-select').selectmenu();
   
 
   

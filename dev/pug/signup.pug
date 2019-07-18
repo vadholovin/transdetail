@@ -1,0 +1,38 @@
+extends template/main
+
+block variables
+  - var title = 'Регистрация'
+  - var pageClass = 'signup-page'
+
+block content
+  .breadcrumbs
+    .breadcrumbs__item
+      a.breadcrumbs__title(href='#') Главная
+    span.breadcrumbs__arrow
+    .breadcrumbs__item
+      a.breadcrumbs__title(href='#') Личный кабинет
+    span.breadcrumbs__arrow
+    .breadcrumbs__item.breadcrumbs__item--active
+      span.breadcrumbs__title Регистрация
+
+  h1.page-title Регистрация
+  .signup__tabs.signup-tabs
+    .signup-tabs__nav.js-tabs-nav
+      button.signup-tabs__nav-item.is-active(
+        data-tab-name="tab-1"
+      )
+        | Для физических лиц
+      button.signup-tabs__nav-item(
+        data-tab-name="tab-2"
+      )
+        | Для юридических лиц
+
+  .signup-tabs__content
+    .signup-tab.tab.tab-1.is-active
+      include pages/signup/signup-tab-individual
+
+    .signup-tab.tab.tab-2
+      include pages/signup/signup-tab-entity
+
+
+
