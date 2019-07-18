@@ -1,0 +1,42 @@
+/*------------------------------------*\
+  #G-TABLE (GENERAL TABLE)
+\*------------------------------------*/
+
+.g-table {
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  text-align: center;
+
+  thead {
+    background-color: $gallery;
+
+    th {
+      font-weight: normal;
+      padding: 15px;
+    }
+  }
+
+  th,
+  td {
+    line-height: 1.2;
+    vertical-align: middle;
+  }
+
+  td {
+    padding: 12px;
+    height: 90px;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid $gallery;
+  }
+}
+
+.g-table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}

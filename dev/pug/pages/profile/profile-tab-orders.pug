@@ -1,7 +1,20 @@
 .profile-tab__heading
-
+  .profile-tab__nav.js-innertabs-nav
+    button.profile-tab__nav-item.is-active(
+      data-tab-name="tab-inner-1-1"
+    )
+      | Текущие заказы
+    button.profile-tab__nav-item(
+      data-tab-name="tab-inner-1-2"
+    )
+      | Все заказы
 
 
 .profile-tab__body
+  .profile-tab__inner-tab.innertab.tab-inner-1-1.is-active
+    include profile-tab-order-current
+
+  .profile-tab__inner-tab.innertab.tab-inner-1-2
+    include profile-tab-order-all
 
 

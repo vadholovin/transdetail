@@ -63,6 +63,7 @@
 
 
 .profile-tab {
+  font-size: rem(14);
 
   &__heading {
     position: relative;
@@ -78,15 +79,45 @@
     }
   }
 
-  &__title {
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__title,
+  &__nav-item {
     display: inline-block;
     padding-bottom: 16px;
     border: 0;
-    border-bottom: 2px solid $orange;
     font-weight: 600;
     font-size: rem(18);
-    color: $orange;
     background-color: transparent;
+  }
+
+  &__title {
+    color: $orange;
+    border-bottom: 2px solid $orange;
+  }
+
+  &__nav-item {
+    color: $greyL;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &:focus {
+      outline: 0;
+      border-color: $greyL;
+    }
+
+    &.is-active {
+      color: $orange;
+      border-color: $orange;
+    }
   }
 
   &__body {
@@ -161,3 +192,4 @@
     display: flex;
   }
 }
+

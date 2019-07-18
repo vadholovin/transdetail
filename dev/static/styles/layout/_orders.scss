@@ -1,0 +1,106 @@
+/*------------------------------------*\
+  #ORDERS
+\*------------------------------------*/
+
+.orders {
+
+  &-info {
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+
+    &__title {
+      font-weight: bold;
+      font-size: rem(18);
+      margin-bottom: 40px;
+    }
+
+
+    &__table {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 45px;
+
+      td {
+        vertical-align: top;
+        padding-right: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.orders-table {
+  margin-bottom: 40px;
+  
+  th, td {
+    width: 20%;
+  }
+
+  tbody td:last-child {
+    color: $grey;
+  }
+
+  tfoot {
+    background-color: rgba(#00ad5d, 0.2);
+
+    td {
+      height: 74px;
+
+      &:first-child {
+        padding-left: 40px;
+        text-align: left;
+      }
+      &:last-child {
+        font-weight: bold;
+
+        span {
+          display: inline-block;
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+.orders-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__text {
+    margin-right: 30px;
+    color: $grey;
+  }
+
+  .button {
+    width: 165px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+.is-paid {
+  color: $jade !important;
+}
+
+.is-processing {
+  color: $orange !important;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 9px;
+    width: 12px;
+    height: 13px;
+    background-image: url(../images/icons/redo.png);
+    background-size: 12px 13px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}

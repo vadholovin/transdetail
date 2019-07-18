@@ -1,0 +1,33 @@
+.auth__header
+  p.auth__title Личный аккаунт
+.auth__body
+  p.auth__subtitle Вход в аккаунт
+  form.auth__form
+    .form-input__wrapper
+      input.form-input(
+        type="text",
+        id="user-login",
+        placeholder="Номер телефона или Email*"
+      )
+    .form-input__wrapper
+      input.form-input(
+        type="text",
+        id="user-password",
+        placeholder="Пароль*"
+      )
+    .auth__form-bottom
+      .form-checkbox__wrapper
+        input.form-checkbox.visuallyhidden(
+          type="checkbox",
+          id="user-remember",
+        )
+        label.form-checkbox__label(
+          for="user-remember"
+        )
+          .form-checkbox__mask
+          .form-checkbox__label-content
+            | Запомнить меня
+      a.link-colored(href="#") Забыли пароль?
+    button.button.button--primary.d-block(
+      type="submit"
+    )

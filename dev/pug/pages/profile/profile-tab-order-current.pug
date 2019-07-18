@@ -1,0 +1,66 @@
+.orders-info
+  .orders-info__title
+    | Заказ №1234567 на сумму 6000 руб.
+  .g-table-responsive
+    table.orders-info__table
+      tr
+        td Имя:
+        td Петров Александр	
+      tr
+        td E-mail:
+        td test@testing.ru
+      tr
+        td Телефон: 
+        td +7 (999) 999-99-99 
+      tr
+        td Адрес доставки:
+        td Россия, г.Москва, ул. Ленина ...
+      tr
+        td Комментарий:
+        td Пожалуйста звоните с 17:00 до 20:00 пока я буду дома. 
+      tr
+        td Дата закза:
+        td 05 июля 2017 в  14:50
+      tr
+        td Состояние:
+        td.is-processing Обрабатывается
+      tr
+        td Оплата:
+        td.is-paid Оплачен
+
+  .g-table-responsive
+    table.g-table.orders-table
+      thead
+        tr
+          th(scope="col") Наименование
+          th(scope="col") Цена
+          th(scope="col") Кол-во
+          th(scope="col") Скидка
+          th(scope="col") Сумма
+
+      tbody
+        tr
+          td
+            b Масляный насос двигателя
+          td 1000₽
+          td 2 шт.
+          td 0₽
+          td 2000₽
+        tr
+          td
+            b #1234567
+          td 1000₽
+          td 2 шт.
+          td 1000₽
+          td 1000₽
+        tr
+          td
+            b #1234567
+          td 1000₽
+          td 2 шт.
+          td 0₽
+          td 2000₽
+      tfoot
+        tr
+          td(colspan="3") Заказ оплачен от 05 июля 2017 в 14:50
+          td(colspan="2") сумма заказа: <span>5 000 руб.</span>

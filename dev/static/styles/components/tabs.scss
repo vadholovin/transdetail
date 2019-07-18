@@ -2,7 +2,8 @@
   #TABS
 \*------------------------------------*/
 
-.tab {
+.tab,
+.innertab {
   display: none;
 
   &.is-active {

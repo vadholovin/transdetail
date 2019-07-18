@@ -38,11 +38,37 @@ $(document).ready(function () {
 
 
   /**
-   * Product Tabs
+   * Tabs
    */
-  let productTabs = function () { 
+  let clickTabs = function () { 
     let tabBtn = $('.js-tabs-nav button'),
         tabContent = $('.tab'),
+        tabName;
+    
+    tabBtn.click(function () {
+      tabBtn.removeClass('is-active');
+      $(this).addClass('is-active');
+      tabName = $(this).data('tab-name');
+      selectTab(tabName);
+    });
+
+    function selectTab(tabName) {
+      tabContent.each(function() {
+        if ($(this).hasClass(tabName)) {
+          $(this).addClass('is-active')
+        } else {
+          $(this).removeClass('is-active');
+        }
+      });
+    }
+  };
+
+  /**
+   * Inner Tabs
+   */
+  let clickInnerTabs = function () { 
+    let tabBtn = $('.js-innertabs-nav button'),
+        tabContent = $('.innertab'),
         tabName;
     
     tabBtn.click(function () {
@@ -125,14 +151,14 @@ $(document).ready(function () {
    */
   $('#select-profile').selectmenu();
   $('#select-placement').selectmenu();
-  // $('#cart-placement').selectmenu();
   
 
   
 
   
   productSlider();
-  productTabs();
+  clickTabs();
+  clickInnerTabs();
   productCarousel();
   productCellSlider();
   hideLabel();
