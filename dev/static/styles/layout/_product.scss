@@ -91,7 +91,6 @@
   &-feature {
     display: table;
     width: 100%;
-    font-size: rem(14);
 
     & > * {
       display: table-cell;
@@ -138,7 +137,6 @@
     &__last {
       display: inline-block;
       position: relative;
-      font-size: rem(14);
       color: $shuttle-gray;
 
       &:after {
@@ -162,7 +160,6 @@
 
   &-about {
     max-width: 360px;
-    font-size: rem(14);
 
     &__title {
       margin-bottom: 12px;
@@ -237,7 +234,6 @@
 
     &__table {
       display: inline-block;
-      font-size: rem(14);
 
       &-head,
       &-tr {

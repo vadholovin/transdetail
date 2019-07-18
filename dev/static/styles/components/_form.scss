@@ -10,7 +10,6 @@
   position: absolute;
   top: 16px;
   left: 20px;
-  font-size: rem(14);
   line-height: 1;
   color: $greyL;
 
@@ -28,7 +27,7 @@
   padding: 15px 15px 15px 20px;
   border: 1px solid #dddddd;
 	font-family: inherit;
-	font-size: rem(14);
+	font-size: inherit;
 	line-height: 1.15;
 	color: inherit;
   background: #fff;
@@ -60,7 +59,6 @@
   &-content {
     flex: 1 1 0%;
     color: #898989;
-    font-size: rem(14);
   }
 
   &-title {
