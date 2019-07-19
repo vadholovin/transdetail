@@ -154,7 +154,12 @@ $(document).ready(function () {
   $('.js-select').selectmenu();
   
 
-  
+  /**
+   * Micromodal init
+   */
+  let initMicromodal = function () {
+    MicroModal.init();
+  };
 
   
   productSlider();
@@ -163,5 +168,5 @@ $(document).ready(function () {
   productCarousel();
   productCellSlider();
   hideLabel();
-
+  initMicromodal();
 });

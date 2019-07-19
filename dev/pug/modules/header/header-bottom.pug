@@ -11,8 +11,8 @@
           .search-form__inner
             .search-form__input-wrapper
               input.search-form__input(autocomplete='off', name='search-text', type='text', placeholder='Поиск по сайту')
-            .search-form__select-wrapper
-              select#search-select.search-form__select(name='search-select')
+            .search-form__select-wrapper.form-select__wrapper.form-select__wrapper--search
+              select#search-select.search-form__select.js-select(name='search-select')
                 option(value='По артикулу или названию') По артикулу или названию
                 option(value='По цвету') По цвету
           button.button(type='submit') Найти

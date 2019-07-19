@@ -16,6 +16,10 @@
   font-weight: normal;
   cursor: pointer;
 
+  &:focus {
+    outline: 0;
+  }
+
 
   &--block {
     display: block;

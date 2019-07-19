@@ -1,0 +1,7 @@
+#modal-signin.modal.modal--signin(aria-hidden='true')
+  .modal__overlay(tabindex='-1', data-micromodal-close)
+    .modal__container(role='dialog', aria-modal='true')
+      button.modal__close(aria-label='Закрыть попап', data-micromodal-close)
+      main.modal__content
+
+        include ../signin/signin

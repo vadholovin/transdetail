@@ -1,0 +1,81 @@
+/*------------------------------------*\
+  #SUCCESS-BLOCK
+\*------------------------------------*/
+
+.success-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px 75px 20px;
+  border: 1px solid $gallery;
+  background-color: #fafafa;
+
+  &__content {
+
+    .icon {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: rem(32);
+    margin-bottom: 55px;
+  }
+}
+
+.success-info {
+
+  &__title {
+    font-size: rem(32);
+    margin-bottom: 50px;
+  }
+
+  &__table {
+    width: 100%;
+    font-size: rem(18);
+    margin-bottom: 60px;
+    
+    tr {
+      padding-bottom: 40px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    td {
+      vertical-align: top;
+      height: 60px;
+    }
+
+    td:first-child {
+      width: 180px;
+      padding-right: 20px;
+    }
+
+    tr:last-child td {
+      height: auto;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .button {
+      width: 250px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      margin-right: 45px;
+    }
+
+    .link-underline {
+      color: $greyL;
+    }
+  }
+}

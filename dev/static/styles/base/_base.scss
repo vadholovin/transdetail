@@ -83,6 +83,14 @@ img {
   }
 }
 
+.link-underline {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .d-flex {
   display: flex;
   flex-wrap: wrap;
