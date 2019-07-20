@@ -1,4 +1,4 @@
-li.goods-item
+li.goods-item.goods-item--full
   .goods-item__status-line
     .status.status--goods.status--in-stock
       span.icon.icon-check
@@ -31,10 +31,8 @@ li.goods-item
         .goods-item__info-cell.goods-item__info-cell--5
           .goods-item__feature
             span.goods-item__feature-label Кол-во
-            .goods-item__quantity
-              button.goods-item__quantity-btn -
-              input.goods-item__quantity-input(type='text', readonly='', value='1шт.')
-              button.goods-item__quantity-btn +
+            
+            include ../product-quantity/product-quantity
         .goods-item__info-cell.goods-item__info-cell--6
           .goods-item__feature
             span.goods-item__feature-label Цена
@@ -42,21 +40,22 @@ li.goods-item
     .goods-item__content-bottom
       .goods-item__features
         span.goods-item__features-heading Тех. характеристики:
-        .goods-item__feature
-          span.goods-item__feature-label Диаметр внутр.:
-          span.goods-item__feature-value 129034
-        .goods-item__feature
-          span.goods-item__feature-label Диаметр нар.:
-          span.goods-item__feature-value 50.9мм.
-        .goods-item__feature
-          span.goods-item__feature-label Состояние:
-          span.goods-item__feature-value Новый
-        .goods-item__feature
-          span.goods-item__feature-label Толщина:
-          span.goods-item__feature-value 2.93мм.
-        .goods-item__feature
-          span.goods-item__feature-label Высота:
-          span.goods-item__feature-value 2.93мм.
+        .goods-item__features-list
+          .goods-item__feature
+            span.goods-item__feature-label Диаметр внутр.:
+            span.goods-item__feature-value 129034
+          .goods-item__feature
+            span.goods-item__feature-label Диаметр нар.:
+            span.goods-item__feature-value 50.9мм.
+          .goods-item__feature
+            span.goods-item__feature-label Состояние:
+            span.goods-item__feature-value Новый
+          .goods-item__feature
+            span.goods-item__feature-label Толщина:
+            span.goods-item__feature-value 2.93мм.
+          .goods-item__feature
+            span.goods-item__feature-label Высота:
+            span.goods-item__feature-value 2.93мм.
       .goods-item__controls
         button.goods-item__control.goods-item__control--to-cart(title='Добавить в корзину')
         button.goods-item__control.goods-item__control--to-wish(title='Добавить в желания')

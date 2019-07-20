@@ -161,6 +161,27 @@ $(document).ready(function () {
     MicroModal.init();
   };
 
+
+  /**
+   * Datepicker init
+   */
+  let initDatepicker = function () {
+    $("#user-birthday").dropdownDatepicker({
+      defaultDate: 'dd-mm-yyyy',
+      displayFormat: 'dmy',
+      submitFormat: 'dd-mm-yyyy',
+      minDate: 1930,
+      monthLongValues: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+      // initialDayMonthYearValues: ['День', 'Месяц', 'Год'],
+      allowFuture: false,
+      daySuffixes: false,
+      monthSuffixes: false,
+      dayLabel: 'День',
+      monthLabel: 'Месяц',
+      yearLabel: 'Год',
+    });
+  };
+
   
   productSlider();
   clickTabs();
@@ -169,4 +190,5 @@ $(document).ready(function () {
   productCellSlider();
   hideLabel();
   initMicromodal();
+  // initDatepicker();
 });

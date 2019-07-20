@@ -78,23 +78,6 @@
         padding-right: 30px;
       }
 
-      &--1 {
-        width: 158px;
-      }
-      &--2 {
-        width: 150px;
-      }
-      &--3 {
-        width: 112px;
-      }
-      &--4 {
-        width: 142px;
-      }
-      &--5 {
-        width: 170px;
-      }
-      
-
       .goods-item__feature-label {
         display: block;
         margin-bottom: 12px;
@@ -154,11 +137,19 @@
     position: relative;
     top: 8px;
     flex: 1 1 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 
     &-heading {
       margin-right: 20px;
       font-size: rem(12);
       color: $greyL;
+    }
+
+    &-list {
+      flex: 1 1 0%;
+      max-width: 100%;
     }
 
     .goods-item__feature {
@@ -194,8 +185,30 @@
     }
 
     &--to-wish {
-      border: 1px solid #ededed;
+      border: 1px solid $gallery;
       background: url(../images/icons/heart-outline-grey.png) no-repeat 50% 50%;
+    }
+  }
+}
+
+.goods-item--full {
+
+  .goods-item__info-cell {
+    
+    &--1 {
+      width: 158px;
+    }
+    &--2 {
+      width: 150px;
+    }
+    &--3 {
+      width: 112px;
+    }
+    &--4 {
+      width: 142px;
+    }
+    &--5 {
+      width: 170px;
     }
   }
 }

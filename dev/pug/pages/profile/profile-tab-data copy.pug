@@ -1,0 +1,126 @@
+.profile-tab__heading
+  span.profile-tab__title Мои данные
+
+.profile-tab__body
+  form.profile-tab__form
+    .profile-tab__form-row
+      .profile-tab__form-cell
+        .form-input__wrapper
+          input.form-input(
+            type="text",
+            id="user-lastname",
+            placeholder="Фамилия"
+          )
+      .profile-tab__form-cell
+        .form-input__wrapper
+          input.form-input(
+            type="text",
+            id="user-firstname",
+            placeholder="Имя"
+          )
+      .profile-tab__form-cell
+        .form-input__wrapper
+          input.form-input(
+            type="text",
+            id="user-patronymic",
+            placeholder="Отчество"
+          )
+    
+    .profile-tab__form-row
+      .profile-tab__form-cell
+        .profile-tab__form-label
+          | Ваш e-mail
+      .profile-tab__form-cell
+        .profile-tab__form-value
+          | testing@test.ru
+    
+    .profile-tab__form-row
+      .profile-tab__form-cell
+        .profile-tab__form-label
+          | Пароль
+      .profile-tab__form-cell
+        button.button.form-control-btn
+          | Изменить
+    
+    hr
+    
+    .profile-tab__form-row
+      .profile-tab__form-cell
+        .profile-tab__form-label
+          | Телефон
+      .profile-tab__form-cell
+        .form-input__wrapper
+          input.form-input(
+            type="text",
+            id="user-phone",
+            placeholder="+7(999) 999 99 99"
+          )
+    
+    .profile-tab__form-row
+      .profile-tab__form-cell
+        .profile-tab__form-label
+          | Дата рождения
+      .profile-tab__form-cell.profile-tab__form-cell--date
+        .form-select__wrapper
+          select.form-select#select-day
+            option(
+              disabled,
+              selected
+            ) День
+            option(value="") 1
+            option(value="") 2
+            option(value="") 3
+        .form-select__wrapper
+          select.form-select#select-month
+            option(
+              disabled,
+              selected
+            ) Месяц
+            option(value="") Январь
+            option(value="") Февраль
+            option(value="") Март
+        .form-select__wrapper
+          select.form-select#select-year
+            option(
+              disabled,
+              selected
+            ) Год
+            option(value="") 2019
+            option(value="") 2018
+            option(value="") 2017
+    
+    .profile-tab__form-row
+      .profile-tab__form-cell
+        .profile-tab__form-label
+          | Пол
+      .profile-tab__form-cell
+        .profile-tab__form-radios
+          .profile-tab__form-radio
+            input.visuallyhidden#user-male(
+              type="radio",
+              name="user-sex",
+              value="male"
+            )
+            label.button.form-control-btn(
+              for="user-male"
+            )
+              | Мужской
+          .profile-tab__form-radio
+            input.visuallyhidden#user-female(
+              type="radio",
+              name="user-sex",
+              value="female"
+            )
+            label.button.form-control-btn(
+              for="user-female"
+            )
+              | Женский
+    hr
+    button.button.button--primary(
+      type="submit"
+    ) Сохранить
+
+
+
+
+
