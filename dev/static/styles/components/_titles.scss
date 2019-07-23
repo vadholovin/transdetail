@@ -6,6 +6,10 @@
   font-weight: bold;
   font-size: rem(32);
   margin-bottom: 32px;
+
+  @media (max-width: 992px) {
+    line-height: 1.2;
+  }
 }
 
 .section-title {

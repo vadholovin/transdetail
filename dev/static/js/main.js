@@ -99,6 +99,36 @@ $(document).ready(function () {
       slidesToScroll: 1,
       prevArrow: $('.product-carousel__btn--prev'),
       nextArrow: $('.product-carousel__btn--next'),
+      responsive: [
+        {
+          breakpoint: 1199.98,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 991.98,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 767.98,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 575.98,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+      ],
     });
   };
 
@@ -149,9 +179,9 @@ $(document).ready(function () {
   /**
    * Replacing selects
    */
-  $('#select-profile').selectmenu();
-  $('#select-placement').selectmenu();
-  $('.js-select').selectmenu();
+  let relaceSelect = function () {
+    $('.js-select').selectmenu();
+  };
   
 
   /**
@@ -189,6 +219,7 @@ $(document).ready(function () {
   productCarousel();
   productCellSlider();
   hideLabel();
-  initMicromodal();
+  relaceSelect();
+  // initMicromodal();
   // initDatepicker();
 });

@@ -11,15 +11,32 @@
 
   &__main-col {
     width: 100%;
-    flex: 1 1 0%;
-    max-width: 100%;
-    padding-right: 80px;
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      flex: 1 1 0%;
+      max-width: 100%;
+      margin-bottom: 0;
+      padding-right: 40px;
+    }
+
+    @media (min-width: 992px) {
+      padding-right: 80px;
+    }
   }
 
   &__aside-col {
     width: 100%;
-    flex: 0 0 300px;
-    max-width: 300px;
+
+    @media (min-width: 768px) {
+      flex: 0 0 240px;
+      max-width: 240px;
+    }
+
+    @media (min-width: 992px) {
+      flex: 0 0 300px;
+      max-width: 300px;
+    }
   }
 }
 

@@ -38,8 +38,11 @@
   }
 
   &-title {
-    max-width: 250px;
     margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      max-width: 250px;
+    }
   }
 
   &-meta {

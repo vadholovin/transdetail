@@ -1,0 +1,112 @@
+/*------------------------------------*\
+  #PRODUCT-TABS
+\*------------------------------------*/
+
+.product-tabs {
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    &::after {
+      content: '';
+      display: none;
+      flex: 1;
+      height: 1px;
+      margin-left: 25px;
+      border-top: 1px solid $gallery;
+
+      @media (min-width: 992px) {
+        display: block;
+      }
+    }
+
+    &-item {
+      height: 48px;
+      padding-left: 26px;
+      padding-right: 26px;
+      border: 1px solid $gallery;
+      font-weight: bold;
+      font-size: rem(14);
+      line-height: 48px;
+      color: $greyL;
+      white-space: nowrap;
+      text-align: left;
+      background-color: #fff;
+      cursor: pointer;
+      transition: background-color 0.25s ease-out, color 0.25s ease-out, border-color 0.25s ease-out;
+
+      @media (min-width: 768px) {
+        text-align: center;
+      }
+
+      @media (min-width: 992px) {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      &:focus {
+        outline: 0;
+        border-color: $alto;
+      }
+
+      &:hover {
+        color: #ffffff;
+        background-color: $blue;
+        border-color: $blue;
+      }
+
+      &.is-active {
+        color: #ffffff;
+        background-color: $blue;
+        border-color: $blue;
+      }
+
+      &--1 {
+        padding-left: 26px;
+        padding-right: 26px;
+      }
+    }
+  }
+}
+
+.product-tab {
+  padding-top: 40px;
+
+  &__table {
+    display: inline-block;
+
+    &-head,
+    &-tr {
+      display: table;
+      width: 100%;
+    }
+
+    &-head {
+      padding-bottom: 6px;
+      border-bottom: 1px solid $gallery;
+      color: $greyL;
+    }
+
+    &-tr {
+      padding-top: 16px;
+      text-transform: uppercase;
+    }
+
+    &-td {
+      display: table-cell;
+      vertical-align: top;
+      line-height: 1.15;
+
+      &:first-child {
+        width: 110px;
+        padding-right: 20px;
+      }
+    }
+  }
+}

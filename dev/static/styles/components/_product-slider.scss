@@ -12,10 +12,11 @@
   }
 
   &__item {
-    min-height: 620px;
+    max-height: 620px;
   }
   
   &__nav {
+    margin-bottom: 35px;
 
     .slick-track {
       margin-left: 0;

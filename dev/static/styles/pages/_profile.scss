@@ -9,6 +9,10 @@
   }
 
   .page-title {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 80px;
+    }
   }
 }

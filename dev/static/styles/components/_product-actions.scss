@@ -8,10 +8,10 @@
 
   & > * {
     margin-right: 15px;
-  }
 
-  &:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &--goods {
@@ -25,6 +25,10 @@
     border: 0;
     cursor: pointer;
 
+    &:focus {
+      outline: 0;
+    }
+
     &--to-cart {
       display: flex;
       flex-wrap: wrap;
@@ -35,8 +39,12 @@
     }
   
     &--to-wish {
-      border: 1px solid #ededed;
+      border: 1px solid $gallery;
       background: #fff url(../images/icons/heart-outline-grey.png) no-repeat 50% 50%;
+
+      &:focus {
+        border-color: $alto;
+      }
     }
   }
 
@@ -45,11 +53,18 @@
 
     .product-actions__btn--to-cart {
       justify-content: space-between;
-      width: 245px;
-      padding-left: 24px;
-      padding-right: 24px;
+      white-space: nowrap;
+      width: 220px;
+      padding-left: 20px;
+      padding-right: 20px;
       font-weight: bold;
       font-size: 14px;
+
+      @media (min-width: 992px) {
+        width: 245px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
     }
   }
 }

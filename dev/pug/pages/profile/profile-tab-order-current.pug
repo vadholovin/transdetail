@@ -28,39 +28,45 @@
         td Оплата:
         td.is-paid Оплачен
 
-  .g-table-responsive
-    table.g-table.orders-table
-      thead
-        tr
-          th(scope="col") Наименование
-          th(scope="col") Цена
-          th(scope="col") Кол-во
-          th(scope="col") Скидка
-          th(scope="col") Сумма
+  .orders-table__wrapper
+    .g-table-responsive
+      table.g-table.orders-table
+        thead
+          tr
+            th(scope="col") Наименование
+            th(scope="col") Цена
+            th(scope="col") Кол-во
+            th(scope="col") Скидка
+            th(scope="col") Сумма
 
-      tbody
-        tr
-          td
-            b Масляный насос двигателя
-          td 1000₽
-          td 2 шт.
-          td 0₽
-          td 2000₽
-        tr
-          td
-            b #1234567
-          td 1000₽
-          td 2 шт.
-          td 1000₽
-          td 1000₽
-        tr
-          td
-            b #1234567
-          td 1000₽
-          td 2 шт.
-          td 0₽
-          td 2000₽
-      tfoot
-        tr
-          td(colspan="3") Заказ оплачен от 05 июля 2017 в 14:50
-          td(colspan="2") сумма заказа: <span>5 000 руб.</span>
+        tbody
+          tr
+            td
+              b Масляный насос двигателя
+            td 1000₽
+            td 2 шт.
+            td 0₽
+            td 2000₽
+          tr
+            td
+              b #1234567
+            td 1000₽
+            td 2 шт.
+            td 1000₽
+            td 1000₽
+          tr
+            td
+              b #1234567
+            td 1000₽
+            td 2 шт.
+            td 0₽
+            td 2000₽
+        tfoot
+          tr
+            td(colspan="3") Заказ оплачен от 05 июля 2017 в 14:50
+            td(colspan="2") сумма заказа: <span>5 000 руб.</span>
+
+
+
+
+

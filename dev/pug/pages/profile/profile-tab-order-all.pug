@@ -1,35 +1,37 @@
-.g-table-responsive
-  table.g-table.orders-table
-    thead
-      tr
-        th(scope="col") Номер заказа
-        th(scope="col") Цена
-        th(scope="col") Кол-во
-        th(scope="col") Сумма
-        th(scope="col") Статус заказа
+.orders-table__wrapper
+  .g-table-responsive
+    table.g-table.orders-table
+      thead
+        tr
+          th(scope="col") Номер заказа
+          th(scope="col") Цена
+          th(scope="col") Кол-во
+          th(scope="col") Сумма
+          th(scope="col") Статус заказа
 
-    tbody
-      tr
-        td
-          b #1234567
-        td 1000₽
-        td 2 шт.
-        td 1000₽
-        td.is-paid Оплачено
-      tr
-        td
-          b #1234567
-        td 1000₽
-        td 2 шт.
-        td 1000₽
-        td.is-paid Оплачено
-      tr
-        td
-          b #1234567
-        td 1000₽
-        td 2 шт.
-        td 1000₽
-        td Ожидает оплаты
+      tbody
+        tr
+          td
+            b #1234567
+          td 1000₽
+          td 2 шт.
+          td 1000₽
+          td.is-paid Оплачено
+        tr
+          td
+            b #1234567
+          td 1000₽
+          td 2 шт.
+          td 1000₽
+          td.is-paid Оплачено
+        tr
+          td
+            b #1234567
+          td 1000₽
+          td 2 шт.
+          td 1000₽
+          td Ожидает оплаты
+
 .orders-bottom
   p.orders-bottom__text
     | В вашей корзине имеются неоплаченые заказы

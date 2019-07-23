@@ -14,17 +14,22 @@
       margin-right: -15px;
     }
 
-    &-left,
-    &-right {
-      display: flex;
-      flex-wrap: wrap;
-      padding-bottom: 50px;
-    }
 
     &-left {
+      width: 100%;
       position: relative;
-      padding-top: 60px;
-      padding-right: 60px !important;
+      padding: 35px 15px 35px 15px;
+
+      @media (min-width: 375px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: 992px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 60px 60px 50px 15px;
+      }
 
       &::after {
         content: '';
@@ -39,14 +44,27 @@
     }
 
     &-right {
-      padding-left: 60px !important;
-      padding-top: 54px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 35px 15px 10px 15px;
+
+      & > * {
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: 992px) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 54px 15px 20px 60px;
+      }
     }
   }
 
 
   &__about {
-    flex: 1;
+    flex: 1 1 0%;
+    max-width: 100%;
     font-style: italic;
     line-height: 1.8;
     color: $greyM;
@@ -60,7 +78,11 @@
   &-module {
 
     &--nav {
-      margin-right: 70px;
+      margin-right: 40px;
+
+      @media (min-width: 576px) {
+        margin-right: 70px;
+      }
     }
 
     &--contact {
@@ -92,16 +114,17 @@
     vertical-align: top;
 
     &:not(:last-child) {
+      margin-right: 30px;
       margin-bottom: 30px;
     }
 
-    &--1 {
-      margin-right: 30px;
-    }
-
     &__heading {
-      margin-bottom: 20px;
+      margin-bottom: 12px;
       color: $greyL;
+
+      @media (min-width: 768px) {
+        margin-bottom: 20px;
+      }
     }
 
     &__phone {
@@ -132,8 +155,25 @@
     &-content {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
+
+      & > * {
+        margin-bottom: 24px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        & > * {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
