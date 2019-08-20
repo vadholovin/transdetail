@@ -5,68 +5,62 @@
 .search-form {
 
   &--header {
-    width: 100%;
-    // margin-right: 2.8vw;
-    margin-right: 25px;
+    width: 340px;
+    // width: 100%;
+    // width: 40.38%;
+    // margin-right: 55px;
+  }
+}
 
-    @media (min-width: 1400px) {
-      width: 49.2%;
-      margin-right: auto;
-    }
+.search-form__input-wrapper {
+  margin-bottom: 6px;
+}
+
+.search-form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding-left: 18px;
+  padding-right: 16px;
+  font-size: rem(15);
+  line-height: 40px;
+  border: 1px solid #b2b2b2;
+  border-radius: 4px;
+  background-color: #d6d6d6;
+
+  &:focus {
+    outline: none;
+    background-color: #fff;
   }
 
-  &__input-wrapper {
-    margin-bottom: 6px;
+  &::placeholder {
+    color: #aeaeae;
   }
+}
 
-  &__input {
-    display: block;
-    width: 100%;
-    height: 40px;
-    padding-left: 18px;
-    padding-right: 16px;
-    font-size: rem(15);
-    line-height: 40px;
-    border: 1px solid #b2b2b2;
-    border-radius: 4px;
-    background-color: #d6d6d6;
-    
+.search-form__radio-wrap {
+  display: inline-block;
 
-
-    &::placeholder {
-      color: #aeaeae;
-    }
-
-    &:focus {
-      outline: none;
-      background-color: #fff;
-    }
+  &:not(:last-child) {
+    margin-right: 9px;
   }
+}
 
-  &__radio-wrap {
+.search-form__label {
+  font-size: 12px;
+  cursor: pointer;
+
+  &:before {
+    content: '';
     display: inline-block;
-
-    &:not(:last-child) {
-      margin-right: 9px;
-    }
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    border: 1px solid $orange;
+    border-radius: 50%;
   }
-  
-  &__label {
-    font-size: 12px;
-    cursor: pointer;
+}
 
-    &:before {
-      content: '';
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      margin-right: 4px;
-      border: 1px solid $orange;
-      border-radius: 50%;
-    }
-  }
-
-  &__radio:checked ~ .search-form__label::before {
-    background-color: $orange;
-  }
+.search-form__radio:checked~.search-form__label::before {
+  background-color: $orange;
 }

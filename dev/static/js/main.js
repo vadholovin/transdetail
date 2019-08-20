@@ -7,9 +7,34 @@ $(document).ready(function () {
 
 
   /**
+   * Menu
+   */
+  let toggleMenu = function () {
+    $('.hamburger').click(function (e) { 
+      e.preventDefault();
+      if ($('.mobile-nav').is('[hidden]')) {
+        $('.mobile-nav').removeAttr('hidden');
+      } else {
+        $('.mobile-nav').attr('hidden', '');
+      }
+      
+      $('.mobile-nav, .mobile-nav__content, .mobile-nav__overlay').toggleClass('is-visible');
+
+      $('document, body').toggleClass('is-overflowed');
+    });
+
+    $('.side-menu__close, .mobile-nav__overlay').click(function (e) { 
+      e.preventDefault();
+      $('.mobile-nav, .mobile-nav__content, .mobile-nav__overlay').removeClass('is-visible');
+      $('.mobile-nav').attr('hidden', '');
+      $('document, body').removeClass('is-overflowed');
+    });
+  }
+
+  /**
    * Product slider
    */
-  let productSlider = function() {
+  let productSlider = function () {
     $('.js-product-slider').slick({ 
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -220,6 +245,7 @@ $(document).ready(function () {
   productCellSlider();
   hideLabel();
   relaceSelect();
+  toggleMenu();
   // initMicromodal();
   // initDatepicker();
 });

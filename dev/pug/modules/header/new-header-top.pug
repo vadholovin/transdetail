@@ -1,5 +1,5 @@
-.header__top
-  .header__container
+.header-top
+  .container-header-top
     .header__content.header__content--top
       .brand.brand--header
         a.logo(href='/')
@@ -15,7 +15,7 @@
           span.header-info__item-label Оптовикам:
           .header-info__links
             a.header-info__item-link.header-info__item-link--more.link-dashed.link-dashed--light(href='tel:84957447224')
-                | (495) 744-722-4
+              | (495) 744-722-4
             .header-info__item-links
               a.header-info__item-link(href='tel:84957447224')
                 | (495) 744-722-4
@@ -24,12 +24,15 @@
         .header-info__item
             span.header-info__item-label Розница:
             a.header-info__item-link.link-dashed.link-dashed--light(href='tel:4957447225')
-                | (495) 744-722-5
+              | (495) 744-722-5
 
       nav.header__nav.menu.menu--primary
-        a.menu-link(href='#') Как купить
-        a.menu-link(href='#') Доставка
-        a.menu-link(href='#') О магазине
-        a.menu-link(href='#') Гарантия
-        a.menu-link(href='#') Контакты
+        a.menu__link.menu__link--primary(href='#') Как купить
+        a.menu__link.menu__link--primary(href='#') Доставка
+        a.menu__link.menu__link--primary(href='#') О магазине
+        a.menu__link.menu__link--primary(href='#') Гарантия
+        a.menu__link.menu__link--primary(href='#') Контакты
+      button.hamburger
+        .hamburger__inner
+          span.hamburger__line
 

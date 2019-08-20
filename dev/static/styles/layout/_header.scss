@@ -2,18 +2,6 @@
   #HEADER
 \*------------------------------------*/
 
-.header__container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @media (min-width: 1280px) {
-    max-width: 1416px;
-
-  }
-}
-
 .header__content {
   display: flex;
 
@@ -26,83 +14,84 @@
 }
 
 
-.header__top {
-  background-color: #0f121a;
+.header-top {
+  background-color: $greyD;
 }
 
 .header-info {
   display: flex;
   flex-wrap: wrap;
   margin-right: auto;
+}
 
-  &__item {
-    font-size: rem(14);
-    color: #fff;
-    margin-right: 40px;
+.header-info__item {
+  font-size: rem(14);
+  color: #fff;
+  margin-right: 40px;
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 
-    &-label {
-      display: block;
-      line-height: 1.15;
-    }
+  &-label {
+    display: block;
+    line-height: 1.15;
+  }
 
-    &-link {
-      display: block;
-      white-space: nowrap;
-      line-height: 1.6;
+  &-link {
+    display: block;
+    white-space: nowrap;
+    line-height: 1.6;
 
-      &--more {
-        position: relative;
-        margin-right: 12px;
+    &--more {
+      position: relative;
+      margin-right: 12px;
 
-        &::after {
-          content: '';
-          position: absolute;
-          display: block;
-          top: 50%;
-          right: 0px;
-          transform: translate(12px, -3px) rotate(-45deg);
-          width: 5px;
-          height: 5px;
-          border: 1px solid #fff;
-          border-top-color: transparent;
-          border-right-color: transparent;
-        }
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 50%;
+        right: 0px;
+        transform: translate(12px, -3px) rotate(-45deg);
+        width: 5px;
+        height: 5px;
+        border: 1px solid #fff;
+        border-top-color: transparent;
+        border-right-color: transparent;
       }
     }
-
-    &-links {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      height: 0%;
-      padding-right: 8px;
-      padding-bottom: 8px;
-      overflow: hidden;
-      opacity: 0;
-      visibility: hidden;
-      background-color: #0f121a;
-      transition:
-        opacity 0.25s,
-        height 0.25s,
-        visibility 0.25s;
-    }
   }
 
-  &__links {
-    position: relative;
-
-    &:hover .header-info__item-links {
-      opacity: 1;
-      visibility: visible;
-      height: auto;
-      z-index: 10;
-    }
+  &-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 0%;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #0f121a;
+    transition:
+      opacity 0.25s,
+      height 0.25s,
+      visibility 0.25s;
   }
 }
+
+.header-info__links {
+  position: relative;
+
+  &:hover .header-info__item-links {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    z-index: 10;
+  }
+}
+
 
 .header-main__left,
 .header-main__right {
@@ -140,6 +129,7 @@
 .header-main__right {
   flex: 1 1 0%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   max-width: 100%;
   position: relative;
@@ -168,8 +158,8 @@
 .header-controls {
   display: flex;
   align-items: center;
-  margin-right: 2.6vw;
-  margin-bottom: 15px;
+  // margin-right: 55px;
+  // margin-bottom: 15px;
 
   @media (min-width: 1920px) {
     margin-right: 50px;
@@ -179,12 +169,12 @@
 .header-control {
   display: flex;
   align-items: center;
+  margin-right: 25px;
 
-  &:not(:last-child) {
-    margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
   }
 
-  &--comparison,
   &--wish {
     display: none;
   }
@@ -195,23 +185,16 @@
     }
   }
 
-  &--comparison {
-
-    @media (min-width: 1400px) {
-      display: flex;
-    }
-  }
-
   .icon {
-    height: 24px;
-    margin-right: 10px;
+    margin-right: 12px;
   }
 
   &__text {
     flex: none;
+    margin-right: 20px;
 
-    &:not(:last-child) {
-      margin-right: 22px;
+    &:last-child {
+      margin-right: 0;
     }
 
     .header-control--cart & {
@@ -228,21 +211,26 @@
 
   &__label {
     display: block;
-    font-size: rem(12);
+    font-size: 12px;
   }
 
   &__value {
     display: block;
-    font-size: rem(14);
+    font-size: 14px;
   }
 }
 
 
 .header-auth {
   display: flex;
-  margin-bottom: 15px;
+  align-items: center;
+  // margin-bottom: 15px;
 
   &__link {
     white-space: nowrap;
+  }
+
+  .icon {
+    margin-right: 8px;
   }
 }
