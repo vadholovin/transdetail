@@ -6,22 +6,23 @@
   margin-bottom: 65px;
   font-size: 0;
 
-  &__item,
-  &__arrow {
+  &__item {
     display: inline-block;
-  }
-
-  &__arrow {
-    width: 3px;
-    height: 7px;
-    margin-right: 12px;
-    margin-left: 12px;
-    background: url(../images/icons/arrow-left-sm.png) no-repeat 50% 50%;
   }
 
   &__item {
     font-size: rem(12);
     color: $greyL;
+
+    &:not(:last-child):after {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 7px;
+      margin-right: 12px;
+      margin-left: 12px;
+      background: url(../images/icons/arrow-left-sm.png) no-repeat 50% 50%;
+    }
 
     &--active {
       color: $greyD;

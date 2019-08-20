@@ -3,30 +3,34 @@
 \*------------------------------------*/
 
 .catalog-toggler {
-  border: 0;
-  font-weight: bold;
-  font-size: inherit;
-  color: #fff;
-  background-color: $orange;
+  width: 203px;
+  padding: 0.55em 0.78em;
+  border: 1.5px solid #18202d;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: rem(18);
+  line-height: 1.15;
+  color: $greyD;
+  background-color: #fff;
   cursor: pointer;
 
-  &__content {
+  &:focus {
+    outline: none;
+  }
+
+  &__inner {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    width: 200px;
-    height: 50px;
-    padding: 15px 20px;
   }
 
   &__text {
     margin-right: auto;
   }
 
-  &__hamburger {
+  &__icon {
     display: block;
-    width: 27px;
-    height: 20px;
-    background: url(../images/icons/hamburger.png) no-repeat 50% 50%;
+    width: 15px;
+    height: 11px;
+    background: url(../images/icons/list.png) no-repeat 50% 50%;
   }
 }

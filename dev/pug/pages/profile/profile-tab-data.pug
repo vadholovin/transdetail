@@ -61,8 +61,8 @@
         .profile-tab__form-label
           | Дата рождения
       .profile-tab__form-cell.profile-tab__form-cell--date
-        .form-select__wrapper
-          select.form-select#select-day
+        .form-select__wrapper.form-select__wrapper--date
+          select.form-select.js-select#select-day
             option(
               disabled,
               selected
@@ -70,8 +70,8 @@
             option(value="") 1
             option(value="") 2
             option(value="") 3
-        .form-select__wrapper
-          select.form-select#select-month
+        .form-select__wrapper.form-select__wrapper--date
+          select.form-select.js-select#select-month
             option(
               disabled,
               selected
@@ -79,8 +79,8 @@
             option(value="") Январь
             option(value="") Февраль
             option(value="") Март
-        .form-select__wrapper
-          select.form-select#select-year
+        .form-select__wrapper.form-select__wrapper--date
+          select.form-select.js-select#select-year
             option(
               disabled,
               selected

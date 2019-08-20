@@ -6,6 +6,7 @@
   border-top: 1px solid #ededed;
 
   &__top {
+    overflow: hidden;
 
     &-content {
       display: flex;
@@ -36,10 +37,15 @@
         position: absolute;
         top: 0;
         right: 0;
+        transform: translateX(50%);
         width: 99999px;
         height: 100%;
         background-color: #f4f4f4;
         z-index: -1;
+
+        @media (min-width: 992px) {
+          transform: translateX(0%);
+        }
       }
     }
 

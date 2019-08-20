@@ -1,0 +1,39 @@
+.header__main.header-main
+  
+  .header__container--main
+
+    .header__content.header__content--main
+
+      .header-main__left
+
+        button.catalog-toggler.js-catalog-toggler(tabindex='0')
+          .catalog-toggler__inner
+            span.catalog-toggler__text полный каталог
+            span.catalog-toggler__icon
+
+      .header-main__right
+        form.search-form.search-form--header(action='')
+          .search-form__input-wrapper
+            input.search-form__input(autocomplete='off', name='search-text', type='text', placeholder='Поиск деталей для вашего АКПП...')
+
+        ul.header-controls
+          li.header-control.header-control--wish
+            span.icon.icon-heart-dark
+            .header-control__text
+              span.header-control__value 0
+          li.header-control.header-control--cart
+            span.icon.icon-bag
+            .header-control__text
+              span.header-control__value 0
+            .header-control__text
+              span.header-control__label Корзина
+              b.header-control__value 10000,99₽
+        
+        .header__auth.header-auth
+          span.icon.icon-user
+          a.header-auth__link(href="#") Войти / Регистрация
+
+
+
+
+        

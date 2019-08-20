@@ -3,71 +3,70 @@
 \*------------------------------------*/
 
 .search-form {
-  display: flex;
-  flex-wrap: wrap;
 
-  &__inner {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
+  &--header {
+    width: 100%;
+    // margin-right: 2.8vw;
+    margin-right: 25px;
+
+    @media (min-width: 1400px) {
+      width: 49.2%;
+      margin-right: auto;
+    }
   }
 
   &__input-wrapper {
-    position: relative;
-    width: 60%;
-
-    &::before {
-      content: '';
-      position: absolute;
-      display: block;
-      top: 50%;
-      left: 20px;
-      transform: translateY(-50%);
-      width: 19px;
-      height: 20px;
-      background: url(../images/icons/search.png) no-repeat 50% 50%;
-    }
+    margin-bottom: 6px;
   }
 
   &__input {
     display: block;
     width: 100%;
-    height: 50px;
-    padding-left: 60px;
+    height: 40px;
+    padding-left: 18px;
+    padding-right: 16px;
     font-size: rem(15);
-    line-height: 50px;
-    border: 1px solid #ededed;
-    outline: 0;
-  }
+    line-height: 40px;
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    background-color: #d6d6d6;
+    
 
-  &__select-wrapper {
-    width: 40%;
-  }
 
-  &__select {
-    display: block;
-    width: 100%;
-    height: 50px;
-    padding-left: 25px;
-    font-size: rem(15);
-    line-height: 50px;
-    border: 1px solid #ededed;
-    border-left: 0;
-    border-right: 0;
+    &::placeholder {
+      color: #aeaeae;
+    }
 
     &:focus {
-      outline: 0;
+      outline: none;
+      background-color: #fff;
     }
   }
 
-  [type=submit] {
-    flex: none;
-    width: 169px;
-    height: 50px;
-    padding: 0 16px;
-    font-weight: bold;
-    line-height: 50px;
-    color: $greyL;
-    background-color: #ededed;
+  &__radio-wrap {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 9px;
+    }
+  }
+  
+  &__label {
+    font-size: 12px;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 4px;
+      border: 1px solid $orange;
+      border-radius: 50%;
+    }
+  }
+
+  &__radio:checked ~ .search-form__label::before {
+    background-color: $orange;
   }
 }

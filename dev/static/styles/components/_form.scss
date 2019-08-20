@@ -154,6 +154,10 @@ a.ui-button:active,
     border-right: 0;
     border-left: 0;
   }
+
+  .form-select__wrapper--date & {
+    padding: 15px 10px 15px 10px;
+  }
 }
 
 .ui-widget {

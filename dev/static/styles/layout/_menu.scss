@@ -4,21 +4,24 @@
 
 .menu {
 
-  &--header {
+  &--primary {
     display: flex;
     flex-wrap: wrap;
-    margin-right: auto;
+    margin-left: auto;
 
     .menu-link {
-      margin-right: 30px;
-      padding-top: rem(17);
-      padding-bottom: rem(17);
-      color: #9b9faa;
+      display: block;
+      color: #fff;
       line-height: 1.15;
-      transition: color 0.25s;
+      transition: border-color 0.25s;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+
+      &:not(:last-child) {
+        margin-right: 14px;
+      }
 
       &:hover {
-        color: #fff;
+        border-color: rgba(255, 255, 255, 0);
       }
     }
   }

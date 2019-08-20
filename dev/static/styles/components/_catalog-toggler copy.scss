@@ -1,0 +1,32 @@
+/*------------------------------------*\
+  #CATALOG-TOGGLER
+\*------------------------------------*/
+
+.catalog-toggler {
+  border: 0;
+  font-weight: bold;
+  font-size: inherit;
+  color: #fff;
+  background-color: $orange;
+  cursor: pointer;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 15px 20px;
+  }
+
+  &__text {
+    margin-right: auto;
+  }
+
+  &__hamburger {
+    display: block;
+    width: 27px;
+    height: 20px;
+    background: url(../images/icons/hamburger.png) no-repeat 50% 50%;
+  }
+}

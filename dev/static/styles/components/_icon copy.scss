@@ -6,7 +6,6 @@
   display: block;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: contain;
 
   &-phone {
     width: 18px;
@@ -14,22 +13,10 @@
     background-image: url(../images/icons/phone-outline-orange.png);
   }
 
-  &-bag {
-    width: 21px;
-    height: 29px;
-    background-image: url(../images/icons/bag.png);
-  }
-
   &-heart {
     width: 32px;
     height: 30px;
     background-image: url(../images/icons/heart-outline-orange.png);
-  }
-
-  &-heart-dark {
-    width: 27px;
-    height: 25px;
-    background-image: url(../images/icons/heart-outline-grey-lg.png);
   }
 
   &-cart {
@@ -104,12 +91,6 @@
     height: 96px;
     background-image: url(../images/icons/success.png);
     background-size: 96px 96px;
-  }
-
-  &-user {
-    width: 12px;
-    height: 12px;
-    background-image: url(../images/icons/user.png);
   }
 
 }

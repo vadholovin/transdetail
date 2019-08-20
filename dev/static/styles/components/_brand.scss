@@ -5,7 +5,17 @@
 .brand {
 
   &--header {
-    margin-right: 70px;
+    margin-right: 40px;
+    color: #fff;
+
+    @media (min-width: 1280px) {
+      margin-right: 70px;
+    }
+    
+    img {
+      width: 55px;
+      height: 59px;
+    }
   }
 
   &--footer {
@@ -24,20 +34,32 @@
   &-text {
     margin-left: 25px;
 
-    &--top {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1;
+    .brand--header & {
+      display: none;
+
+      @media (min-width: 1280px) {
+        display: block;
+      }
+    }
+
+    &__top,
+    &__bottom {
+      display: block;
+      line-height: 1.3;
+    }
+
+    &__top {
+      font-size: 24px;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
 
       b {
         font-weight: 800;
       }
     }
 
-    &--bottom {
-      font-size: rem(12);
+    &__bottom {
+      font-size: 10px;
     }
   }
 }

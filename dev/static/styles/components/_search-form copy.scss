@@ -1,0 +1,73 @@
+/*------------------------------------*\
+  #SEARCH-FORM
+\*------------------------------------*/
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__inner {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__input-wrapper {
+    position: relative;
+    width: 60%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      width: 19px;
+      height: 20px;
+      background: url(../images/icons/search.png) no-repeat 50% 50%;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-left: 60px;
+    font-size: rem(15);
+    line-height: 50px;
+    border: 1px solid #ededed;
+    outline: 0;
+  }
+
+  &__select-wrapper {
+    width: 40%;
+  }
+
+  &__select {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-left: 25px;
+    font-size: rem(15);
+    line-height: 50px;
+    border: 1px solid #ededed;
+    border-left: 0;
+    border-right: 0;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  [type=submit] {
+    flex: none;
+    width: 169px;
+    height: 50px;
+    padding: 0 16px;
+    font-weight: bold;
+    line-height: 50px;
+    color: $greyL;
+    background-color: #ededed;
+  }
+}

@@ -78,44 +78,77 @@
   clear: both;
 }
 
-/*
- * An Intrinsic Ratio Component
- */
+.link-dashed {
+  display: inline-block;
+  border-bottom: 1px dashed $greyD;
 
-.intrinsic {
-
-  // Make sure <picture> wrapper is set to block
-  // Max-width is governed by parentNode
-  display: block;
-
-  // Intrinsic Ratio Box
-  position: relative;
-  height: 0;
-  width: 100%;
-  padding-top: 100%; // Default to square
-
-  // Custom Styling
-  background: #f0f0f0;
-
-  // Add as many ratios as you'd like...
-  &.intrinsic--square {
-    padding-top: 100%;
+  &:hover {
+    border-color: transparent;
   }
 
-  &.intrinsic--4x3 {
-    padding-top: 75%;
+  &--brand {
+    border-color: $orange;
   }
 
-  &.intrinsic--16x9 {
-    padding-top: 56.25%;
+  &--light {
+    border-color: #fff;
   }
+}
 
-  // Force the item to fill the intrinsic box
-  .intrinsic-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.link-dotted {
+  border-bottom: 1px dotted;
+  border-color: inherit;
+  transition: 0.25s;
+
+  &:hover {
+    border-color: transparent;
   }
+}
+
+.link-underline {
+  border-bottom: 1px solid;
+  border-color: inherit;
+  transition: 0.25s;
+
+  &:hover {
+    text-decoration: none;
+    border-color: transparent;
+  }
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.negative-h-margins {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.mb-3-5 {
+  margin-bottom: 3.5rem;
+}
+
+.mb-4-5 {
+  margin-bottom: 4.5rem;
+}
+
+.mb-md {
+  margin-bottom: 56px;
+}
+
+.mb-lg {
+  margin-bottom: 72px;
 }
