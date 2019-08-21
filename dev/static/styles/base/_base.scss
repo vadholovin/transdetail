@@ -3,7 +3,6 @@
 \*------------------------------------*/
 
 html {
-  width: 100%;
   box-sizing: border-box;
 }
 
@@ -13,20 +12,22 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  width: 100%;
-  min-width: 320px;
-  background-color: #fff;
-  overflow-x: hidden;
-}
-
 html, body {
+  width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 
   &.is-overflowed {
     overflow: hidden;
   }
 }
+
+
+body {
+  min-width: 320px;
+  background-color: #fff;
+}
+
 
 hr {
   display: block;
@@ -81,6 +82,15 @@ img {
   border-style: none;
 }
 
+.wrapper {
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 767.98px) {
+    padding-top: 72px;
+  }
+}
+
 .container,
 .container-header-top,
 .container-header-main {
@@ -122,12 +132,7 @@ img {
 }
 
 .container-header-main {
-
-  @media (min-width: 1280px) {
-    max-width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+  max-width: 1170px;
 }
 
 .container-fluid {

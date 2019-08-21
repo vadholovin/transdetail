@@ -21,17 +21,18 @@ html(lang="ru-RU")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
     <![endif]-->
   body(class=pageClass)
-    include ../modules/header/header
-    .main-content
-      .container
-        block content
-    include ../modules/footer/footer
-    //- include ../modules/modal/modal-signin
-    script(src="static/js/jquery-3.3.1.min.js")
-    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
-    script(src="static/libs/micromodal/micromodal.min.js")
-    script(src="static/libs/jquery-dropdown-datepicker/jquery-dropdown-datepicker.min.js")
-    script(src="static/js/libs.min.js")
-    script(src="static/js/main.js")
-    block script
+    .wrapper
+      include ../modules/header/header
+      .main-content
+        .container
+          block content
+      include ../modules/footer/footer
+      //- include ../modules/modal/modal-signin
+      script(src="static/js/jquery-3.3.1.min.js")
+      script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+      script(src="static/libs/micromodal/micromodal.min.js")
+      script(src="static/libs/jquery-dropdown-datepicker/jquery-dropdown-datepicker.min.js")
+      script(src="static/js/libs.min.js")
+      script(src="static/js/main.js")
+      block script

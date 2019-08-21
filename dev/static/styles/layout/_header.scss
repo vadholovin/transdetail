@@ -2,14 +2,32 @@
   #HEADER
 \*------------------------------------*/
 
+.header {
+  position: relative;
+  z-index: 99999;
+
+  @media (max-width: 767.98px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
 .header__content {
   display: flex;
 
   &--top {
-    height: 100px;
+    height: 72px;
     align-items: center;
-    padding-top: 15px;
-    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+
+    @media (min-width: 768px) {
+      height: 100px;
+      padding-top: 15px;
+      padding-bottom: 12px;
+    }
   }
 }
 
@@ -19,15 +37,24 @@
 }
 
 .header-info {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: auto;
+  display: none;
+
+  @media (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+  }
+  
 }
 
 .header-info__item {
   font-size: rem(14);
   color: #fff;
-  margin-right: 40px;
+  margin-right: 20px;
+
+  @media (min-width: 576px) {
+    margin-right: 40px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -92,6 +119,13 @@
   }
 }
 
+.header-main {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
 
 .header-main__left,
 .header-main__right {
@@ -103,9 +137,12 @@
   flex: none;
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 21px;
   padding-right: 35px;
+
+  @media (min-width: 992px) {
+    padding-top: 24px;
+    padding-bottom: 21px;
+  }
 
   @media (min-width: 1400px) {
     padding-right: 45px;
@@ -129,13 +166,16 @@
 .header-main__right {
   flex: 1 1 0%;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   max-width: 100%;
   position: relative;
   padding-left: 60px;
-  padding-top: 24px;
-  padding-bottom: 27px;
+
+  @media (min-width: 992px) {
+    padding-top: 24px;
+    padding-bottom: 27px;
+  }
 
   @media (min-width: 1400px) {
     padding-left: 75px;
@@ -158,10 +198,12 @@
 .header-controls {
   display: flex;
   align-items: center;
-  // margin-right: 55px;
-  // margin-bottom: 15px;
 
-  @media (min-width: 1920px) {
+  @media (min-width: 992px) {
+    margin-right: 16px;
+  }
+
+  @media (min-width: 1280px) {
     margin-right: 50px;
   }
 }
@@ -180,7 +222,7 @@
   }
 
   &--wish {
-    @media (min-width: 1280px) {
+    @media (min-width: 1024px) {
       display: flex;
     }
   }
@@ -222,9 +264,12 @@
 
 
 .header-auth {
-  display: flex;
-  align-items: center;
-  // margin-bottom: 15px;
+  display: none;
+
+  @media (min-width: 992px) {
+    display: flex;
+    align-items: center;
+  }
 
   &__link {
     white-space: nowrap;

@@ -8,6 +8,10 @@
   border-radius: 0;
   background-color: transparent;
 
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
   &:hover {
     cursor: pointer;
   }

@@ -1,16 +1,10 @@
 $(document).ready(function () {
   
   /**
-   * SVG
-   */
-  svg4everybody({});
-
-
-  /**
    * Menu
    */
   let toggleMenu = function () {
-    $('.hamburger').click(function (e) { 
+    $('.js-hamburger').click(function (e) { 
       e.preventDefault();
       if ($('.mobile-nav').is('[hidden]')) {
         $('.mobile-nav').removeAttr('hidden');
@@ -20,16 +14,55 @@ $(document).ready(function () {
       
       $('.mobile-nav, .mobile-nav__content, .mobile-nav__overlay').toggleClass('is-visible');
 
-      $('document, body').toggleClass('is-overflowed');
+      $('html, body').toggleClass('is-overflowed');
+
+      if ($('.mobile-info').hasClass('is-open')) {
+        $('.mobile-info').removeClass('is-open');
+      }
+
+      if ($('.mobile-search').hasClass('is-open')) {
+        $('.mobile-search').removeClass('is-open');
+      }
     });
 
     $('.side-menu__close, .mobile-nav__overlay').click(function (e) { 
       e.preventDefault();
       $('.mobile-nav, .mobile-nav__content, .mobile-nav__overlay').removeClass('is-visible');
       $('.mobile-nav').attr('hidden', '');
-      $('document, body').removeClass('is-overflowed');
+      $('html, body').removeClass('is-overflowed');
     });
-  }
+  };
+
+
+  /**
+   * Mobile search
+   */
+  let searchToggle = function () {
+    $('.js-search-trigger').click(function (e) { 
+      e.preventDefault();
+      $('.mobile-search').toggleClass('is-open');
+
+      if ($('.mobile-info').hasClass('is-open')) {
+        $('.mobile-info').removeClass('is-open');
+      }
+    });
+  };
+
+
+  /**
+   * Mobile info
+   */
+  let infoToggle = function () {
+    $('.js-info-trigger').click(function (e) { 
+      e.preventDefault();
+      $('.mobile-info').toggleClass('is-open');
+
+      if ($('.mobile-search').hasClass('is-open')) {
+        $('.mobile-search').removeClass('is-open');
+      }
+    });
+  };
+  
 
   /**
    * Product slider
@@ -246,6 +279,8 @@ $(document).ready(function () {
   hideLabel();
   relaceSelect();
   toggleMenu();
+  searchToggle();
+  infoToggle();
   // initMicromodal();
   // initDatepicker();
 });

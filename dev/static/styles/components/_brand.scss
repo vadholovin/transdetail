@@ -5,8 +5,12 @@
 .brand {
 
   &--header {
-    margin-right: 40px;
+    margin-right: auto;
     color: #fff;
+
+    @media (min-width: 576px) {
+      margin-right: 40px;
+    }
 
     @media (min-width: 1280px) {
       margin-right: 70px;
@@ -15,6 +19,12 @@
     img {
       width: 55px;
       height: 59px;
+      transform: scale(0.8);
+      transform-origin: left;
+
+      @media (min-width: 768px) {
+        transform: scale(1);
+      }
     }
   }
 

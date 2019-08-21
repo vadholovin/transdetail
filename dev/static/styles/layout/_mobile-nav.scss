@@ -5,7 +5,7 @@
 .mobile-nav {
   display: none;
 
-  @media (max-width: 991.99px) {
+  @media (max-width: 1023.98px) {
     display: block;
   }
 
@@ -71,13 +71,14 @@
 
 
 .side-menu__close {
+  display: inline-block;
   margin-left: auto;
   padding: 0;
   border: 0;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.15;
-  color: #fff;
+  // color: #fff;
   background-color: transparent;
   cursor: pointer;
 
@@ -98,7 +99,7 @@
   height: 56px;
   padding-left: 16px;
   padding-right: 16px;
-  background-color: $greyD;
+  // background-color: $greyD;
 }
 
 
@@ -118,9 +119,9 @@
 
 .menu-main__item {
 
-  &--first {
-    margin-top: 16px;
-  }
+  // &--first {
+  //   margin-top: 16px;
+  // }
 
   &--bordered {
     border-bottom: 1px solid #dedede;
