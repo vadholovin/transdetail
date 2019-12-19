@@ -83,7 +83,7 @@
   border-bottom: 1px dashed $greyD;
 
   &:hover {
-    border-color: transparent;
+    // border-color: transparent;
   }
 
   &--brand {
@@ -97,7 +97,7 @@
 
 .link-dotted {
   border-bottom: 1px dotted;
-  border-color: inherit;
+  border-color: currentColor;
   transition: 0.25s;
 
   &:hover {
@@ -107,7 +107,7 @@
 
 .link-underline {
   border-bottom: 1px solid;
-  border-color: inherit;
+  border-color: currentColor;
   transition: 0.25s;
 
   &:hover {
@@ -151,4 +151,12 @@
 
 .mb-lg {
   margin-bottom: 72px;
+}
+
+.highlight {
+  color: $highlight;
+}
+
+a.highlight:hover {
+  color: $highlight;
 }

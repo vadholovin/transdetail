@@ -12,10 +12,12 @@ html(lang="ru-RU")
     meta(name="viewport" content="width=device-width,initial-scale=1")
     meta(name="keywords" content="")
     
+    link(rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,500,700|Rubik:300,400,500,500i&display=swap&subset=cyrillic")
     link(rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic")
     link(rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css")
     link(rel="stylesheet" type='text/css' href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
     link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
+    link(rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous")
 
     <!--[if lt IE 9]>
     script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
@@ -23,9 +25,16 @@ html(lang="ru-RU")
   body(class=pageClass)
     .wrapper
       include ../modules/header/header
-      .main-content
-        .container
-          block content
+      if pageClass == 'index-page'
+        include ../modules/hero/hero
+        .main-content
+          .container-wider
+            block content
+      
+      else
+        .main-content
+          .container
+            block content
       include ../modules/footer/footer
       //- include ../modules/modal/modal-signin
       script(src="static/js/jquery-3.3.1.min.js")

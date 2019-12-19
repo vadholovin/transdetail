@@ -1,0 +1,233 @@
+/* ==========================================================================
+   #.MAIN-GOODS
+   ========================================================================== */
+
+.main-goods {
+  margin-bottom: 80px;
+}
+
+.main-goods__nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.main-goods__nav-btn {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid #dfe5f7;
+  font-family: $font-secondary;
+  font-size: 16px;
+  color: #000;
+  line-height: 1.2;
+  background-color: #fefefe;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+  &:hover {
+    background-color: $bg-highlight;
+    border-color: #dfe5f7;
+    color: #fff;
+  }
+}
+
+.main-goods__nav-btn:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.main-goods__nav-btn.is-active {
+  background-color: $bg-highlight;
+  border-color: #dfe5f7;
+  color: #fff;
+}
+
+.main-goods__nav-btn + .main-goods__nav-btn {
+  margin-left: -1px;
+}
+
+.main-goods__grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -26px;
+}
+
+.main-goods__cell {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 26px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 20%;
+}
+
+.main-goods__cell--double {
+  width: 40%;
+}
+
+
+/* #GOODS-TILE
+   ========================================================================== */
+
+.goods-tile {
+  position: relative;
+  height: 100%;
+  padding: 20px 25px 12px 30px;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  font-family: $font-secondary;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(192, 197, 217, 0.25);
+}
+
+.goods-tile__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.goods-tile__picture {
+  flex: none;
+  position: relative;
+  display: block;
+  height: 230px;
+  // margin-bottom: 16px;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.goods-tile__picture img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-height: 200px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.goods-tile__top {
+  display: flex;
+  align-items: center;
+}
+
+.goods-tile__top .goods-tile__picture {
+  width: 100%;
+  width: 170px;
+}
+
+.goods-tile__top .goods-tile__picture img {
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.goods-tile__desc {
+  width: 60%;
+  margin-left: auto;
+  padding-left: 30px;
+  font-size: 15px;
+  color: #1d3045;
+
+  @media (min-width: 1600px) {
+    font-size: 16px;
+  }
+}
+
+.goods-tile__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #1d3045;
+  margin-top: auto;
+  margin-bottom: 12px;
+}
+
+.goods-tile__foot-top {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #9fa8c8;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+.goods-tile__id {
+  display: block;
+  margin-right: auto;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.goods-tile__price {
+  white-space: nowrap;
+  margin-bottom: 3px;
+}
+
+.goods-tile__price-link {
+  position: relative;
+  display: inline-block;
+  margin-left: 4px;
+  color: #0063d1;
+  text-decoration: underline;
+
+  &:hover {
+    color: #0063d1;
+    text-decoration: none;
+  }
+}
+
+.goods-tile__foot-notes {
+  text-align: right;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #b2b2b2;
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.goods-tile__labels {
+  position: absolute;
+  top: 20px;
+  right: -1px;
+  display: flex;
+  z-index: 2;
+}
+
+.promo-label {
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.15;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.promo-label:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.promo-label--action { background-color: #e42828; }
+.promo-label--new { background-color: #1885ff; }
+.promo-label--top { background-color: #d100ca; }
+.promo-label--cat { background-color: #0063d1; }
+
+a.promo-label {
+  text-decoration: underline;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}

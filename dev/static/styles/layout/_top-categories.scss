@@ -1,0 +1,20 @@
+/* ==========================================================================
+   #TOP-CATEGORIES
+   ========================================================================== */
+
+.top-categories {
+  margin-bottom: 50px;
+}
+
+.top-categories__title {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 4px 12px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  font-family: $font-secondary;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.2;
+  background-color: $bg-highlight;
+}

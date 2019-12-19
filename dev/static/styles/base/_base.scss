@@ -84,16 +84,14 @@ img {
 
 .wrapper {
   margin: 0;
-  padding: 0;
+  padding-top: 65px;
 
-  @media (max-width: 767.98px) {
-    padding-top: 72px;
+  @media (min-width: 1024px) {
+    padding-top: 0;
   }
 }
 
-.container,
-.container-header-top,
-.container-header-main {
+.container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -115,9 +113,6 @@ img {
 
 @media (min-width: 1280px) {
   .container {
-    // max-width: 1420px;
-    // padding-left: 140px;
-    // padding-right: 140px;
     max-width: 1620px;
     padding-left: 240px;
     padding-right: 240px;
@@ -131,10 +126,50 @@ img {
   }
 }
 
-.container-header-main {
-  max-width: 1170px;
-}
-
 .container-fluid {
   width: 100%;
+}
+
+.container-wider {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: 768px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @media (min-width: 992px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media (min-width: 1280px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (min-width: 1440px) {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  @media (min-width: 1600px) {
+    width: 1490px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+}
+
+.currency {
+  font-family: $font-fifth;
+}
+
+.index-page {
+  background-color: #f6f6f6;
+}
+
+.index-page .main-content {
+  padding-top: 0;
+  padding-bottom: 0;
 }

@@ -1,14 +1,53 @@
-.header__top
-  .container
-    .header__content
-      nav.header__nav.menu.menu--header
-        a.menu-link(href='#') Как купить
-        a.menu-link(href='#') Доставка
-        a.menu-link(href='#') О магазине
-        a.menu-link(href='#') Гарантия
-        a.menu-link(href='#') Контакты
-      .button-group
-        button.button.button--outline(
-          data-micromodal-trigger='modal-signin'
-        ) Войти
-        button.button.button--primary Регистрация
+.header-top
+  .container-wider
+    .header-inner.header-inner--top
+      button.hamburger.js-hamburger(type="button", aria-label="Открыть меню")
+        .hamburger__inner
+          span.hamburger__line
+
+      a.logo.logo--header(href='/')
+        img(src='static/images/general/logo.png', width="74", alt='Перейти на главную страницу')
+        .logo-text TransDetail
+      
+      nav.header__nav
+        ul.menu.menu--primary
+          li.menu__item
+            a.menu__link(href='') Акции
+          li.menu__item
+            a.menu__link(href='') О магазине
+          li.menu__item
+            a.menu__link(href='') Доставка
+          li.menu__item
+            a.menu__link(href='') Оплата
+          li.menu__item
+            a.menu__link(href='') Гарантии
+          li.menu__item
+            a.menu__link(href='') Новости
+          li.menu__item
+            a.menu__link(href='') Журнал
+          li.menu__item
+            a.menu__link(href='') Контакты
+
+      .header-info
+        .header-info__module
+          a.header-info__email(href="info@transdetail.ru") info@transdetail.ru
+          button.header-info__btn(type="button")
+            span.link-dotted Задать вопрос
+        .header-info__module
+          .header-phones
+            button.header-phones__btn(type="button")
+              span.link-dotted (495) 250-00-25
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          .header-phones
+            button.header-phones__btn(type="button")
+              span.link-dotted (495) 250-00-25
+              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          p.header-phones__notes Пн-Пт: 9-19 Сб: 10-15
+
+      .header__mobile-btns
+        button.header__search-trigger.js-search-trigger(aria-label="Перейти к поиску")
+          <i class="fa fa-search" aria-hidden="true"></i>
+
+        a.header-cart(href="", aria-label="Перейти в корзину")
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          span.header-cart__counter 2

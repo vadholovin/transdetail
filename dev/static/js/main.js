@@ -65,6 +65,69 @@ $(document).ready(function () {
   
 
   /**
+   * Hero slider
+   */
+  let heroSlider = function () {
+    let slider = $('.js-hero-carousel');
+
+    slider.on('afterChange init', function(event, slick, direction){
+      console.log('afterChange/init', event, slick, slick.$slides);
+      // remove all prev/next
+      slick.$slides
+        .removeClass('prev')
+        .removeClass('prev-prev')
+        .removeClass('prev-prev-prev')
+        .removeClass('next')
+        .removeClass('next-next')
+        .removeClass('next-next-next');
+  
+      // find current slide
+      for (var i = 0; i < slick.$slides.length; i++) {
+
+        var $slide = $(slick.$slides[i]);
+        if ($slide.hasClass('slick-current')) {
+          // update DOM siblings
+          $(slick.$slides[i+=1]).addClass('next');
+          $(slick.$slides[i+=2]).addClass('next-next');
+          $(slick.$slides[i+=3]).addClass('next-next-next');
+          // $slide.next().addClass('next');
+          // $slide.next().next().addClass('next-next');
+          // $slide.next().next().next().addClass('next-next-next');
+          break;
+        }
+      }
+    })
+      .on('beforeChange', function(event, slick) {
+        slick.$slides
+          .removeClass('next')
+          .removeClass('next-next')
+          .removeClass('next-next-next');
+      });
+
+    slider.slick({ 
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      variableWidth: true,
+    });
+  };
+
+  /**
+   * Viewed slider
+   */
+  let viewedSlider = function () {
+    $('.js-viewed-slider').slick({ 
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      prevArrow: $('.js-viewed-slider-nav .headed-block__prev'),
+      nextArrow: $('.js-viewed-slider-nav .headed-block__next'),
+      dots: false,
+    });
+  };
+
+
+  /**
    * Product slider
    */
   let productSlider = function () {
@@ -271,7 +334,9 @@ $(document).ready(function () {
   };
 
   
+  heroSlider();
   productSlider();
+  viewedSlider();
   clickTabs();
   clickInnerTabs();
   productCarousel();

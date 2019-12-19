@@ -1,0 +1,36 @@
+/* ==========================================================================
+   #ARROW-BUTTON
+   ========================================================================== */
+
+.arrow-button {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  padding-left: 16px;
+  padding-right: 20px;
+  border: 2px solid #1f1f2f;
+  border-radius: 3px;
+  background-color: transparent;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.arrow-button__text,
+.arrow-button__icon {
+  display: inline-block;
+}
+
+.arrow-button__text {
+  margin-right: 25px;
+  font-family: $font-fourth;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  color: #1f1f2f;
+}
+
+.arrow-button:hover .arrow-button__icon {
+  transform: translateX(-8px);
+  opacity: 0;
+  transition: 0.2s ease-out;
+}

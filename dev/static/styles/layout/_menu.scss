@@ -1,36 +1,40 @@
-/*------------------------------------*\
-  #MENU
-\*------------------------------------*/
+/* ==========================================================================
+   #MENU
+   ========================================================================== */
 
-.menu {
+.menu__link {
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+  outline: none;
 
-  &--primary {
-    display: none;
-    
-
-    @media (min-width: 1024px) {
-      display: flex;
-      margin-left: auto;
-    }
+  &:hover,
+  &:focus {
+    text-decoration: none;
   }
 }
 
-.menu__link {
-  display: block;
-  line-height: 1.15;
+.menu--primary {
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.menu__link--primary {
-  margin-right: 14px;
-  color: #fff;
-  transition: border-color 0.25s;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+.menu--primary .menu__item {
+  margin-right: 12px;
 
   &:last-child {
     margin-right: 0;
   }
+}
+
+.menu--primary .menu__link {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #fff;
 
   &:hover {
-    border-color: rgba(255, 255, 255, 0);
+    color: #fff;
   }
 }

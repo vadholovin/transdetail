@@ -1,4 +1,5 @@
 .mobile-search
-  form.search-form.search-form--mobile(action='')
+  .mobile-search__overlay
+  form.search-form.search-form--mobile(role='search', action="/", method="get")
     .search-form__input-wrapper
-      input.search-form__input(autocomplete='off', name='search-text', type='text', placeholder='Поиск деталей для вашего АКПП...')
+      input.search-form__input(autocomplete='off', name='search-text', type='text', placeholder='Поиск деталей для вашего АКПП...', area-label="Введите поисковой запрос деталей АКПП")

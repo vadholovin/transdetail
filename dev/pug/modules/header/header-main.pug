@@ -1,38 +1,37 @@
-.header__main
-  .container
-    .header__content
-      .brand.brand--header
-        a.logo(href='/')
-          img(src='static/images/general/logo.png', alt='', width='55', height='59')
-          .logo-text
-            p.logo-text--top
-              | TRANS
-              b DETAIL
-            span.logo-text--bottom
-              | Продажа деталей для АКПП
-      .header-info
-        .header-info__item
-          .header-info__item-content
-            span.header-info__item-label Ваш город:
-            .header-info__item-value.header-info__item-value--city
-              a.header-info__item-link(href='#')
-                span.link-dashed Санкт-Петербург
-        .header-info__item.header-info__item--schedule
-          span.header-info__item-icon
-            span.icon.icon-phone
-          .header-info__item-content
-            span.header-info__item-label Пн-Пт: 9 -19, Сб: 10 - 15
-            .header-info__item-value
-              a.header-info__item-link.header-info__item-link--phone(href='tel:+74957967996')
-                | +7 (495) 796-799-6
-      ul.header-controls
-        li.header-controls__item
-          span.icon.icon-heart
-          .header-controls__item-text
-            span.header-controls__item-label Нравится
-            span.header-controls__item-value 4 товара
-        li.header-controls__item
-          span.icon.icon-cart
-          .header-controls__item-text
-            span.header-controls__item-label В корзине
-            span.header-controls__item-value 2 товара, 10 000Р
+.header-main
+  .container-wider
+    .header-inner.header-inner--main
+      .header-main__left
+        button.header-main__catalog-toggler.catalog-toggler.js-catalog-toggler(aria-label="Каталог товаров")
+          .catalog-toggler__inner
+            span.catalog-toggler__text Полный каталог
+            <svg class="catalog-toggler__icon" width="20" height="14" viewBox="0 0 20 14" aria-hidden="true">
+              <path fill-rule="evenodd" fill="rgb(27, 36, 51)" d="M5.625,13.031 L5.625,11.312 L19.437,11.312 L19.437,13.031 L5.625,13.031 ZM5.625,6.125 L19.437,6.125 L19.437,7.875 L5.625,7.875 L5.625,6.125 ZM5.625,0.969 L19.437,0.969 L19.437,2.687 L5.625,2.687 L5.625,0.969 ZM0.438,11.312 L3.031,11.312 L3.031,13.031 L0.438,13.031 L0.438,11.312 ZM0.438,6.125 L3.031,6.125 L3.031,7.875 L0.438,7.875 L0.438,6.125 ZM0.438,0.969 L3.031,0.969 L3.031,2.687 L0.438,2.687 L0.438,0.969 Z" />
+            </svg>
+
+      .header-main__right
+        form.header-main__search.search-form(role='search', action="/", method="get")
+          label(for="header-search")
+            span.visuallyhidden Поиск по деталям АКПП
+          .search-form__input-wrapper
+            input.search-form__input#header-search(autocomplete='off', name='search-text', type='text', placeholder='Поиск деталей для вашего АКПП...', area-label="Введите поисковой запрос деталей АКПП")
+          button.search-form__btn(type="submit") Найти
+
+        ul.header-controls
+          li.header-control.header-control--wish(aria-label="Добавлено в")
+            <a class="header-control__icon" href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            span.header-control__text
+              | Избранное:
+            a.header-control__value(href="") 3
+          li.header-control.header-control--cart(aria-label="В корзине")
+            <a class="header-control__icon" href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            span.header-control__text
+              | 2 товара
+            a.header-control__value(href="")
+              <span class="header-control__value-num">2</span>
+              <span class="header-control__value-full">23560 <span class="currency">₽</span></span>
+        
+        .header-auth
+          <i class="fa fa-user-o" aria-hidden="true"></i>
+          a.header-auth__link(href="") Войти
+          a.header-auth__link(href="") Регистрация

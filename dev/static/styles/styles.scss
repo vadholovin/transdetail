@@ -9,38 +9,20 @@
 // @import 'vendor-extensions/bootstrap';
 
 
-// @import 'base/fonts';
+@import 'base/fonts';
 @import 'base/reset';
 @import 'base/base';
 @import 'base/typography';
 @import 'base/helpers';
 
-@import 'layout/header';
-@import 'layout/menu';
-@import 'layout/mobile-nav';
-@import 'layout/main-content';
-@import 'layout/text-block';
-@import 'layout/schemes-list';
-@import 'layout/categories-list';
-@import 'layout/goods-list';
-@import 'layout/categories';
-@import 'layout/product';
-@import 'layout/product-tabs';
-@import 'layout/cart-form';
-@import 'layout/success-block';
-@import 'layout/contact-tabs';
-@import 'layout/profile-tabs';
-@import 'layout/signup-tabs';
-@import 'layout/orders';
-@import 'layout/footer';
-
 // @import 'components/container';
 @import 'components/button-group';
 @import 'components/button';
+@import 'components/arrow-button';
 @import 'components/brand';
 @import 'components/icon';
 @import 'components/hamburger';
-@import 'components/search-trigger';
+// @import 'components/search-trigger';
 @import 'components/info-trigger';
 @import 'components/catalog-toggler';
 @import 'components/form';
@@ -59,6 +41,30 @@
 @import 'components/aside-widget';
 @import 'components/modal';
 
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/hero';
+@import 'layout/mobile-nav';
+@import 'layout/main-content';
+@import 'layout/partners';
+@import 'layout/sections';
+@import 'layout/headed-block';
+@import 'layout/top-categories';
+@import 'layout/main-goods';
+@import 'layout/text-block';
+@import 'layout/schemes-list';
+@import 'layout/categories-list';
+@import 'layout/goods-list';
+@import 'layout/categories';
+@import 'layout/product';
+@import 'layout/product-tabs';
+@import 'layout/cart-form';
+@import 'layout/success-block';
+@import 'layout/contact-tabs';
+@import 'layout/profile-tabs';
+@import 'layout/signup-tabs';
+@import 'layout/orders';
+@import 'layout/footer';
 
 @import 'pages/catalog';
 @import 'pages/schemes';

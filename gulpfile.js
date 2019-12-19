@@ -17,7 +17,7 @@ $.gulp.task('dev', $.gulp.series(
     'clean',
     $.gulp.parallel(
         'pug',
-        // 'fonts',
+        'fonts',
         'libs',
         'styles:dev',
         'img:dev',
@@ -31,7 +31,7 @@ $.gulp.task('build', $.gulp.series(
     'clean',
     $.gulp.parallel(
         'pug',
-        // 'fonts',
+        'fonts',
         'libs',
         'styles:build-min',
         'img:build',

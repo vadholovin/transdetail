@@ -1,6 +1,6 @@
-/*------------------------------------*\
-  #MOBILE-NAV
-\*------------------------------------*/
+/* ==========================================================================
+   #MOBILE-NAV
+   ========================================================================== */
 
 .mobile-nav {
   display: none;
@@ -76,7 +76,7 @@
   padding: 0;
   border: 0;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.15;
   // color: #fff;
   background-color: transparent;
@@ -96,10 +96,8 @@
   display: flex;
   flex-shrink: 0;
   align-items: center;
-  height: 56px;
-  padding-left: 16px;
-  padding-right: 16px;
-  // background-color: $greyD;
+  padding: 10px 15px;
+  box-shadow: 0 1px 12px rgba(51, 51, 51, .15);
 }
 
 
@@ -119,10 +117,6 @@
 
 .menu-main__item {
 
-  // &--first {
-  //   margin-top: 16px;
-  // }
-
   &--bordered {
     border-bottom: 1px solid #dedede;
   }
@@ -138,9 +132,19 @@
 }
 
 
-.menu-main__icon.icon {
-  width: 25px;
+.menu-main__icon {
+  display: inline-block;
+  color: $highlight;
   margin-right: 16px;
+
+  svg {
+    display: block;
+    width: 13px;
+    path {
+      fill: $highlight;
+    }
+    
+  }
 }
 
 
@@ -152,15 +156,17 @@
 
 .menu-main__link-counter {
   display: inline-block;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 6px;
+  padding-right: 6px;
+  min-width: 22px;
   height: 22px;
   margin-left: auto;
   border-radius: 50%;
-  background-color: $orange;
+  background-color: $bg-highlight;
   font-size: 13px;
   line-height: 22px;
   color: #fff;
+  text-align: center;
 }
 
 

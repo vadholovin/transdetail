@@ -1,36 +1,41 @@
-/*------------------------------------*\
-  #CATALOG-TOGGLER
-\*------------------------------------*/
+/* ==========================================================================
+   #CATALOG-TOGGLER
+   ========================================================================== */
 
 .catalog-toggler {
-  width: 203px;
-  padding: 0.55em 0.78em;
-  border: 1.5px solid #18202d;
-  border-radius: 5px;
+  display: inline-block;
+  height: 50px;
+  padding: 0 1.25rem;
+  border: 2px solid #1f1f2f;
+  border-radius: 4px;
+  font-family: $font-fourth;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.15;
-  color: $greyD;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #18202e;
+  text-transform: uppercase;
   background-color: #fff;
   cursor: pointer;
 
   &:focus {
     outline: none;
   }
+}
 
-  &__inner {
-    display: flex;
-    align-items: center;
-  }
+.catalog-toggler__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 
-  &__text {
-    margin-right: auto;
-  }
+.catalog-toggler__text {
+  margin-right: 1rem;
+  white-space: nowrap;
+}
 
-  &__icon {
-    display: block;
-    width: 15px;
-    height: 11px;
-    background: url(../images/icons/list.png) no-repeat 50% 50%;
-  }
+.catalog-toggler__icon {
+  position: relative;
+  top: -1px;
 }

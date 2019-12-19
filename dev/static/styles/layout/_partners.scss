@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #PARTNERS
+   ========================================================================== */
+
+.partners {
+  margin-bottom: rem(74);
+}
+
+.partners-title {
+  margin-bottom: 40px;
+  font-family: $font-secondary;
+  font-weight: 500;
+  font-size: rem(30);
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  color: $blue-dark;
+  text-transform: uppercase;
+}
+
+.partners-list {
+  margin-top: -32px;
+}
+
+.partners-list__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 32px;
+  margin-right: 40px;
+
+  @media (min-width: 1440px) {
+    margin-right: 67px;
+  }
+}

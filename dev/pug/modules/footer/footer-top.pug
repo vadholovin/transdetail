@@ -1,48 +1,90 @@
-.footer__top
-  .container
-    .footer__top-content
-      .footer__top-left
-        .brand.brand--footer
-          a.logo(href='/')
-            img(
-              src='static/images/general/logo.png', alt='',
-              width='76',
-              height='81')
-        .footer__about
-          p
-            | Наша компания занимает лидирующее положение
-            | на российском рынке с 1998 года. Имея огромный опыт в сфере продаж запасных частей для автоматических
-            | трансмиссий, Мы поставляем продукцию, напрямую
-            | от производителей, минуя посредников. Это позволяет предложить Вам товары по более выгодной цене.
-          p
-            b
-              | Наши правила – стабильность,
-              br
-              | оперативность, надежность.
+.footer-top
+  .footer-top__inner
+    .footer-top__block.footer-about
+      h2.footer-top__heading О магазине
+      p
+        | Наша компания занимает лидирующее положение на
+        | российском рынке с 1998 года. Имея большой опыт в сфере
+        | продаж запасных частей для автоматических трансмиссий.
+        | Мы поставляем продукцию, напрямую от производителей,
+        | минуя посредников.
+        br
+        | Это позволяет предложить вам товары по более выгодной цене.
+
+      p.bolder Наши правила – стабильность, оперативность, надежность.
+
+      ul.footer-social
+        li.footer-social__item
+          a(href="", target="_blank", rel="noopener", aria-label="Ссылка на аккаунт Вконтакте")
+            <i class="fa fa-vk" aria-hidden="true"></i>
+        li.footer-social__item
+          a(href="", target="_blank", rel="noopener", aria-label="Ссылка на аккаунт Facebook")
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        li.footer-social__item
+          a(href="", target="_blank", rel="noopener", aria-label="Ссылка на аккаунт Twitter")
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        li.footer-social__item
+          a(href="", target="_blank", rel="noopener", aria-label="Ссылка на аккаунт Google+")
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
       
-      .footer__top-right
-        .footer-module.footer-module--nav
-          h3.footer-module__title О магазине
-          .footer-nav
-            a.footer-nav__link(href='#') Как купить
-            a.footer-nav__link(href='#') Доставка
-            a.footer-nav__link(href='#') О нас
-            a.footer-nav__link(href='#') Гарантия
-            a.footer-nav__link(href='#') Контакты
-        
-        .footer-module.footer-module--contact
-          h3.footer-module__title Наши контакты
-          .footer-contact
-            p.footer-contact__heading Оптовый отдел:
-            .footer-contact__phones
-              a.footer-contact__phone(href='tel:+74957967996') +7 (495) 796-799-6
-              a.footer-contact__phone(href='tel:+74957447224') +7 (495) 744-722-4
-          .footer-contact
-            p.footer-contact__heading График работы:
-            p
-              | Пн-Пт: 09 -19
-              br
-              | Сб: 10 - 15
-          .footer-contact
-            p.footer-contact__heading Email:
-            a.footer-contact__email(href='mailto:info@transdetail.ru') info@transdetail.ru
+      .footer-payments
+        img(src="static/images/general/payments.png", alt="")
+
+    .footer-top__block.footer-contacts
+      h2.footer-top__heading Контакты
+      ul.footer-contacts__list
+        li.footer-contacts__item
+          | Оптовикам:
+          a.footer-contacts__info(href="tel:(495) 744-722-5") (495) 744-722-4
+        li.footer-contacts__item
+          | Розница:
+          a.footer-contacts__info(href="tel:(495) 744-722-5") (495) 744-722-5
+        li.footer-contacts__item
+          | Email:
+          a.footer-contacts__info(href="mailto:info@transdetail.ru") info@transdetail.ru
+        li.footer-contacts__item
+          | График работы: 
+          span.footer-contacts__info 
+            | Пн-Пт 9:00-19:00
+            br
+            | Сб 10:00-15:00
+    
+    .footer-top__block.footer-info
+      h2.footer-top__heading Информация
+      ul.footer-info__list
+        li.footer-info__item
+          a(href="")
+            | Пользовательское соглашение
+            br
+            | об использовании персональных данных
+        li.footer-info__item
+          a(href="")
+            | Политика конфиденциальности
+        li.footer-info__item
+          a(href="")
+            | Соглашением на рассылку
+            br
+            | рекламных материалов
+        li.footer-info__item
+          a(href="")
+            | Политика возвратов
+    
+    .footer-top__block.footer-nav
+      h2.footer-top__heading Рубрикатор
+      ul.footer-nav__list
+          li.footer-nav__item
+            a(href='') Акции
+          li.footer-nav__item
+            a(href='') О магазине
+          li.footer-nav__item
+            a(href='') Доставка
+          li.footer-nav__item
+            a(href='') Оплата
+          li.footer-nav__item
+            a(href='') Гарантии
+          li.footer-nav__item
+            a(href='') Новости
+          li.footer-nav__item
+            a(href='') Журнал
+          li.footer-nav__item
+            a(href='') Контактная информация
