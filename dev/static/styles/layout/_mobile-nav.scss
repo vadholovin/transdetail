@@ -3,10 +3,10 @@
    ========================================================================== */
 
 .mobile-nav {
-  display: none;
+  display: block;
 
-  @media (max-width: 1023.98px) {
-    display: block;
+  @media (min-width: 1280px) {
+    display: none;
   }
 
   &.is-visible {

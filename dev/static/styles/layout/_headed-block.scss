@@ -124,12 +124,25 @@
   color: #000;
 }
 
+.info-headed__column--1,
+.info-headed__column--2 {
+  width: 100%;
+}
+
 .info-headed__column--1 {
-  width: 42%;
+  margin-bottom: 40px;
+  
+  @media (min-width: 992px) {
+    width: 42%;
+    margin-bottom: 0;
+  }
 }
 
 .info-headed__column--2 {
-  width: 58%;
+  
+  @media (min-width: 992px) {
+    width: 58%;
+  }
 }
 
 .info-headed__body h3 {
@@ -184,15 +197,22 @@
   margin-top: 32px;
   padding-left: 15px;
   padding-right: 15px;
-  width: 50%;
+
+  @media (min-width: 576px) {
+    width: 50%;
+  }
 }
 
 .info-headed__benefits-icon {
   flex: none;
   display: block;
-  font-size: 36px;
+  font-size: 30px;
   margin-right: 20px;
   color: $highlight;
+
+  @media (min-width: 576px) {
+    font-size: 36px;
+  }
 }
 
 .info-headed__benefits-head {
@@ -215,6 +235,15 @@
   margin-bottom: 50px;
 }
 
+.catalog-headed .headed-block__head {
+  
+  @media (max-width: 991.98px) {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .catalog-headed__body {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -224,8 +253,16 @@
 }
 
 .catalog-headed__column {
-  width: 25%;
+  width: 100%;
   margin-top: -16px;
+
+  @media (min-width: 480px) {
+    width: 50%;
+  }
+
+  @media (min-width: 768px) {
+    width: 25%;
+  }
 }
 
 .catalog-headed__module {
@@ -272,14 +309,34 @@
 .catalog-headed__setting {
   display: flex;
   align-items: center;
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 
 .sorting {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   font-family: $font-third;
   font-weight: normal;
   font-size: 15px;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.sorting  + .sorting {
+
+  @media (max-width: 991.98px) {
+    margin-top: 8px;
+  }
 }
 
 .sorting  + .sorting::before {
@@ -289,8 +346,17 @@
   width: 0;
   height: 22px;
   border-left: 1px solid #dfe5f7;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (max-width: 991.98px) {
+    content: none;
+  }
+
+  @media (min-width: 1024px) {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
 }
 
 .sorting__label {
@@ -315,9 +381,6 @@
     width: 10em;
   }
 
-  // .ui-selectmenu-button.ui-button {
-  //   width: 150px;
-  // }
   .ui-icon {
     position: absolute;
     top: 50%;

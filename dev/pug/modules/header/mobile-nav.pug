@@ -1,12 +1,12 @@
 .mobile-nav(hidden)
-  .mobile-nav__overlay
+  .mobile-nav__overlay.js-mobile-nav-close
   .mobile-nav__content
     .side-menu
       .side-menu__head
         .logo.logo--mobile-nav
           img(src='static/images/general/logo.png', width="74")
           .logo-text TransDetail
-        button.side-menu__close
+        button.side-menu__close.js-mobile-nav-close(type="button", aria-label="Закрыть меню")
       .side-menu__body
         ul.menu-main
           li.menu-main__item.menu-main__item--first.menu-main__item--bordered

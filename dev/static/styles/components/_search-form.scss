@@ -69,11 +69,51 @@
   &.is-open {
     display: block;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 100%;
-    padding: 16px 24px;
+    height: 100%;
+    padding: 10px 16px;
     background-color: #eaeaea;
-    box-shadow: 0 2px 6px rgba(51, 51, 51, .26);
+    z-index: 100;
   }
+
+  .search-form__input {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.mobile-search__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.mobile-search__close,
+.mobile-search__submit {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  color: $greyD;
+  z-index: 1;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.mobile-search__close {
+  left: auto;
+  right: 0;
 }

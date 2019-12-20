@@ -49,23 +49,61 @@
 .main-goods__grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
-  margin-top: -26px;
+  margin-left: -4px;
+  margin-right: -4px;
+  margin-top: -8px;
+
+  @media (min-width: 480px) {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -16px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -26px;
+  }
 }
 
 .main-goods__cell {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin-top: 26px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 20%;
+  width: 50%;
+  margin-top: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+
+  @media (min-width: 480px) {
+    margin-top: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  @media (min-width: 992px) {
+    width: 25%;
+  }
+
+  @media (min-width: 1024px) {
+    margin-top: 26px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: 1280px) {
+    width: 20%;
+  }
 }
 
 .main-goods__cell--double {
-  width: 40%;
+
+  @media (min-width: 992px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1280px) {
+    width: 40%;
+  }
 }
 
 
@@ -75,12 +113,19 @@
 .goods-tile {
   position: relative;
   height: 100%;
-  padding: 20px 25px 12px 30px;
+  padding: 16px 16px 12px 16px;
   border: 1px solid #dfdfdf;
   border-radius: 4px;
   font-family: $font-secondary;
   background-color: #ffffff;
   box-shadow: 0 10px 20px rgba(192, 197, 217, 0.25);
+  overflow: hidden;
+
+  @media (min-width: 576px) {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 25px;
+  }
 }
 
 .goods-tile__inner {
@@ -93,12 +138,20 @@
   flex: none;
   position: relative;
   display: block;
-  height: 230px;
+  height: 160px;
   // margin-bottom: 16px;
   text-align: center;
 
   &:focus {
     outline: none;
+  }
+
+  @media (min-width: 576px) {
+    height: 180px;
+  }
+
+  @media (min-width: 992px) {
+    height: 230px;
   }
 }
 
@@ -107,9 +160,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  max-height: 200px;
+  max-height: 135px;
   max-width: 100%;
   vertical-align: middle;
+
+  @media (min-width: 576px) {
+    max-height: 150px;
+  }
+
+  @media (min-width: 992px) {
+    max-height: 200px;
+  }
 }
 
 .goods-tile__top {
@@ -119,20 +180,37 @@
 
 .goods-tile__top .goods-tile__picture {
   width: 100%;
-  width: 170px;
+
+  @media (min-width: 992px) {
+    width: 170px;
+  }
 }
 
 .goods-tile__top .goods-tile__picture img {
-  left: 0;
+
+  @media (min-width: 992px) {
+    left: 0;
   transform: translate(0, -50%);
+  }
+  
 }
 
 .goods-tile__desc {
+  display: none;
   width: 60%;
   margin-left: auto;
-  padding-left: 30px;
-  font-size: 15px;
+  padding-left: 15px;
+  font-size: 14px;
   color: #1d3045;
+
+  @media (min-width: 992px) {
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 15px;
+    padding-left: 30px;
+  }
 
   @media (min-width: 1600px) {
     font-size: 16px;
@@ -141,20 +219,29 @@
 
 .goods-tile__title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.2;
   color: #1d3045;
   margin-top: auto;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
+
+  @media (min-width: 576px) {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
 }
 
 .goods-tile__foot-top {
   display: flex;
   flex-wrap: wrap;
-  font-size: 13px;
+  font-size: 12px;
   color: #9fa8c8;
   letter-spacing: 0.02em;
   line-height: 1.2;
+
+  @media (min-width: 576px) {
+    font-size: 13px;
+  }
 }
 
 .goods-tile__id {
@@ -207,10 +294,14 @@
 
 .promo-label {
   padding: 5px 10px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.15;
   color: #fff;
   text-transform: uppercase;
+
+  @media (min-width: 576px) {
+    font-size: 13px;
+  }
 }
 
 .promo-label:first-child {

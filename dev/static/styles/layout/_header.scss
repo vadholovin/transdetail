@@ -8,7 +8,6 @@
   left: 0;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
-  border-bottom: 1px solid #dfdfdf;
   box-shadow: 0 0 25px rgba(0, 50, 101, 0.1);
   z-index: 9999;
 
@@ -197,10 +196,11 @@
 
 .header-main {
   display: none;
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #eaeaea;
 
   @media (min-width: 1024px) {
     display: block;
-    background-color: #eaeaea;
   }
 }
 
@@ -248,6 +248,7 @@
 
 .header-main__right {
   padding-left: 15px;
+  flex-grow: 1;
 
   @media (min-width: 1280px) {
     width: 79%;
@@ -268,7 +269,8 @@
 }
 
 .header-main__search {
-  margin-right: 30px;
+  // margin-right: 30px;
+  margin-right: auto;
   max-width: 48.7%;
   min-width: 380px;
 
@@ -396,7 +398,7 @@
 }
 
 .header-auth {
-  margin-left: auto;
+  // margin-left: auto;
   font-family: $font-fourth;
   font-size: rem(15);
   letter-spacing: 0.02em;

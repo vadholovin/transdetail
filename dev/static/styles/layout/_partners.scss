@@ -19,15 +19,28 @@
 
 .partners-list {
   margin-top: -32px;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: 1440px) {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
 }
 
 .partners-list__item {
   display: inline-block;
   vertical-align: top;
   margin-top: 32px;
-  margin-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (max-width: 991.98px) {
+    width: 120px;
+  }
 
   @media (min-width: 1440px) {
-    margin-right: 67px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
