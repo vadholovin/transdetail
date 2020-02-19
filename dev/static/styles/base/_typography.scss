@@ -10,20 +10,21 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-@media (max-width: 1440px) {
-  html {
-    font-size: 95%;
-  }
-}
-@media (max-width: 992px) {
-  html {
-    font-size: 90%;
-  }
-}
+// @media (max-width: 1440px) {
+//   html {
+//     font-size: 95%;
+//   }
+// }
+// @media (max-width: 992px) {
+//   html {
+//     font-size: 90%;
+//   }
+// }
 
 
 body {
-  font-family: $mainFont;
+  // font-family: $mainFont;
+  font-family: $font-secondary;
   font-size: rem(14);
   line-height: 1.4;
   color: $greyD;

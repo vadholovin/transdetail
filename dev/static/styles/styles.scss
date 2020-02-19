@@ -9,7 +9,7 @@
 // @import 'vendor-extensions/bootstrap';
 
 
-@import 'base/fonts';
+// @import 'base/fonts';
 @import 'base/reset';
 @import 'base/base';
 @import 'base/typography';
@@ -18,16 +18,16 @@
 // @import 'components/container';
 @import 'components/button-group';
 @import 'components/button';
-@import 'components/arrow-button';
+// @import 'components/arrow-button';
 @import 'components/brand';
 @import 'components/icon';
 @import 'components/hamburger';
-// @import 'components/search-trigger';
-@import 'components/info-trigger';
+@import 'components/search-trigger';
+// @import 'components/info-trigger';
 @import 'components/catalog-toggler';
 @import 'components/form';
 @import 'components/search-form';
-@import 'components/mobile-info';
+// @import 'components/mobile-info';
 @import 'components/socials';
 @import 'components/breadcrumb';
 @import 'components/titles';

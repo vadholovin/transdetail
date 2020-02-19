@@ -31,23 +31,47 @@
       .header-info
         .header-info__module
           a.header-info__email(href="info@transdetail.ru") info@transdetail.ru
-          button.header-info__btn(type="button")
+          button.header-info__btn.js-question(type="button")
             span.link-dotted Задать вопрос
         .header-info__module
           .header-phones
-            button.header-phones__btn(type="button")
+            button.header-phones__btn.js-more-phones(type="button")
               span.link-dotted (495) 250-00-25
-              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <svg class="ic ic-chevron-down" aria-hidden="true">
+                <use xlink:href="#chevron-down"></use>
+              </svg>
+            .header-phones__pop(hidden)
+              ul.header-phones__pop-list
+                li.header-phones__pop-item
+                  a(href="tel:") (495) 250-00-25
+                li.header-phones__pop-item
+                  a(href="tel:") (495) 250-00-25
+                li.header-phones__pop-item
+                  a(href="tel:") (495) 250-00-25
           .header-phones
-            button.header-phones__btn(type="button")
+            button.header-phones__btn.js-more-phones(type="button")
               span.link-dotted (495) 250-00-25
-              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              <svg class="ic ic-chevron-down" aria-hidden="true">
+                <use xlink:href="#chevron-down"></use>
+              </svg>
+            .header-phones__pop(hidden)
+              ul.header-phones__pop-list
+                li.header-phones__pop-item
+                  a(href="tel:") (495) 250-00-25
+                li.header-phones__pop-item
+                  a(href="tel:") (495) 250-00-25
+                li.header-phones__pop-item
+                  a(href="tel:") (495) 250-00-25
           p.header-phones__notes Пн-Пт: 9-19 Сб: 10-15
 
       .header__mobile-btns
         button.header__search-trigger.js-search-trigger(aria-label="Перейти к поиску")
-          <i class="fa fa-search" aria-hidden="true"></i>
+          <svg class="ic ic-search" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
 
         a.header-cart(href="", aria-label="Перейти в корзину")
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <svg class="ic ic-shopping-cart" aria-hidden="true">
+            <use xlink:href="#shopping-cart"></use>
+          </svg>
           span.header-cart__counter 2

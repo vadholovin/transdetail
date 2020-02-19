@@ -12,8 +12,8 @@
           alt=''
         )
     .product-cell__slider-nav
-      button.product-cell__slider-btn.product-cell__slider-btn--prev
-      button.product-cell__slider-btn.product-cell__slider-btn--next
+      button.product-cell__slider-btn.product-cell__slider-btn--prev(aria-label="Предыдущий слайд")
+      button.product-cell__slider-btn.product-cell__slider-btn--next(aria-label="Следующий слайд")
   .product-cell__body
     p.product-cell__title
       | Барабан в сборе  со ступицей
@@ -42,4 +42,6 @@
     a.button.button--outline.button--outline-secondary(href='#')
       | Подробнее
     a.button.button--secondary(href='#')
-      span.icon.icon-cart-white
+      <svg class="ic ic-cart-plus" aria-hidden="true">
+        <use xlink:href="#cart-plus"></use>
+      </svg>

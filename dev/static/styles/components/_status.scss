@@ -1,42 +1,44 @@
-/*------------------------------------*\
-  #STATUS
-\*------------------------------------*/
+/* ==========================================================================
+   #STATUS
+   ========================================================================== */
 
 .status {
   padding: 8px 20px;
-  font-size: 0;
   color: #ffffff;
-
-  .icon {
-    display: inline-block;
-  }
-
-  &__text {
-    margin-left: 10px;
-    font-size: rem(12);
-    line-height: 1.15;
-  }
-
-  &--goods {
-    margin-left: auto;
-  }
-
-  &--product {
-    position: absolute;
-    left: 0;
-    top: 21px;
-    padding-left: 35px;
-    padding-right: 35px;
-    z-index: 100;
-
-    .status__text {
-      margin-left: 12px;
-      font-weight: 600;
-      font-size: rem(14);
-    }
-  }
-
-  &--in-stock {
-    background-color: $blue;
-  }
+  font-size: rem(12);
+  line-height: 1.15;
+  white-space: nowrap;
 }
+
+.status .ic {
+  position: relative;
+  top: -2px;
+}
+
+.status__text {
+  margin-left: 10px;
+}
+
+.status--goods {
+  margin-left: auto;
+}
+
+.status--product {
+  position: absolute;
+  left: 0;
+  top: 21px;
+  padding-left: 35px;
+  padding-right: 35px;
+  z-index: 100;
+}
+
+.status--product .status__text {
+  margin-left: 12px;
+  font-weight: 600;
+  font-size: rem(14);
+}
+
+.status--in-stock {
+  background-color: $blue;
+}
+

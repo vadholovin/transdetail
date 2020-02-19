@@ -1,121 +1,223 @@
-/*------------------------------------*\
-  #ICON
-\*------------------------------------*/
+/* ==========================================================================
+   #ICONS
+   ========================================================================== */
 
 .icon {
-  display: block;
+  display: inline-block;
+}
+
+.icon-arrow-bottom-sm {
+  width: 8px;
+  height: 4px;
+  background-image: url(../images/sprites/sprite.png);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
+  background-position: -4px -4px;
+}
 
-  &-phone {
-    width: 18px;
-    height: 18px;
-    background-image: url(../images/icons/phone-outline-orange.png);
-  }
+.icon-arrow-l-carousel {
+  width: 21px;
+  height: 45px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -20px -4px;
+}
 
-  &-bag {
-    width: 21px;
-    height: 29px;
-    background-image: url(../images/icons/bag.png);
-  }
+.icon-arrow-l-lg {
+  width: 45px;
+  height: 90px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -49px -4px;
+}
 
-  &-heart {
-    width: 32px;
-    height: 30px;
-    background-image: url(../images/icons/heart-outline-orange.png);
-  }
+.icon-arrow-left-sm {
+  width: 4px;
+  height: 8px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -102px -4px;
+}
 
-  &-heart-dark {
-    width: 27px;
-    height: 25px;
-    background-image: url(../images/icons/heart-outline-grey-lg.png);
-  }
+.icon-arrow-r-carousel {
+  width: 21px;
+  height: 45px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -114px -4px;
+}
 
-  &-cart {
-    width:35px;
-    height: 30px;
-    background-image: url(../images/icons/cart-outline-orange.png);
-  }
+.icon-arrow-r-lg {
+  width: 45px;
+  height: 90px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -143px -4px;
+}
 
-  &-cart-white {
-    width: 20px;
-    height: 20px;
-    background-image: url(../images/icons/cart-outline-white.png);
-  }
+.icon-arrow-top-sm {
+  width: 8px;
+  height: 4px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -4px -102px;
+}
 
-  &-vk {
-    width: 15px;
-    height: 9px;
-    background-image: url(../images/icons/vk.png);
-  }
+.icon-bag {
+  width: 21px;
+  height: 29px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -20px -102px;
+}
 
-  &-instagram {
-    width: 13px;
-    height: 13px;
-    background-image: url(../images/icons/instagram.png);
-  }
+.icon-cart-outline-orange {
+  width: 35px;
+  height: 30px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -49px -102px;
+}
 
-  &-facebook {
-    width: 7px;
-    height: 13px;
-    background-image: url(../images/icons/facebook.png);
-  }
+.icon-cart-outline-white {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -92px -102px;
+}
 
-  &-check {
-    width: 9px;
-    height: 7px;
-    background-image: url(../images/icons/check-white.png);
-  }
+.icon-check-white {
+  width: 9px;
+  height: 7px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -120px -102px;
+}
 
-  &-list {
-    width: 15px;
-    height: 11px;
-    background-image: url(../images/icons/list.png);
-  }
+.icon-checkmark {
+  width: 23px;
+  height: 19px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -137px -102px;
+}
 
-  &-ruble {
-    width: 11px;
-    height: 15px;
-    background-image: url(../images/icons/ruble.png);
-  }
+.icon-hamburger {
+  width: 27px;
+  height: 20px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -168px -102px;
+}
 
-  &-star {
-    width: 21px;
-    height: 20px;
-    background-image: url(../images/icons/star.png);
-  }
+.icon-heart-outline-grey {
+  width: 17px;
+  height: 16px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -92px -130px;
+}
 
-  &-star-empty {
-    width: 21px;
-    height: 20px;
-    background-image: url(../images/icons/star-empty.png);
-  }
+.icon-heart-outline-grey-lg {
+  width: 27px;
+  height: 25px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -117px -130px;
+}
 
-  &-review {
-    width: 22px;
-    height: 20px;
-    background-image: url(../images/icons/review.png);
-  }
+.icon-heart-outline-orange {
+  width: 32px;
+  height: 30px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -152px -130px;
+}
 
-  &-redo {
-    width: 12px;
-    height: 13px;
-    background-image: url(../images/icons/redo.png);
-    background-size: 12px 13px;
-  }
+.icon-list {
+  width: 15px;
+  height: 11px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -4px -168px;
+}
 
-  &-success {
-    width: 96px;
-    height: 96px;
-    background-image: url(../images/icons/success.png);
-    background-size: 96px 96px;
-  }
+.icon-phone-outline-orange {
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -27px -168px;
+}
 
-  &-user {
-    width: 12px;
-    height: 12px;
-    background-image: url(../images/icons/user.png);
-  }
+.icon-place {
+  width: 11px;
+  height: 15px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -53px -168px;
+}
 
+.icon-redo {
+  width: 34px;
+  height: 37px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -196px -4px;
+}
+
+.icon-review {
+  width: 22px;
+  height: 20px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -196px -49px;
+}
+
+.icon-ruble {
+  width: 11px;
+  height: 15px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -226px -49px;
+}
+
+.icon-search {
+  width: 19px;
+  height: 20px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -203px -77px;
+}
+
+.icon-star {
+  width: 21px;
+  height: 20px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -203px -105px;
+}
+
+.icon-star-empty {
+  width: 21px;
+  height: 20px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -192px -133px;
+}
+
+.icon-success {
+  width: 96px;
+  height: 96px;
+  background-image: url(../images/sprites/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -245px -4px;
+}
+
+.ic {
+  display: inline-flex;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
 }

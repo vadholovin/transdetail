@@ -35,7 +35,9 @@ block content
       .product-image
         .product-slider__wrapper
           .status.status--product.status--in-stock
-            span.icon.icon-check
+            <svg class="ic ic-check" aria-hidden="true">
+              <use xlink:href="#check"></use>
+            </svg>
             span.status__text
               | Товар в наличии
           .product-slider.js-product-slider
@@ -55,13 +57,26 @@ block content
             | Барабан в сборе со ступицей
           .product-meta
             .product-rating
-              span.icon.icon-star
-              span.icon.icon-star
-              span.icon.icon-star
-              span.icon.icon-star
-              span.icon.icon-star-empty
+              <svg class="ic ic-star" aria-hidden="true">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg class="ic ic-star" aria-hidden="true">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg class="ic ic-star" aria-hidden="true">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg class="ic ic-star" aria-hidden="true">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg class="ic ic-star-o" aria-hidden="true">
+                <use xlink:href="#star-o"></use>
+              </svg>
             a.product-meta__reviews(href='#')
-              .icon.icon-review
+              span.product-meta__reviews-icon
+                <svg class="ic ic-commenting-o" aria-hidden="true">
+                  <use xlink:href="#commenting-o"></use>
+                </svg>
               span.product-meta__reviews-text
                 <b>5</b> отзывов
           .product-features
@@ -75,17 +90,26 @@ block content
             .product-cost
               span.product-cost__now
                 | 3 700 
-                span.icon.icon-ruble
+                <svg class="ic ic-ruble" aria-hidden="true">
+                  <use xlink:href="#ruble"></use>
+                </svg>
               span.product-cost__last
                 | 7 400
 
             include modules/product-quantity/product-quantity
 
           .product-actions.product-actions--product
-            button.product-actions__btn.product-actions__btn--to-cart(title='Добавить в корзину')
+            button.product-actions__btn.product-actions__btn--to-cart(aria-label='Добавить в корзину')
               | Добавить в корзину
-              span.icon.icon-cart-white
-            button.product-actions__btn.product-actions__btn--to-wish(title='Добавить в желания')
+              span.product-actions__btn-icon
+                <svg class="ic ic-cart-plus" aria-hidden="true">
+                  <use xlink:href="#cart-plus"></use>
+                </svg>
+            button.product-actions__btn.product-actions__btn--to-wish(aria-label='Добавить в желания')
+              span.product-actions__btn-icon
+                <svg class="ic" aria-hidden="true">
+                  <use xlink:href="#heart-o"></use>
+                </svg>
 
           .product-about
             p.product-about__title

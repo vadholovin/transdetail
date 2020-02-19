@@ -17,9 +17,9 @@ block content
             a(href="")
               span.sections-item__heading-small Раздел
               span.sections-item__heading-big Фильтра
-          a.arrow-button.sections-item__link(href="")
-            span.arrow-button__text В раздел
-            <svg class="arrow-button__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10">
+          a.button.button--icon.sections-item__link(href="")
+            span.button__text В раздел
+            <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10">
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M4.000,5.999 L4.000,3.999 L22.000,3.999 L22.000,5.999 L4.000,5.999 Z" />
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M20.000,-0.001 L22.000,-0.001 L22.000,5.999 L20.000,5.999 L20.000,-0.001 Z" />
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M0.007,5.010 L6.007,10.011 L6.007,0.008 L0.007,5.010 Z" />
@@ -31,9 +31,9 @@ block content
             a(href="")
               span.sections-item__heading-small Раздел
               span.sections-item__heading-big Масла
-          a.arrow-button.sections-item__link(href="")
-            span.arrow-button__text В раздел
-            <svg class="arrow-button__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10">
+          a.button.button--icon.sections-item__link(href="")
+            span.button__text В раздел
+            <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10">
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M4.000,5.999 L4.000,3.999 L22.000,3.999 L22.000,5.999 L4.000,5.999 Z" />
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M20.000,-0.001 L22.000,-0.001 L22.000,5.999 L20.000,5.999 L20.000,-0.001 Z" />
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M0.007,5.010 L6.007,10.011 L6.007,0.008 L0.007,5.010 Z" />
@@ -45,9 +45,9 @@ block content
             a(href="")
               span.sections-item__heading-small Раздел
               span.sections-item__heading-big SONNAX
-          a.arrow-button.sections-item__link(href="")
-            span.arrow-button__text В раздел
-            <svg class="arrow-button__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10">
+          a.button.button--icon.sections-item__link(href="")
+            span.button__text В раздел
+            <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10">
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M4.000,5.999 L4.000,3.999 L22.000,3.999 L22.000,5.999 L4.000,5.999 Z" />
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M20.000,-0.001 L22.000,-0.001 L22.000,5.999 L20.000,5.999 L20.000,-0.001 Z" />
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M0.007,5.010 L6.007,10.011 L6.007,0.008 L0.007,5.010 Z" />
@@ -59,9 +59,9 @@ block content
             a(href="")
               span.sections-item__heading-small Раздел
               span.sections-item__heading-big Радиаторы
-          a.arrow-button.sections-item__link(href="")
-            span.arrow-button__text В раздел
-            <svg class="arrow-button__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10">
+          a.button.button--icon.sections-item__link(href="")
+            span.button__text В раздел
+            <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10">
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M4.000,5.999 L4.000,3.999 L22.000,3.999 L22.000,5.999 L4.000,5.999 Z" />
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M20.000,-0.001 L22.000,-0.001 L22.000,5.999 L20.000,5.999 L20.000,-0.001 Z" />
               <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M0.007,5.010 L6.007,10.011 L6.007,0.008 L0.007,5.010 Z" />
@@ -98,7 +98,9 @@ block content
             ul.info-headed__benefits-list
               li.info-headed__benefits-item
                 span.info-headed__benefits-icon
-                  <i class="fa fa-user-o" aria-hidden="true"></i>
+                  <svg class="ic ic-user-o" aria-hidden="true">
+                    <use xlink:href="#user-o"></use>
+                  </svg>
                 .info-headed__benefits-body
                   p.info-headed__benefits-head Персональное обслуживание
                   p.info-headed__benefits-desc
@@ -109,7 +111,9 @@ block content
 
               li.info-headed__benefits-item
                 span.info-headed__benefits-icon
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <svg class="ic ic-star-o" aria-hidden="true">
+                    <use xlink:href="#star-o"></use>
+                  </svg>
                 .info-headed__benefits-body
                   p.info-headed__benefits-head Специальные цены
                   p.info-headed__benefits-desc
@@ -127,88 +131,101 @@ block content
         <svg class="head-label__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14">
           <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M6.000,14.000 L6.000,12.000 L22.000,12.000 L22.000,14.000 L6.000,14.000 ZM6.000,6.000 L22.000,6.000 L22.000,8.000 L6.000,8.000 L6.000,6.000 ZM6.000,-0.000 L22.000,-0.000 L22.000,2.000 L6.000,2.000 L6.000,-0.000 ZM-0.000,12.000 L3.000,12.000 L3.000,14.000 L-0.000,14.000 L-0.000,12.000 ZM-0.000,6.000 L3.000,6.000 L3.000,8.000 L-0.000,8.000 L-0.000,6.000 ZM-0.000,-0.000 L3.000,-0.000 L3.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z" />
         </svg>
-      .catalog-headed__setting
+      .catalog-headed__settings
         .catalog-headed__sorting.sorting
           label.sorting__label(for="autoCategories") Категории по марке авто
-          select.sorting-select.sorting-select--categories.js-select#autoCategories
+          select.select-css.sorting-select.sorting-select--categories.js-select#autoCategories
             option(value="", selected) Agura
             option(value="") 1
             option(value="") 2
             option(value="") 3
         .catalog-headed__sorting.sorting
           label.sorting__label(for="mainSort") Сортировать
-          select.sorting-select.js-select#mainSort
+          select.select-css.sorting-select.js-select#mainSort
             option(value="", selected) от А до Я
             option(value="") 1
             option(value="") 2
             option(value="") 3
 
     .headed-block__body.catalog-headed__body
-      .headed-block__row
-        .headed-block__column.catalog-headed__column
-          .catalog-headed__module
-            h3.catalog-headed__heading ACURA
-            ul.catalog-headed__list
-              each item in acura
-                li
-                  a(href="")= item.name
-          .catalog-headed__module
-            h3.catalog-headed__heading ALFA ROMEO
-            ul.catalog-headed__list
-              each item in alfa_romeo
-                li
-                  a(href="")= item.name
-          .catalog-headed__module
-            h3.catalog-headed__heading AM GENERAL
-            ul.catalog-headed__list
-              each item in am_general
-                li
-                  a(href="")= item.name
+      .headed-block__row.catalog-headed__row
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading ACURA
+          ul.catalog-headed__list
+            each item in acura
+              li
+                a(href="")= item.name
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading ALFA ROMEO
+          ul.catalog-headed__list
+            each item in alfa_romeo
+              li
+                a(href="")= item.name
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading AM GENERAL
+          ul.catalog-headed__list
+            each item in am_general
+              li
+                a(href="")= item.name
 
-        .headed-block__column.catalog-headed__column
-          .catalog-headed__module
-            h3.catalog-headed__heading AUDI
-            ul.catalog-headed__list
-              each item in audi
-                li
-                  a(href="")= item.name
-          .catalog-headed__module
-            h3.catalog-headed__heading BENTLEY
-            ul.catalog-headed__list
-              each item in bentley
-                li
-                  a(href="")= item.name
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading AUDI
+          ul.catalog-headed__list
+            each item in audi
+              li
+                a(href="")= item.name
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading BENTLEY
+          ul.catalog-headed__list
+            each item in bentley
+              li
+                a(href="")= item.name
 
-        .headed-block__column.catalog-headed__column
-          .catalog-headed__module
-            h3.catalog-headed__heading BMW
-            ul.catalog-headed__list
-              each item in bmw
-                li
-                  a(href="")= item.name
-          .catalog-headed__module
-            h3.catalog-headed__heading BUICK
-            ul.catalog-headed__list
-              each item in buick
-                li
-                  a(href="")= item.name
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading BMW
+          ul.catalog-headed__list
+            each item in bmw
+              li
+                a(href="")= item.name
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading BUICK
+          ul.catalog-headed__list
+            each item in buick
+              li
+                a(href="")= item.name
 
-        .headed-block__column.catalog-headed__column
-          .catalog-headed__module
-            h3.catalog-headed__heading CADILLAC
-            ul.catalog-headed__list
-              each item in cadillac
-                li
-                  a(href="")= item.name
-          .catalog-headed__module
-            h3.catalog-headed__heading CHEVROLET
-            ul.catalog-headed__list
-              each item in chevrolet
-                li
-                  a(href="")= item.name
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading CADILLAC
+          ul.catalog-headed__list
+            each item in cadillac
+              li
+                a(href="")= item.name
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading CHEVROLET
+          ul.catalog-headed__list
+            each item in chevrolet
+              li
+                a(href="")= item.name
+
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading CADILLAC
+          ul.catalog-headed__list
+            each item in cadillac
+              li
+                a(href="")= item.name
+        .headed-block__column.catalog-headed__module
+          h3.catalog-headed__heading CHEVROLET
+          ul.catalog-headed__list
+            each item in chevrolet
+              li
+                a(href="")= item.name
 
     .headed-block__foot.catalog-headed__foot
-      a.link-dashed.catalog-headed__more.js-catalog-block-more(href="#") показать весь каталог
+      a.link-dashed.catalog-headed__more.js-catalog-block-more(
+        href="#",
+        data-text-open="показать весь каталог",
+        data-text-close="скрыть"
+        ) показать весь каталог
 
 
   //- TOP CATEGORIES ==========================================================
@@ -517,9 +534,13 @@ block content
 
       .headed-block__nav.js-viewed-slider-nav
         button.headed-block__prev(aria-label="Предыдущий слайд")
-          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          <svg class="ic ic-chevron-left" aria-hidden="true">
+            <use xlink:href="#chevron-left"></use>
+          </svg>
         button.headed-block__next(aria-label="Следующий слайд")
-          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          <svg class="ic ic-chevron-right" aria-hidden="true">
+            <use xlink:href="#chevron-right"></use>
+          </svg>
 
     .headed-block__body.viewed-headed__body
       .headed-block__carousel.js-viewed-slider

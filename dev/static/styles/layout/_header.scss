@@ -7,7 +7,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
   box-shadow: 0 0 25px rgba(0, 50, 101, 0.1);
   z-index: 9999;
 
@@ -87,6 +86,10 @@
   line-height: 1.2;
 }
 
+.header-phones {
+  position: relative;
+}
+
 .header-info__email,
 .header-info__btn,
 .header-phones__btn {
@@ -115,12 +118,31 @@
   white-space: nowrap;
 }
 
-.header-phones__btn .fa {
-  display: inline-block;
+.header-phones__btn .ic {
+  position: relative;
+  top: -2px;
+  width: 0.5rem;
+  height: 0.5rem;
   margin-left: 5px;
-  vertical-align: middle;
-  font-size: 8px;
-  font-weight: normal;
+}
+
+.header-phones__pop {
+  position: absolute;
+  top: 101%;
+  right: 0;
+  width: auto;
+  padding: 6px 6px 8px 8px;
+  border-top: 2px solid $highlight;
+  background-color: #1b2433;
+  z-index: 1;
+}
+
+.header-phones__pop-item {
+  white-space: nowrap;
+}
+
+.header-phones__pop-item + .header-phones__pop-item {
+  margin-top: 4px;
 }
 
 .header-phones__notes {
@@ -164,8 +186,8 @@
   }
 }
 
-.header__search-trigger .fa,
-.header-cart .fa {
+.header__search-trigger .ic,
+.header-cart .ic {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -182,7 +204,7 @@
   padding-left: 5px;
   padding-right: 5px;
   border-radius: 50%;
-  font-family: $font-third;
+  // font-family: $font-third;
   font-weight: 600;
   font-size: 12px;
   color: #fff;
@@ -313,7 +335,6 @@
 
 .header-control {
   margin-right: 20px;
-  font-family: $font-fourth;
   font-size: rem(15);
   line-height: 1.15;
   color: #1b2433;
@@ -354,7 +375,7 @@
 
 .header-control__value {
   display: inline-block;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: underline;
   color: #ff3c09;
 
@@ -393,22 +414,15 @@
   }
 }
 
-.header-control .currency {
-  font-weight: bold;
-}
-
 .header-auth {
-  // margin-left: auto;
-  font-family: $font-fourth;
   font-size: rem(15);
   letter-spacing: 0.02em;
+  color: #1b2433;
   white-space: nowrap;
 }
 
-.header-auth .fa {
+.header-auth .ic {
   margin-right: 4px;
-  vertical-align: baseline;
-  color: #1b2433;
 }
 
 .header-auth__link {

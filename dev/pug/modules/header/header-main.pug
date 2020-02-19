@@ -14,24 +14,34 @@
           label(for="header-search")
             span.visuallyhidden Поиск по деталям АКПП
           .search-form__input-wrapper
-            input.search-form__input#header-search(autocomplete='off', name='search-text', type='text', placeholder='Поиск деталей для вашего АКПП...', area-label="Введите поисковой запрос деталей АКПП")
+            input.search-form__input#header-search(autocomplete='off', name='s', type='text', placeholder='Поиск деталей для вашего АКПП...', area-label="Введите поисковой запрос деталей АКПП")
           button.search-form__btn(type="submit") Найти
 
         ul.header-controls
           li.header-control.header-control--wish(aria-label="Добавлено в")
-            <a class="header-control__icon" href=""><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a class="header-control__icon" href="">
+              <svg class="ic ic-heart-o" aria-hidden="true">
+                <use xlink:href="#heart-o"></use>
+              </svg>
+            </a>
             span.header-control__text
               | Избранное:
             a.header-control__value(href="") 3
           li.header-control.header-control--cart(aria-label="В корзине")
-            <a class="header-control__icon" href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <a class="header-control__icon" href="">
+              <svg class="ic ic-shopping-cart" aria-hidden="true">
+                <use xlink:href="#shopping-cart"></use>
+              </svg>
+            </a>
             span.header-control__text
               | 2 товара
             a.header-control__value(href="")
               <span class="header-control__value-num">2</span>
-              <span class="header-control__value-full">23560 <span class="currency">₽</span></span>
+              <span class="header-control__value-full">23560 ₽</span>
         
         .header-auth
-          <i class="fa fa-user-o" aria-hidden="true"></i>
+          <svg class="ic ic-user-o" aria-hidden="true">
+            <use xlink:href="#user-o"></use>
+          </svg>
           a.header-auth__link(href="") Войти
           a.header-auth__link(href="") Регистрация

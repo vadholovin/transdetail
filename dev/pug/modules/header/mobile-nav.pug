@@ -1,4 +1,4 @@
-.mobile-nav(hidden)
+.mobile-nav
   .mobile-nav__overlay.js-mobile-nav-close
   .mobile-nav__content
     .side-menu
@@ -20,13 +20,17 @@
           li.menu-main__item
             a.menu-main__link(href="#")
               span.menu-main__icon
-                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <svg class="ic ic-user-o" aria-hidden="true">
+                  <use xlink:href="#user-o"></use>
+                </svg>
               span.menu-main__link-title
                 | Войти / Регистрация
           li.menu-main__item
             a.menu-main__link(href="#")
               span.menu-main__icon
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <svg class="ic ic-shopping-cart" aria-hidden="true">
+                  <use xlink:href="#shopping-cart"></use>
+                </svg>
               span.menu-main__link-title
                 | Корзина
               span.menu-main__link-counter
