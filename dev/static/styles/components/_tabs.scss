@@ -5,14 +5,20 @@
 .tab,
 .innertab {
   display: none;
-  opacity: 0;
-  transform: translate3d(0, 10px, 0);
-  transition:
-    opacity 0.3s ease-out,
-    transform 0.3s ease-out;
-
+  animation-name: showTab;
+  animation-duration: .3s;
+  
   &.is-active {
     display: block;
+  }
+}
+
+@keyframes showTab {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 10px, 0);
+  }
+  100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
