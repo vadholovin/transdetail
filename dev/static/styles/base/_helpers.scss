@@ -96,8 +96,8 @@
 }
 
 .link-dotted {
-  border-bottom: 1px dotted;
-  border-color: currentColor;
+  border-bottom: 1px dotted !important;
+  border-color: currentColor !important;
   transition: 0.25s;
 
   &:hover {

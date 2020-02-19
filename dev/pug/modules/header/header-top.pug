@@ -30,9 +30,11 @@
 
       .header-info
         .header-info__module
-          a.header-info__email(href="info@transdetail.ru") info@transdetail.ru
-          button.header-info__btn.js-question(type="button")
-            span.link-dotted Задать вопрос
+          ul.header-info__contacts
+            li
+              a.header-info__email(href="mailto:info@transdetail.ru") info@transdetail.ru
+            li
+              a.header-info__btn.link-dotted(href="") Задать вопрос
         .header-info__module
           .header-phones
             button.header-phones__btn.js-more-phones(type="button")
