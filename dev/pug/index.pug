@@ -253,274 +253,810 @@ block content
 
   //- MAIN-GOODS
   .main-goods
-    .main-goods__nav
-      button.main-goods__nav-btn.is-active Подборки товаров
-      button.main-goods__nav-btn Акции
-      button.main-goods__nav-btn Сейчас покупают
+    .main-goods__nav.js-tabs-nav
+      button.main-goods__nav-btn.is-active(
+        data-tab-name="tab-1"
+      ) Подборки товаров
+      button.main-goods__nav-btn(
+        data-tab-name="tab-2"
+      ) Акции
+      button.main-goods__nav-btn(
+        data-tab-name="tab-3"
+      ) Сейчас покупают
 
-    .main-goods__grid
-      .main-goods__cell.main-goods__cell--double
-        .goods-tile.goods-tile--big
-          .goods-tile__inner
-            .goods-tile__top
-              a.goods-tile__picture(href="")
-                img(
-                  src="static/images/content/selection/selection-1.jpg",
-                  alt="Трансмиссионное масло ATF WS (SINTETIC-TIPTRONIC) 4L JAPAN"
-                )
-              .goods-tile__desc
-                | MITASU ATF WS Synthetic Tech –
-                |
-                | низковязкая жидкость
-                |
-                | для современных автоматических
-                |
-                | трансмиссий, изготовленная по
-                |
-                | синтетической технологии...
-            a.goods-tile__title(href="") Трансмиссионное масло
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id ATF WS (SINTETIC-TIPTRONIC) 4L JAPAN
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
-          .goods-tile__labels.promo-labels
-            a.promo-label.promo-label--cat(href="") Масла
-            .promo-label.promo-label--action Скинка 50%
+    .main-goods__content
+      .main-goods__tab.tab.tab-1.is-active
+        .main-goods__grid
+          .main-goods__cell.main-goods__cell--double
+            .goods-tile.goods-tile--big
+              .goods-tile__inner
+                .goods-tile__top
+                  a.goods-tile__picture(href="")
+                    img(
+                      src="static/images/content/selection/selection-1.jpg",
+                      alt="Трансмиссионное масло ATF WS (SINTETIC-TIPTRONIC) 4L JAPAN"
+                    )
+                  .goods-tile__desc
+                    | MITASU ATF WS Synthetic Tech –
+                    |
+                    | низковязкая жидкость
+                    |
+                    | для современных автоматических
+                    |
+                    | трансмиссий, изготовленная по
+                    |
+                    | синтетической технологии...
+                a.goods-tile__title(href="") Трансмиссионное масло
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id ATF WS (SINTETIC-TIPTRONIC) 4L JAPAN
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                a.promo-label.promo-label--cat(href="") Масла
+                .promo-label.promo-label--action Скинка 50%
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-2.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Ведомая шестерня
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-2.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Ведомая шестерня
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-3.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Планетарный механизм
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-3.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Планетарный механизм
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-4.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Барабан
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-4.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Барабан
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-5.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Комплект фрикционных дисков
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-5.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Комплект фрикционных дисков
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-6.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Комплект соленоидов
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
-          .goods-tile__labels.promo-labels
-            .promo-label.promo-label--new Новый
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-6.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Комплект соленоидов
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--new Новый
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-7.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Гидравлический блок
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-7.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Гидравлический блок
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-8.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Масляный насос
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
-          .goods-tile__labels.promo-labels
-            .promo-label.promo-label--top Хит
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-8.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Масляный насос
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--top Хит
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-9.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Фильтр масляный
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
-          .goods-tile__labels.promo-labels
-            a.promo-label.promo-label--cat(href="") Фильтра
-            .promo-label.promo-label--top Хит
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-9.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Фильтр масляный
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                a.promo-label.promo-label--cat(href="") Фильтра
+                .promo-label.promo-label--top Хит
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-10.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Задний планетарный механизм
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-10.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Задний планетарный механизм
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-11.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Задняя крышка
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
-          .goods-tile__labels.promo-labels
-            .promo-label.promo-label--action Акция
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-11.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Задняя крышка
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--action Акция
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-12.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Электронный модуль
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-12.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Электронный модуль
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-13.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Статор
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
-          .goods-tile__labels.promo-labels
-            .promo-label.promo-label--action Скидка 30%
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-13.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Статор
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--action Скидка 30%
 
-      .main-goods__cell
-        .goods-tile
-          .goods-tile__inner
-            a.goods-tile__picture(href="")
-              img(
-                src="static/images/content/selection/selection-14.jpg",
-                alt="Задняя крышка F4A51"
-              )
-            a.goods-tile__title(href="") Комплект соленоидов
-            .goods-tile__foot
-              .goods-tile__foot-top
-                .goods-tile__id F4A51
-                .goods-tile__price
-                  span.goods-tile__price-label ЦЕНА
-                  a.goods-tile__price-link(href="") скрыта<sup>*</sup>
-              .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-14.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Комплект соленоидов
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+      .main-goods__tab.tab.tab-2
+        .main-goods__grid
+          .main-goods__cell.main-goods__cell--double
+            .goods-tile.goods-tile--big
+              .goods-tile__inner
+                .goods-tile__top
+                  a.goods-tile__picture(href="")
+                    img(
+                      src="static/images/content/selection/selection-1.jpg",
+                      alt="Трансмиссионное масло ATF WS (SINTETIC-TIPTRONIC) 4L JAPAN"
+                    )
+                  .goods-tile__desc
+                    | MITASU ATF WS Synthetic Tech –
+                    |
+                    | низковязкая жидкость
+                    |
+                    | для современных автоматических
+                    |
+                    | трансмиссий, изготовленная по
+                    |
+                    | синтетической технологии...
+                a.goods-tile__title(href="") Трансмиссионное масло
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id ATF WS (SINTETIC-TIPTRONIC) 4L JAPAN
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                a.promo-label.promo-label--cat(href="") Масла
+                .promo-label.promo-label--action Скинка 50%
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-2.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Ведомая шестерня
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-3.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Планетарный механизм
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-4.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Барабан
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-5.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Комплект фрикционных дисков
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-6.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Комплект соленоидов
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--new Новый
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-7.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Гидравлический блок
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-8.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Масляный насос
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--top Хит
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-9.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Фильтр масляный
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                a.promo-label.promo-label--cat(href="") Фильтра
+                .promo-label.promo-label--top Хит
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-10.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Задний планетарный механизм
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-11.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Задняя крышка
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--action Акция
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-12.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Электронный модуль
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-13.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Статор
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--action Скидка 30%
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-14.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Комплект соленоидов
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+      .main-goods__tab.tab.tab-3
+        .main-goods__grid
+          .main-goods__cell.main-goods__cell--double
+            .goods-tile.goods-tile--big
+              .goods-tile__inner
+                .goods-tile__top
+                  a.goods-tile__picture(href="")
+                    img(
+                      src="static/images/content/selection/selection-1.jpg",
+                      alt="Трансмиссионное масло ATF WS (SINTETIC-TIPTRONIC) 4L JAPAN"
+                    )
+                  .goods-tile__desc
+                    | MITASU ATF WS Synthetic Tech –
+                    |
+                    | низковязкая жидкость
+                    |
+                    | для современных автоматических
+                    |
+                    | трансмиссий, изготовленная по
+                    |
+                    | синтетической технологии...
+                a.goods-tile__title(href="") Трансмиссионное масло
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id ATF WS (SINTETIC-TIPTRONIC) 4L JAPAN
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                a.promo-label.promo-label--cat(href="") Масла
+                .promo-label.promo-label--action Скинка 50%
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-2.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Ведомая шестерня
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-3.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Планетарный механизм
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-4.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Барабан
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-5.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Комплект фрикционных дисков
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-6.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Комплект соленоидов
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--new Новый
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-7.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Гидравлический блок
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-8.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Масляный насос
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--top Хит
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-9.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Фильтр масляный
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                a.promo-label.promo-label--cat(href="") Фильтра
+                .promo-label.promo-label--top Хит
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-10.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Задний планетарный механизм
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-11.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Задняя крышка
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--action Акция
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-12.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Электронный модуль
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-13.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Статор
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
+              .goods-tile__labels.promo-labels
+                .promo-label.promo-label--action Скидка 30%
+
+          .main-goods__cell
+            .goods-tile
+              .goods-tile__inner
+                a.goods-tile__picture(href="")
+                  img(
+                    src="static/images/content/selection/selection-14.jpg",
+                    alt="Задняя крышка F4A51"
+                  )
+                a.goods-tile__title(href="") Комплект соленоидов
+                .goods-tile__foot
+                  .goods-tile__foot-top
+                    .goods-tile__id F4A51
+                    .goods-tile__price
+                      span.goods-tile__price-label ЦЕНА
+                      a.goods-tile__price-link(href="") скрыта<sup>*</sup>
+                  .goods-tile__foot-notes <sup>*</sup>Необходимо <a href="">авторизоваться</a>
 
 
   //- RECENTLY-VIEWED =========================================================
