@@ -290,6 +290,39 @@ $(function () {
 
 
 /**
+ * #WISH BUTTON
+ */
+$(function () {
+  $(document).on('click', '.js-wish-button', function (e) { 
+    e.preventDefault();
+    var button = $(this);
+    var stateClass = 'wish-button--in-wish';
+    if (!button.hasClass(stateClass)) {
+      button
+        .addClass(stateClass)
+        .find('use')
+        .attr('xlink:href', '#heart');
+    }
+  });
+});
+
+
+/**
+ * #BUY BUTTON
+ */
+$(function () {
+  $(document).on('click', '.js-buy-button', function (e) { 
+    e.preventDefault();
+    var button = $(this);
+    var stateClass = 'buy-button--in-cart';
+    if (!button.hasClass(stateClass)) {
+      button.addClass(stateClass);
+    }
+  });
+});
+
+
+/**
  * #CONTACT FORM
  */
 $(function () {

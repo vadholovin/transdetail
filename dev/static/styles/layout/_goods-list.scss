@@ -157,35 +157,13 @@
 }
 
 .goods-item__controls {
+  display: flex;
   flex: none;
   font-size: 0;
 }
 
-.goods-item__control {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 41px;
-  height: 41px;
-  border: 0;
-  cursor: pointer;
-}
-
 .goods-item__control:not(:last-child) {
   margin-right: 15px;
-}
-
-.goods-item__control--to-cart {
-  font-size: 20px;
-  color: #fff;
-  background-color: $orange;
-}
-
-.goods-item__control--to-wish {
-  font-size: 16px;
-  color: #000;
-  border: 1px solid $gallery;
-  background-color: #fff;
 }
 
 .goods-item--full .goods-item__info-cell--1 {

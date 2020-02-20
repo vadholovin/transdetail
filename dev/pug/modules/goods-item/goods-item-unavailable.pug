@@ -58,11 +58,20 @@ li.goods-item.goods-item--full
             span.goods-item__feature-label Высота:
             span.goods-item__feature-value 2.93мм.
       .goods-item__controls
-        button.goods-item__control.goods-item__control--to-cart(title='Добавить в корзину')
-          <svg class="ic ic-cart-plus" aria-hidden="true">
-            <use xlink:href="#cart-plus"></use>
-          </svg>
-        button.goods-item__control.goods-item__control--to-wish(title='Добавить в желания')
-          <svg class="ic" aria-hidden="true">
-            <use xlink:href="#heart-o"></use>
-          </svg>
+        .goods-item__control
+          button.buy-button.js-buy-button(
+            type="button"
+            aria-label='Добавить в корзину',
+            disabled
+          )
+            <svg class="ic ic-cart-plus" aria-hidden="true">
+              <use xlink:href="#cart-plus"></use>
+            </svg>
+        .goods-item__control
+          button.wish-button.js-wish-button(
+            type="button"
+            aria-label='Добавить в избранное',
+          )
+            <svg class="ic" aria-hidden="true">
+              <use xlink:href="#heart-o"></use>
+            </svg>

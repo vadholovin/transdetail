@@ -119,3 +119,63 @@
     transition: 0.2s ease-out;
   }
 }
+
+.buy-button,
+.wish-button {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid;
+  text-align: center;
+  cursor: pointer;
+  transition: 
+    color .25s ease-out,
+    border-color .25s ease-out,
+    background-color .25s ease-out;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    background-color: #f4faf6;
+  }
+
+  &[disabled] {
+    color: $greyL;
+    border-color: $gallery;
+    background-color: $gallery;
+    cursor: auto;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.buy-button {
+  font-size: 20px;
+  color: #fff;
+  border-color: $orange;
+  background-color: $orange;
+}
+
+.buy-button--in-cart {
+  color: $orange;
+  border-color: $gallery;
+  background-color: #fff;
+}
+
+.wish-button {
+  font-size: 16px;
+  color: #000;
+  border-color: $gallery;
+  background-color: #fff;
+}
+
+.wish-button--in-wish {
+  color: $orange;
+}
