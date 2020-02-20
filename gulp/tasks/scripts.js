@@ -1,5 +1,4 @@
 const { src, dest } = require('gulp');
-const browserSync = require('browser-sync').create();
 const scriptsPATH = {
   input: "./dev/static/js/",
   ouput: "./build/static/js/"
@@ -7,10 +6,7 @@ const scriptsPATH = {
 
 function scripts() {
   return src([scriptsPATH.input + '*.js'])
-    .pipe(dest(scriptsPATH.ouput))
-    .pipe(browserSync.reload({
-      stream: true
-    }));
+    .pipe(dest(scriptsPATH.ouput));
 };
 
 exports.scripts = scripts;

@@ -32,8 +32,7 @@ function templates() {
         inline: [],
       }
     }))
-    .pipe(dest('./build/'))
-    .on('end', browserSync.reload);
+    .pipe(dest('./build/'));
 };
 
 exports.templates = templates;

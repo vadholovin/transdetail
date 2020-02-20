@@ -19,7 +19,7 @@ function styles() {
     .pipe(sourcemaps.write('.'))
     .pipe(rename('styles.min.css'))
     .pipe(dest(stylesPATH.ouput))
-    .on('end', browserSync.reload);
+    .pipe(browserSync.stream());
 };
 
 exports.styles = styles;
