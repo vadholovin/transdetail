@@ -290,5 +290,78 @@ $(function () {
 
 
 /**
- * 
+ * #CONTACT FORM
  */
+$(function () {
+  var form = $('#contactForm');
+
+  form.submit(function(e){
+    e.preventDefault();
+
+    var validator = form.validate({
+      rules: {
+        'user-name': {
+          required: true,
+        },
+        'user-email': {
+          required: true,
+          email: true,
+        },
+        'user-comment': {
+          required: true,
+        },
+      },
+      messages: {
+        'user-name': {
+          required: 'Заполните поле',
+        },
+        'user-email': {
+          required: 'Заполните поле',
+          email: 'Укажите правильный имейл',
+        },
+        'user-comment': {
+          required: 'Заполните поле',
+        },
+      },
+    });
+
+    if(form.valid()) {
+      $.ajax({
+        url : 'mail.php',
+        type: 'POST',
+        data: $(this).serialize(),
+      }).done(function(resp) {
+        answer(resp);
+      });
+    }
+  });
+
+
+  // Answers
+  var resp = {
+    success: {
+      title: 'Заявка отправлена!',
+      text: 'Ваша заявка отправлена, наши менеджеры свяжуться с вами в ближайшее время.'
+    },
+    fail: {
+      title: 'Произошла ошибка!',
+      text: 'Попробуйте позже'
+    }
+  };
+
+  function answer(resp) {
+    var respTitle = document.querySelector('.modal--answer .answer-title');
+    var respText = document.querySelector('.modal--answer .answer-text');
+
+    if(res == "done"){
+      respTitle.textContent = resp.success.title;
+      respText.textContent = resp.success.text;
+    }
+    if(res == "error"){
+      respTitle.textContent = resp.fail.title;
+      respText.textContent = resp.fail.text;
+    }
+
+    // MicroModal.show('modal-answer');
+  }
+});

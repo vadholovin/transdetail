@@ -1,6 +1,8 @@
-module.exports = function () {
-  $.gulp.task('fonts', () => {
-    return $.gulp.src('./dev/static/fonts/**/*.*')
-      .pipe($.gulp.dest('./build/static/fonts/'));
-  });
+const { src, dest } = require('gulp');
+
+function fonts() {
+  return src('./dev/static/fonts/**/*.*')
+    .pipe(dest('./build/static/fonts/'));
 };
+
+exports.fonts = fonts;

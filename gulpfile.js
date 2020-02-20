@@ -1,49 +1,9 @@
 "use strict";
 
-global.$ = {
-    path: {
-        task: require('./gulp/path/tasks.js')
-    },
-    gulp: require('gulp'),
-    browserSync: require('browser-sync').create(),
-    del: require('del')
-};
+const { build } = require('./gulp/tasks/build');
+const { watch } = require('./gulp/tasks/watch');
+const { dev } = require('./gulp/tasks/dev');
 
-$.path.task.forEach(function (taskPath) {
-    require(taskPath)();
-});
-
-$.gulp.task('dev', $.gulp.series(
-    'clean',
-    $.gulp.parallel(
-        'pug',
-        'fonts',
-        'libs',
-        'styles:dev',
-        'img:dev',
-        // 'libsJS:dev',
-        'js:dev',
-        'svg'
-    )
-));
-
-$.gulp.task('build', $.gulp.series(
-    'clean',
-    $.gulp.parallel(
-        'pug',
-        'fonts',
-        'libs',
-        'styles:build-min',
-        'img:build',
-        // 'libsJS:build',
-        'js:build-min',
-        'svg'
-    )
-));
-$.gulp.task('default', $.gulp.series(
-    'dev',
-    $.gulp.parallel(
-        'watch',
-        'serve'
-    )
-));
+exports.build = build;
+exports.watch = watch;
+exports.default = dev;
