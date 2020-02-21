@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="utf-8">
+  <title>Категории</title>
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap&amp;subset=cyrillic">
+  <link rel="stylesheet" type="text/css" href="static/libs/libs.min.css">
+  <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+  <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/libs/libs.min.js"></script>
+  <script src="static/js/main.js"></script>
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+</head>
+
+<body class="categories-page">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-top">
+        <div class="container-wider">
+          <div class="header-inner header-inner--top">
+            <button class="hamburger js-hamburger" type="button" aria-label="Открыть меню">
+              <div class="hamburger__inner">
+                <span class="hamburger__line"></span>
+              </div>
+            </button>
+            <a class="logo logo--header" href="/">
+              <img src="static/images/general/logo.png" width="74" alt="Перейти на главную страницу">
+              <div class="logo-text">TransDetail</div>
+            </a>
+            <nav class="header__nav">
+              <ul class="menu menu--primary">
+                <li class="menu__item">
+                  <a class="menu__link" href="">Акции</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">О магазине</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Доставка</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Оплата</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Гарантии</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Новости</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Журнал</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header-info">
+              <div class="header-info__module">
+                <ul class="header-info__contacts">
+                  <li>
+                    <a class="header-info__email" href="mailto:info@transdetail.ru">info@transdetail.ru</a>
+                  </li>
+                  <li>
+                    <a class="header-info__btn link-dotted" href="">Задать вопрос</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-info__module">
+                <div class="header-phones">
+                  <button class="header-phones__btn js-more-phones" type="button">
+                    <span class="link-dotted">(495) 250-00-25</span>
+                    <svg class="ic ic-chevron-down" aria-hidden="true">
+                      <use xlink:href="#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <div class="header-phones__pop" hidden>
+                    <ul class="header-phones__pop-list">
+                      <li class="header-phones__pop-item">
+                        <a href="tel:">(495) 250-00-25</a>
+                      </li>
+                      <li class="header-phones__pop-item">
+                        <a href="tel:">(495) 250-00-25</a>
+                      </li>
+                      <li class="header-phones__pop-item">
+                        <a href="tel:">(495) 250-00-25</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header-phones">
+                  <button class="header-phones__btn js-more-phones" type="button">
+                    <span class="link-dotted">(495) 250-00-25</span>
+                    <svg class="ic ic-chevron-down" aria-hidden="true">
+                      <use xlink:href="#chevron-down"></use>
+                    </svg>
+                  </button>
+                  <div class="header-phones__pop" hidden>
+                    <ul class="header-phones__pop-list">
+                      <li class="header-phones__pop-item">
+                        <a href="tel:">(495) 250-00-25</a>
+                      </li>
+                      <li class="header-phones__pop-item">
+                        <a href="tel:">(495) 250-00-25</a>
+                      </li>
+                      <li class="header-phones__pop-item">
+                        <a href="tel:">(495) 250-00-25</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <p class="header-phones__notes">Пн-Пт: 9-19 Сб: 10-15</p>
+              </div>
+            </div>
+            <div class="header__mobile-btns">
+              <button class="header__search-trigger js-search-trigger" aria-label="Перейти к поиску">
+                <svg class="ic ic-search" aria-hidden="true">
+                  <use xlink:href="#search"></use>
+                </svg>
+              </button>
+              <a class="header-cart" href="" aria-label="Перейти в корзину">
+                <svg class="ic ic-shopping-cart" aria-hidden="true">
+                  <use xlink:href="#shopping-cart"></use>
+                </svg>
+                <span class="header-cart__counter">2</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="container-wider">
+          <div class="header-inner header-inner--main">
+            <div class="header-main__left">
+              <button class="header-main__catalog-toggler catalog-toggler js-catalog-toggler" aria-label="Каталог товаров">
+                <div class="catalog-toggler__inner">
+                  <span class="catalog-toggler__text">Полный каталог</span>
+                  <svg class="catalog-toggler__icon" width="20" height="14" viewBox="0 0 20 14" aria-hidden="true">
+                    <path fill-rule="evenodd" fill="rgb(27, 36, 51)" d="M5.625,13.031 L5.625,11.312 L19.437,11.312 L19.437,13.031 L5.625,13.031 ZM5.625,6.125 L19.437,6.125 L19.437,7.875 L5.625,7.875 L5.625,6.125 ZM5.625,0.969 L19.437,0.969 L19.437,2.687 L5.625,2.687 L5.625,0.969 ZM0.438,11.312 L3.031,11.312 L3.031,13.031 L0.438,13.031 L0.438,11.312 ZM0.438,6.125 L3.031,6.125 L3.031,7.875 L0.438,7.875 L0.438,6.125 ZM0.438,0.969 L3.031,0.969 L3.031,2.687 L0.438,2.687 L0.438,0.969 Z" />
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <div class="header-main__right">
+              <form class="header-main__search search-form" role="search" action="/" method="get">
+                <label for="header-search">
+                  <span class="visuallyhidden">Поиск по деталям АКПП</span>
+                </label>
+                <div class="search-form__input-wrapper">
+                  <input class="search-form__input" id="header-search" autocomplete="off" name="s" type="text" placeholder="Поиск деталей для вашего АКПП..." area-label="Введите поисковой запрос деталей АКПП">
+                </div>
+                <button class="search-form__btn" type="submit">Найти</button>
+              </form>
+              <ul class="header-controls">
+                <li class="header-control header-control--wish" aria-label="Добавлено в">
+                  <a class="header-control__icon" href="">
+                    <svg class="ic ic-heart-o" aria-hidden="true">
+                      <use xlink:href="#heart-o"></use>
+                    </svg>
+                  </a>
+                  <span class="header-control__text">Избранное:</span>
+                  <a class="header-control__value" href="">3</a>
+                </li>
+                <li class="header-control header-control--cart" aria-label="В корзине">
+                  <a class="header-control__icon" href="">
+                    <svg class="ic ic-shopping-cart" aria-hidden="true">
+                      <use xlink:href="#shopping-cart"></use>
+                    </svg>
+                  </a>
+                  <span class="header-control__text">2 товара</span>
+                  <a class="header-control__value" href="">
+                    <span class="header-control__value-num">2</span>
+                    <span class="header-control__value-full">23560 ₽</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="header-auth">
+                <svg class="ic ic-user-o" aria-hidden="true">
+                  <use xlink:href="#user-o"></use>
+                </svg>
+                <a class="header-auth__link" href="">Войти</a>
+                <a class="header-auth__link" href="">Регистрация</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-nav">
+        <div class="mobile-nav__overlay js-mobile-nav-close"></div>
+        <div class="mobile-nav__content">
+          <div class="side-menu">
+            <div class="side-menu__head">
+              <div class="logo logo--mobile-nav">
+                <img src="static/images/general/logo.png" width="74">
+                <div class="logo-text">TransDetail</div>
+              </div>
+              <button class="side-menu__close js-mobile-nav-close" type="button" aria-label="Закрыть меню"></button>
+            </div>
+            <div class="side-menu__body">
+              <ul class="menu-main">
+                <li class="menu-main__item menu-main__item--first menu-main__item--bordered">
+                  <a class="menu-main__link" href="#">
+                    <span class="menu-main__icon">
+                      <svg viewBox="0 0 20 14" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.625,13.031 L5.625,11.312 L19.437,11.312 L19.437,13.031 L5.625,13.031 ZM5.625,6.125 L19.437,6.125 L19.437,7.875 L5.625,7.875 L5.625,6.125 ZM5.625,0.969 L19.437,0.969 L19.437,2.687 L5.625,2.687 L5.625,0.969 ZM0.438,11.312 L3.031,11.312 L3.031,13.031 L0.438,13.031 L0.438,11.312 ZM0.438,6.125 L3.031,6.125 L3.031,7.875 L0.438,7.875 L0.438,6.125 ZM0.438,0.969 L3.031,0.969 L3.031,2.687 L0.438,2.687 L0.438,0.969 Z" />
+                      </svg>
+                    </span>
+                    <span class="menu-main__link-title">Полный каталог</span>
+                  </a>
+                </li>
+                <li class="menu-main__item">
+                  <a class="menu-main__link" href="#">
+                    <span class="menu-main__icon">
+                      <svg class="ic ic-user-o" aria-hidden="true">
+                        <use xlink:href="#user-o"></use>
+                      </svg>
+                    </span>
+                    <span class="menu-main__link-title">Войти / Регистрация</span>
+                  </a>
+                </li>
+                <li class="menu-main__item">
+                  <a class="menu-main__link" href="#">
+                    <span class="menu-main__icon">
+                      <svg class="ic ic-shopping-cart" aria-hidden="true">
+                        <use xlink:href="#shopping-cart"></use>
+                      </svg>
+                    </span>
+                    <span class="menu-main__link-title">Корзина</span>
+                    <span class="menu-main__link-counter">2</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="menu-nav">
+                <a class="menu-nav__link" href="#">Акции</a>
+                <a class="menu-nav__link" href="#">О магазине</a>
+                <a class="menu-nav__link" href="#">Доставка</a>
+                <a class="menu-nav__link" href="#">Оплата</a>
+                <a class="menu-nav__link" href="#">Гарантии</a>
+                <a class="menu-nav__link" href="#">Новости</a>
+                <a class="menu-nav__link" href="#">Журнал</a>
+                <a class="menu-nav__link" href="#">Контакты</a>
+              </div>
+              <ul class="menu-info">
+                <li class="menu-info__item">
+                  <a class="menu-info__item-link" href="tel:">(495) 250-00-25</a>
+                  <a class="menu-info__item-link" href="tel:">(495) 250-00-25</a>
+                  <a class="menu-info__item-link" href="tel:">(495) 250-00-25</a>
+                </li>
+                <li class="menu-info__item">Пн-Пт: 9-19 Сб: 10-15</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-search">
+        <div class="mobile-search__overlay js-mobile-search-close"></div>
+        <form class="search-form search-form--mobile" role="search" action="/" method="get">
+          <div class="search-form__input-wrapper">
+            <input class="search-form__input" autocomplete="off" name="s" type="text" placeholder="Поиск деталей для вашего АКПП..." area-label="Введите поисковой запрос деталей АКПП">
+          </div>
+          <button class="mobile-search__close js-mobile-search-close" type="button" aria-label="Закрыть форму поиска">
+            <svg class="ic" aria-hidden="true">
+              <use xlink:href="#times"></use>
+            </svg>
+          </button>
+          <button class="mobile-search__submit" type="submit" aria-label="Искать">
+            <svg class="ic ic-search" aria-hidden="true">
+              <use xlink:href="#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+    <div class="main-content">
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__title" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__title" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--active">
+            <span class="breadcrumbs__title">Железо</span>
+          </li>
+        </ul>
+        <h2 class="page-title">Категории</h2>
+        <div class="categories">
+          <div class="category">
+            <a class="category__tile" href="#">
+              <div class="category__image">
+                <img src="static/images/content/categories/image-big-1.jpg" alt="">
+              </div>
+              <div class="category__title">
+                <span class="category__title-name">Фрикционные, стальные, опорные диски</span>
+              </div>
+            </a>
+          </div>
+          <div class="category">
+            <a class="category__tile" href="#">
+              <div class="category__image">
+                <img src="static/images/content/categories/image-big-2.jpg" alt="">
+              </div>
+              <div class="category__title">
+                <span class="category__title-name">Сальники, уплотнительные кольца, прокладки</span>
+              </div>
+            </a>
+          </div>
+          <div class="category">
+            <a class="category__tile" href="#">
+              <div class="category__image">
+                <img src="static/images/content/categories/image-big-3.jpg" alt="">
+              </div>
+              <div class="category__title">
+                <span class="category__title-name">Поршни</span>
+              </div>
+            </a>
+          </div>
+          <div class="category">
+            <a class="category__tile" href="#">
+              <div class="category__image">
+                <img src="static/images/content/categories/image-big-4.jpg" alt="">
+              </div>
+              <div class="category__title">
+                <span class="category__title-name">Фильтра, прокладки поддона</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container-wider">
+        <div class="footer__inner">
+          <div class="footer-top">
+            <div class="footer-top__inner">
+              <div class="footer-top__block footer-about">
+                <h2 class="footer-top__heading">О магазине</h2>
+                <p>Наша компания занимает лидирующее положение на
+                  российском рынке с 1998 года. Имея большой опыт в сфере
+                  продаж запасных частей для автоматических трансмиссий.
+                  Мы поставляем продукцию, напрямую от производителей,
+                  минуя посредников.
+                  <br>Это позволяет предложить вам товары по более выгодной цене.</p>
+                <p class="bolder">Наши правила – стабильность, оперативность, надежность.</p>
+                <ul class="footer-social">
+                  <li class="footer-social__item">
+                    <a href="" target="_blank" rel="noopener" aria-label="Ссылка на аккаунт Вконтакте">
+                      <svg class="ic" aria-hidden="true">
+                        <use xlink:href="#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer-social__item">
+                    <a href="" target="_blank" rel="noopener" aria-label="Ссылка на аккаунт Facebook">
+                      <svg class="ic" aria-hidden="true">
+                        <use xlink:href="#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer-social__item">
+                    <a href="" target="_blank" rel="noopener" aria-label="Ссылка на аккаунт Twitter">
+                      <svg class="ic" aria-hidden="true">
+                        <use xlink:href="#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer-social__item">
+                    <a href="" target="_blank" rel="noopener" aria-label="Ссылка на аккаунт Google+">
+                      <svg class="ic" aria-hidden="true">
+                        <use xlink:href="#google-plus"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="footer-payments">
+                  <img src="static/images/general/payments.png" alt="">
+                </div>
+              </div>
+              <div class="footer-top__block footer-contacts">
+                <h2 class="footer-top__heading">Контакты</h2>
+                <ul class="footer-contacts__list">
+                  <li class="footer-contacts__item">Оптовикам:<a class="footer-contacts__info" href="tel:(495) 744-722-5">(495) 744-722-4</a>
+                  </li>
+                  <li class="footer-contacts__item">Розница:<a class="footer-contacts__info" href="tel:(495) 744-722-5">(495) 744-722-5</a>
+                  </li>
+                  <li class="footer-contacts__item">Email:<a class="footer-contacts__info" href="mailto:info@transdetail.ru">info@transdetail.ru</a>
+                  </li>
+                  <li class="footer-contacts__item">График работы: <span class="footer-contacts__info"> Пн-Пт 9:00-19:00
+                      <br>Сб 10:00-15:00</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-top__block footer-info">
+                <h2 class="footer-top__heading">Информация</h2>
+                <ul class="footer-info__list">
+                  <li class="footer-info__item">
+                    <a href="">Пользовательское соглашение
+                      <br>об использовании персональных данных</a>
+                  </li>
+                  <li class="footer-info__item">
+                    <a href="">Политика конфиденциальности</a>
+                  </li>
+                  <li class="footer-info__item">
+                    <a href="">Соглашением на рассылку
+                      <br>рекламных материалов</a>
+                  </li>
+                  <li class="footer-info__item">
+                    <a href="">Политика возвратов</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-top__block footer-nav">
+                <h2 class="footer-top__heading">Рубрикатор</h2>
+                <ul class="footer-nav__list">
+                  <li class="footer-nav__item">
+                    <a href="">Акции</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="">О магазине</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="">Доставка</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="">Оплата</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="">Гарантии</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="">Новости</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="">Журнал</a>
+                  </li>
+                  <li class="footer-nav__item">
+                    <a href="">Контактная информация</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-bottom__inner">
+              <p class="footer-bottom__copyright">2017 © ООО «Трансдетеил» - запчасти для акпп</p>
+              <p class="footer-bottom__dev">Создание сайта: <a href="" rel="noopener" target="_blank">АйтиБрейн</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <svg width="0" height="0" class="hidden">
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="cart-plus">
+      <path d="M1280 704q0-26-19-45t-45-19h-128V512q0-26-19-45t-45-19-45 19-19 45v128H832q-26 0-45 19t-19 45 19 45 45 19h128v128q0 26 19 45t45 19 45-19 19-45V768h128q26 0 45-19t19-45zm-576 832q0 53-37.5 90.5T576 1664t-90.5-37.5T448 1536t37.5-90.5T576 1408t90.5 37.5T704 1536zm896 0q0 53-37.5 90.5T1472 1664t-90.5-37.5-37.5-90.5 37.5-90.5 90.5-37.5 90.5 37.5 37.5 90.5zm128-1088v512q0 24-16 42.5t-41 21.5L627 1146q1 7 4.5 21.5t6 26.5 2.5 22q0 16-24 64h920q26 0 45 19t19 45-19 45-45 19H512q-26 0-45-19t-19-45q0-14 11-39.5t29.5-59.5 20.5-38L332 384H128q-26 0-45-19t-19-45 19-45 45-19h256q16 0 28.5 6.5t20 15.5 13 24.5T453 329t5.5 29.5T463 384h1201q26 0 45 19t19 45z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="check">
+      <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="chevron-down">
+      <path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="chevron-left">
+      <path d="M1427 301L896 832l531 531q19 19 19 45t-19 45l-166 166q-19 19-45 19t-45-19L429 877q-19-19-19-45t19-45l742-742q19-19 45-19t45 19l166 166q19 19 19 45t-19 45z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="chevron-right">
+      <path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45L531 45q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="commenting-o">
+      <path d="M640 896q0 53-37.5 90.5T512 1024t-90.5-37.5T384 896t37.5-90.5T512 768t90.5 37.5T640 896zm384 0q0 53-37.5 90.5T896 1024t-90.5-37.5T768 896t37.5-90.5T896 768t90.5 37.5T1024 896zm384 0q0 53-37.5 90.5T1280 1024t-90.5-37.5T1152 896t37.5-90.5T1280 768t90.5 37.5T1408 896zM896 384q-204 0-381.5 69.5T232.5 641 128 896q0 112 71.5 213.5T401 1285l87 50-27 96q-24 91-70 172 152-63 275-171l43-38 57 6q69 8 130 8 204 0 381.5-69.5t282-187.5T1664 896t-104.5-255-282-187.5T896 384zm896 512q0 174-120 321.5t-326 233-450 85.5q-70 0-145-8-198 175-460 242-49 14-114 22h-5q-15 0-27-10.5t-16-27.5v-1q-3-4-.5-12t2-10 4.5-9.5l6-9 7-8.5 8-9q7-8 31-34.5t34.5-38 31-39.5 32.5-51 27-59 26-76q-157-89-247.5-220T0 896q0-130 71-248.5T262 443t286-136.5T896 256t348 50.5T1530 443t191 204.5 71 248.5z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="facebook">
+      <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759H734V905H479V609h255V391q0-186 104-288.5T1115 0q147 0 228 12z"></path>
+    </symbol>
+    <symbol viewBox="0 0 2304 1792" xmlns="http://www.w3.org/2000/svg" id="google-plus">
+      <path d="M1437 913q0 208-87 370.5t-248 254-369 91.5q-149 0-285-58t-234-156-156-234T0 896t58-285 156-234 234-156 285-58q286 0 491 192l-199 191Q908 433 733 433q-123 0-227.5 62T340 663.5 279 896t61 232.5T505.5 1297t227.5 62q83 0 152.5-23t114.5-57.5 78.5-78.5 49-83 21.5-74H733V791h692q12 63 12 122zm867-122v210h-209v209h-210v-209h-209V791h209V582h210v209h209z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="heart">
+      <path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="heart-o">
+      <path d="M1664 596q0-81-21.5-143t-55-98.5T1506 295t-94-31-98-8-112 25.5-110.5 64-86.5 72-60 61.5q-18 22-49 22t-49-22q-24-28-60-61.5t-86.5-72-110.5-64T478 256t-98 8-94 31-81.5 59.5-55 98.5T128 596q0 168 187 355l581 560 580-559q188-188 188-356zm128 0q0 221-229 450l-623 600q-18 18-44 18t-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="phone">
+      <path d="M1600 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-53-3.5t-57.5-12.5-47-14.5-55.5-20.5-49-18q-98-35-175-83-127-79-264-216T344 904q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47-12.5-57.5-3.5-53q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="repeat">
+      <path d="M1664 256v448q0 26-19 45t-45 19h-448q-42 0-59-40-17-39 14-69l138-138q-148-137-349-137-104 0-198.5 40.5T534 534 424.5 697.5 384 896t40.5 198.5T534 1258t163.5 109.5T896 1408q119 0 225-52t179-147q7-10 23-12 15 0 25 9l137 138q9 8 9.5 20.5t-7.5 22.5q-109 132-264 204.5T896 1664q-156 0-298-61t-245-164-164-245-61-298 61-298 164-245 245-164 298-61q147 0 284.5 55.5T1425 340l130-129q29-31 70-14 39 17 39 59z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="ruble">
+      <path d="M1299 565q0-100-65-162t-171-62H743v448h320q106 0 171-62t65-162zm237 0q0 193-126.5 315T1083 1002H743v118h505q14 0 23 9t9 23v128q0 14-9 23t-23 9H743v192q0 14-9.5 23t-22.5 9H544q-14 0-23-9t-9-23v-192H288q-14 0-23-9t-9-23v-128q0-14 9-23t23-9h224v-118H288q-14 0-23-9t-9-23V821q0-13 9-22.5t23-9.5h224V160q0-14 9-23t23-9h539q200 0 326.5 122T1536 565z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="search">
+      <path d="M1216 832q0-185-131.5-316.5T768 384 451.5 515.5 320 832t131.5 316.5T768 1280t316.5-131.5T1216 832zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225T64 832t55.5-273.5 150-225 225-150T768 128t273.5 55.5 225 150 150 225T1472 832q0 220-124 399l343 343q37 37 37 90z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="shopping-bag">
+      <path d="M1757 1408l35 313q3 28-16 50-19 21-48 21H64q-29 0-48-21-19-22-16-50l35-313h1722zm-93-839l86 775H42l86-775q3-24 21-40.5t43-16.5h256v128q0 53 37.5 90.5T576 768t90.5-37.5T704 640V512h384v128q0 53 37.5 90.5T1216 768t90.5-37.5T1344 640V512h256q25 0 43 16.5t21 40.5zm-384-185v256q0 26-19 45t-45 19-45-19-19-45V384q0-106-75-181t-181-75-181 75-75 181v256q0 26-19 45t-45 19-45-19-19-45V384q0-159 112.5-271.5T896 0t271.5 112.5T1280 384z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="shopping-cart">
+      <path d="M704 1536q0 52-38 90t-90 38-90-38-38-90 38-90 90-38 90 38 38 90zm896 0q0 52-38 90t-90 38-90-38-38-90 38-90 90-38 90 38 38 90zm128-1088v512q0 24-16.5 42.5T1671 1024L627 1146q13 60 13 70 0 16-24 64h920q26 0 45 19t19 45-19 45-45 19H512q-26 0-45-19t-19-45q0-11 8-31.5t16-36 21.5-40T509 1207L332 384H128q-26 0-45-19t-19-45 19-45 45-19h256q16 0 28.5 6.5T432 278t13 24.5 8 26 5.5 29.5 4.5 26h1201q26 0 45 19t19 45z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="star">
+      <path d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5T1385 1619q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="star-half-o">
+      <path d="M1250 957l257-250-356-52-66-10-30-60-159-322v963l59 31 318 168-60-355-12-66zm452-262l-363 354 86 500q5 33-6 51.5t-34 18.5q-17 0-40-12l-449-236-449 236q-23 12-40 12-23 0-34-18.5t-6-51.5l86-500L89 695q-32-32-23-59.5t54-34.5l502-73L847 73q20-41 49-41 28 0 49 41l225 455 502 73q45 7 54 34.5t-24 59.5z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="star-o">
+      <path d="M1201 1004l306-297-422-62-189-382-189 382-422 62 306 297-73 421 378-199 377 199zm527-357q0 22-26 48l-363 354 86 500q1 7 1 20 0 50-41 50-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5T365 1569q0-6 2-20l86-500L89 695q-25-27-25-48 0-37 56-46l502-73L847 73q19-41 49-41t49 41l225 455 502 73q56 9 56 46z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="times">
+      <path d="M1490 1322q0 40-28 68l-136 136q-28 28-68 28t-68-28l-294-294-294 294q-28 28-68 28t-68-28l-136-136q-28-28-28-68t28-68l294-294-294-294q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 294 294-294q28-28 68-28t68 28l136 136q28 28 28 68t-28 68l-294 294 294 294q28 28 28 68z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="twitter">
+      <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5T1369.5 1125 1185 1335.5t-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5T285 1033q33 5 61 5 43 0 85-11-112-23-185.5-111.5T172 710v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5T884 653q-8-38-8-74 0-134 94.5-228.5T1199 256q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"></path>
+    </symbol>
+    <symbol viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" id="user-o">
+      <path d="M1329 784q47 14 89.5 38t89 73 79.5 115.5 55 172 22 236.5q0 154-100 263.5T1323 1792H469q-141 0-241-109.5T128 1419q0-131 22-236.5t55-172T284.5 895t89-73 89.5-38q-79-125-79-272 0-104 40.5-198.5T534 150 697.5 40.5 896 0t198.5 40.5T1258 150t109.5 163.5T1408 512q0 147-79 272zM896 128q-159 0-271.5 112.5T512 512t112.5 271.5T896 896t271.5-112.5T1280 512t-112.5-271.5T896 128zm427 1536q88 0 150.5-71.5T1536 1419q0-239-78.5-377T1232 897q-145 127-336 127T560 897q-147 7-225.5 145T256 1419q0 102 62.5 173.5T469 1664h854z"></path>
+    </symbol>
+    <symbol viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg" id="vk">
+      <path d="M1981 520q23 64-150 294-24 32-65 85-40 51-55 72t-30.5 49.5-12 42 13 34.5 32.5 43 57 53q4 2 5 4 141 131 191 221 3 5 6.5 12.5t7 26.5-.5 34-25 27.5-59 12.5l-256 4q-24 5-56-5t-52-22l-20-12q-30-21-70-64t-68.5-77.5-61-58-56.5-15.5q-3 1-8 3.5t-17 14.5-21.5 29.5-17 52-6.5 77.5q0 15-3.5 27.5t-7.5 18.5l-4 5q-18 19-53 22h-115q-71 4-146-16.5t-131.5-53-103-66T552 1338l-25-24q-10-10-27.5-30t-71.5-91-106-151-122.5-211T69 559q-6-16-6-27t3-16l4-6q15-19 57-19l274-2q12 2 23 6.5t16 8.5l5 3q16 11 24 32 20 50 46 103.5t41 81.5l16 29q29 60 56 104t48.5 68.5T718 964t34 14 27-5q2-1 5-5t12-22 13.5-47 9.5-81 0-125q-2-40-9-73t-14-46l-6-12q-25-34-85-43-13-2 5-24 16-19 38-30 53-26 239-24 82 1 135 13 20 5 33.5 13.5t20.5 24 10.5 32 3.5 45.5-1 55-2.5 70.5-1.5 82.5q0 11-1 42t-.5 48 3.5 40.5 11.5 39T1221 971q8 2 17 4t26-11 38-34.5 52-67 68-107.5q60-104 107-225 4-10 10-17.5t11-10.5l4-3 5-2.5 13-3 20-.5 288-2q39-5 64 2.5t31 16.5z"></path>
+    </symbol>
+  </svg>
+</body>
+
+</html>

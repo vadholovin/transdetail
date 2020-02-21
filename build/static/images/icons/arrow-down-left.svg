@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10">
+  <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M4.000,5.999 L4.000,3.999 L22.000,3.999 L22.000,5.999 L4.000,5.999 Z" />
+  <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M20.000,-0.001 L22.000,-0.001 L22.000,5.999 L20.000,5.999 L20.000,-0.001 Z" />
+  <path fill-rule="evenodd" fill="rgb(31, 31, 47)" d="M0.007,5.010 L6.007,10.011 L6.007,0.008 L0.007,5.010 Z" />
+</svg>
