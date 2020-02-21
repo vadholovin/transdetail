@@ -18,10 +18,13 @@ $border-color: hsl(0, 0%, 60%) !default;
     display: block;
     padding: 0.5rem;
     min-width: 2.5rem;
-    border: 1px solid $gallery;
+    border: 1px solid $mercury;
     text-decoration: none;
     text-align: center;
-    transition: background-color .25s ease-out;
+    background-color: $wild-sand;
+    transition:
+      background-color .25s ease-out,
+      color .25s ease-out;
 
     &+& {
       border-left: 0;
@@ -36,7 +39,8 @@ $border-color: hsl(0, 0%, 60%) !default;
 
       &:hover,
       &:focus {
-        background-color: $gallery;
+        color: #fff;
+        background-color: $bg-highlight;
       }
     }
 
