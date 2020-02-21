@@ -258,6 +258,13 @@
   margin-bottom: 3px;
 }
 
+.goods-tile__price-value {
+  font-weight: bold;
+  font-size: 15px;
+  color: #1d3045;
+  white-space: nowrap;
+}
+
 .goods-tile__price-link {
   position: relative;
   display: inline-block;
