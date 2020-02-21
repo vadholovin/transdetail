@@ -99,17 +99,15 @@ block content
             include modules/product-quantity/product-quantity
 
           .product-actions.product-actions--product
-            button.product-actions__btn.product-actions__btn--to-cart(aria-label='Добавить в корзину')
-              | Добавить в корзину
-              span.product-actions__btn-icon
-                <svg class="ic ic-cart-plus" aria-hidden="true">
-                  <use xlink:href="#cart-plus"></use>
-                </svg>
-            button.product-actions__btn.product-actions__btn--to-wish(aria-label='Добавить в желания')
-              span.product-actions__btn-icon
-                <svg class="ic" aria-hidden="true">
-                  <use xlink:href="#heart-o"></use>
-                </svg>
+            button.buy-button.buy-button-with-text.js-buy-button(aria-label='Добавить в корзину')
+              span.buy-button__label Добавить в корзину
+              <svg class="ic ic-cart-plus" aria-hidden="true">
+                <use xlink:href="#cart-plus"></use>
+              </svg>
+            button.wish-button.js-wish-button(aria-label='Добавить в желания')
+              <svg class="ic" aria-hidden="true">
+                <use xlink:href="#heart-o"></use>
+              </svg>
 
           .product-about
             p.product-about__title
@@ -131,6 +129,7 @@ block content
       | Аналоги
     ul.goods-list
       include modules/goods-item/goods-item
+      include modules/goods-item/goods-item-active
       include modules/goods-item/goods-item-unavailable
       
   section.goods-list__wrapper.mb-4-5

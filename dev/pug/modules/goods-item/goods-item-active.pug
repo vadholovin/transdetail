@@ -62,7 +62,7 @@ li.goods-item.goods-item--full
             span.goods-item__feature-value 2.93мм.
       .goods-item__controls
         .goods-item__control
-          button.buy-button.js-buy-button(
+          button.buy-button.buy-button--in-cart.js-buy-button(
             type="button"
             aria-label='Добавить в корзину',
           )
@@ -70,10 +70,10 @@ li.goods-item.goods-item--full
               <use xlink:href="#cart-plus"></use>
             </svg>
         .goods-item__control
-          button.wish-button.js-wish-button(
+          button.wish-button.wish-button--in-wish.js-wish-button(
             type="button"
             aria-label='Добавить в избранное',
           )
             <svg class="ic" aria-hidden="true">
-              <use xlink:href="#heart-o"></use>
+              <use xlink:href="#heart"></use>
             </svg>

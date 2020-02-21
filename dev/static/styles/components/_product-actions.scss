@@ -4,7 +4,6 @@
 
 .product-actions {
   display: flex;
-  // flex-wrap: wrap;
 }
 
 .product-actions>* {
@@ -19,60 +18,14 @@
   flex: none;
 }
 
-.product-actions__btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 41px;
-  height: 41px;
-  border: 0;
-  cursor: pointer;
-
-  &:focus {
-    outline: 0;
-  }
-}
-
-.product-actions__btn--to-cart {
-  color: #fff;
-  background-color: $orange;
-}
-
-.product-actions__btn--to-cart .product-actions__btn-icon {
-  font-size: 20px;
-}
-
-.product-actions__btn--to-wish {
-  border: 1px solid $gallery;
-  background-color: #fff;
-
-  &:focus {
-    border-color: $alto;
-  }
-}
-
-.product-actions__btn--to-wish .product-actions__btn-icon {
-  font-size: 16px;
-}
-
 .product-actions--product {
   margin-bottom: 36px;
 }
 
-.product-actions--product .product-actions__btn--to-cart {
-  justify-content: space-between;
-  white-space: nowrap;
+.product-actions--product .buy-button {
   width: 220px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-weight: bold;
-  font-size: 14px;
-}
 
-@media (min-width: 992px) {
-  .product-actions--product .product-actions__btn--to-cart {
+  @media (min-width: 992px) {
     width: 245px;
-    padding-left: 24px;
-    padding-right: 24px;
   }
 }
