@@ -1,0 +1,48 @@
+/* ==========================================================================
+   #PAGINATION
+   ========================================================================== */
+
+$border-color: hsl(0, 0%, 60%) !default;
+
+.pagination {
+
+  $block-name: &; // #{$block-name}__element
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  &__item {
+    display: block;
+    padding: 0.5rem;
+    min-width: 2.5rem;
+    border: 1px solid $gallery;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color .25s ease-out;
+
+    &+& {
+      border-left: 0;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    @at-root a#{&} {
+
+      &:hover,
+      &:focus {
+        background-color: $gallery;
+      }
+    }
+
+    &--active {
+      color: #fff;
+      background-color: $bg-highlight;
+    }
+  }
+}
