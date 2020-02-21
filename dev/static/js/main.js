@@ -398,3 +398,29 @@ $(function () {
     // MicroModal.show('modal-answer');
   }
 });
+
+
+$(function () {
+  $(document).on('click', '.js-quantity-minus, .js-quantity-plus', function (e) {
+    e.preventDefault();
+
+    var input = $(this).parent().find('.js-quantity-input');
+    var val = +input.val();
+    var minus = $(this).attr('class').includes('minus') || false;
+
+    if (!val.length) {
+      input.val(1);
+    }
+
+    if (minus) {
+      input.val(val > 0 ? (val -= 1) : 0);
+    } else {
+      input.val(val += 1);
+    }
+  });
+
+  $(document).on('keyup change', '.js-quantity-input', function () {
+    this.value = this.value.replace(/[^\d]/, '');
+    if ($(this).val() < 0) $(this).val(0);
+  });
+});
