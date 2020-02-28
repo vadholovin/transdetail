@@ -1,0 +1,19 @@
+mixin product-quantity(mod)
+  if (mod)
+    .product-quantity(class="product-quantity--" + mod)
+      button.product-quantity__btn.product-quantity__btn--minus.js-quantity-minus
+      input.product-quantity__input.js-quantity-input(
+        type='text',
+        value='1',
+        placeholder='1шт.'
+      )
+      button.product-quantity__btn.product-quantity__btn--plus.js-quantity-plus
+  else
+    .product-quantity
+      button.product-quantity__btn.product-quantity__btn--minus.js-quantity-minus
+      input.product-quantity__input.js-quantity-input(
+        type='text',
+        value='1',
+        placeholder='1шт.'
+      )
+      button.product-quantity__btn.product-quantity__btn--plus.js-quantity-plus

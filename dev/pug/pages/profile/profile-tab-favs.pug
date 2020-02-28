@@ -4,5 +4,131 @@
 
 
 .profile-tab__body
+  .wishlist-message
+    h3.wishlist-message__heading Ваш список желаний пока пуст
+    p.wishlist-message__note Добавив в него товары, вы можете вернуться к списку покупок в любое удобное время.
 
+  .wishlist__grid
+    .wishlist__cell
+      .goods-tile.wishlist-goods-tile
+        .goods-tile__inner
+          a.goods-tile__picture(href="")
+            img(
+              src="static/images/content/selection/selection-2.jpg",
+              alt="Задняя крышка F4A51"
+            )
+          a.goods-tile__title(href="") Ведомая шестерня
+          .goods-tile__foot
+            .goods-tile__foot-top
+              .goods-tile__id F4A51
+              .goods-tile__price
+                span.goods-tile__price-label ЦЕНА
+                span.goods-tile__price-value 12000 ₽
+            .goods-tile__foot-actions
+              button.buy-button.buy-button-with-text.js-buy-button(aria-label='Добавить в корзину')
+                span.buy-button__label В корзину
+                svg.ic.ic-cart-plus(aria-hidden='true')
+                  use(xlink:href='#cart-plus')
+        button.wishlist-remove-btn(
+          type="button",
+          name="wishlist-goods-delete",
+          title="Удалить товар из списка желаний"
+        )
+          svg.ic.ic-times(aria-hidden='true')
+            use(xlink:href='#times')
+    .wishlist__cell
+      .goods-tile.wishlist-goods-tile
+        .goods-tile__inner
+          a.goods-tile__picture(href="")
+            img(
+              src="static/images/content/selection/selection-2.jpg",
+              alt="Задняя крышка F4A51"
+            )
+          a.goods-tile__title(href="") Ведомая шестерня
+          .goods-tile__foot
+            .goods-tile__foot-top
+              .goods-tile__id F4A51
+              .goods-tile__price
+                span.goods-tile__price-label ЦЕНА
+                span.goods-tile__price-value 12000 ₽
+            .goods-tile__foot-actions
+              button.buy-button.buy-button-with-text.js-buy-button(aria-label='Добавить в корзину')
+                span.buy-button__label В корзину
+                svg.ic.ic-cart-plus(aria-hidden='true')
+                  use(xlink:href='#cart-plus')
+        .goods-tile__labels.promo-labels
+          a.promo-label.promo-label--cat(href="") Фильтра
+          .promo-label.promo-label--top Хит
+        button.wishlist-remove-btn(
+          type="button",
+          name="wishlist-goods-delete",
+          title="Удалить товар из списка желаний"
+        )
+          svg.ic.ic-times(aria-hidden='true')
+            use(xlink:href='#times')
+    .wishlist__cell
+      .goods-tile.wishlist-goods-tile
+        .goods-tile__inner
+          a.goods-tile__picture(href="")
+            img(
+              src="static/images/content/selection/selection-2.jpg",
+              alt="Задняя крышка F4A51"
+            )
+          a.goods-tile__title(href="") Ведомая шестерня
+          .goods-tile__foot
+            .goods-tile__foot-top
+              .goods-tile__id F4A51
+              .goods-tile__price
+                span.goods-tile__price-label ЦЕНА
+                span.goods-tile__price-value 12000 ₽
+            .goods-tile__foot-actions
+              button.buy-button.buy-button-with-text.js-buy-button(aria-label='Добавить в корзину')
+                span.buy-button__label В корзину
+                svg.ic.ic-cart-plus(aria-hidden='true')
+                  use(xlink:href='#cart-plus')
+        button.wishlist-remove-btn(
+          type="button",
+          name="wishlist-goods-delete",
+          title="Удалить товар из списка желаний"
+        )
+          svg.ic.ic-times(aria-hidden='true')
+            use(xlink:href='#times')
+    .wishlist__cell
+      .goods-tile.wishlist-goods-tile
+        .goods-tile__inner
+          a.goods-tile__picture(href="")
+            img(
+              src="static/images/content/selection/selection-2.jpg",
+              alt="Задняя крышка F4A51"
+            )
+          a.goods-tile__title(href="") Ведомая шестерня
+          .goods-tile__foot
+            .goods-tile__foot-top
+              .goods-tile__id F4A51
+              .goods-tile__price
+                span.goods-tile__price-label ЦЕНА
+                span.goods-tile__price-value 12000 ₽
+            .goods-tile__foot-actions
+              button.buy-button.buy-button-with-text.js-buy-button(aria-label='Добавить в корзину')
+                span.buy-button__label В корзину
+                svg.ic.ic-cart-plus(aria-hidden='true')
+                  use(xlink:href='#cart-plus')
+        .goods-tile__labels.promo-labels
+          a.promo-label.promo-label--cat(href="") Фильтра
+          .promo-label.promo-label--top Хит
+        button.wishlist-remove-btn(
+          type="button",
+          name="wishlist-goods-delete",
+          title="Удалить товар из списка желаний"
+        )
+          svg.ic.ic-times(aria-hidden='true')
+            use(xlink:href='#times')
 
+  +pagination('catalog')
+      +pagination-item('1', '/1')
+      +pagination-item('...')
+      +pagination-item('4', '/4')
+      +pagination-item('5', '/5', true)
+      +pagination-item('6', '/6')
+      +pagination-item('...')
+      +pagination-item('999', '/999')

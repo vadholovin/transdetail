@@ -465,7 +465,8 @@ a.highlight:hover {
   font-size: 20px;
   color: #fff;
   border-color: #ea6020;
-  background-color: #ea6020; }
+  background-color: #ea6020;
+  white-space: nowrap; }
 
 .buy-button--in-cart {
   color: #ea6020;
@@ -473,9 +474,13 @@ a.highlight:hover {
   background-color: #fff; }
 
 .buy-button-with-text {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: left; }
+  width: auto;
+  padding-left: 16px;
+  padding-right: 16px; }
+  @media (min-width: 480px) {
+    .buy-button-with-text {
+      padding-left: 20px;
+      padding-right: 20px; } }
   @media (min-width: 992px) {
     .buy-button-with-text {
       padding-left: 24px;
@@ -945,7 +950,6 @@ a.highlight:hover {
   background-size: 8px 7px; }
 
 .form__message {
-  display: none;
   position: relative;
   margin-bottom: 2rem;
   padding: 1.5rem 1.5rem 1.5rem 2rem;
@@ -953,8 +957,6 @@ a.highlight:hover {
   border-left: 5px solid #e01f19;
   font-size: 1rem;
   background-color: #fce8e8; }
-  .form__message.is-active {
-    display: block; }
 
 .select-css {
   display: block;
@@ -1337,8 +1339,8 @@ a.highlight:hover {
 
 .product-quantity__btn {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border: 1px solid #ededed;
   font-size: 16px;
   font-weight: bold;
@@ -1352,6 +1354,10 @@ a.highlight:hover {
     outline: 0;
     color: #fff;
     background-color: #378ff2; }
+  @media (min-width: 992px) {
+    .product-quantity__btn {
+      width: 40px;
+      height: 40px; } }
 
 .product-quantity__btn--minus::after {
   content: '-'; }
@@ -1361,8 +1367,8 @@ a.highlight:hover {
 
 .product-quantity__input {
   display: block;
-  height: 40px;
-  width: 52px;
+  height: 36px;
+  width: 45px;
   border: 0;
   border-top: 1px solid #ededed;
   border-bottom: 1px solid #ededed;
@@ -1371,6 +1377,10 @@ a.highlight:hover {
   background-color: #fff; }
   .product-quantity__input:focus {
     outline: 0; }
+  @media (min-width: 992px) {
+    .product-quantity__input {
+      width: 52px;
+      height: 40px; } }
 
 /* ==========================================================================
    #PRODUCT-ACTIONS
@@ -4853,6 +4863,89 @@ a.promo-label {
     margin-left: 9px;
     width: 14px;
     height: 14px; }
+
+/* ==========================================================================
+   #WISHLIST
+   ========================================================================== */
+.wishlist__grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -4px;
+  margin-right: -4px;
+  margin-top: -8px; }
+  @media (min-width: 480px) {
+    .wishlist__grid {
+      margin-left: -8px;
+      margin-right: -8px;
+      margin-top: -16px; } }
+
+.wishlist__cell {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 8px;
+  padding-left: 4px;
+  padding-right: 4px; }
+  @media (min-width: 480px) {
+    .wishlist__cell {
+      margin-top: 16px;
+      padding-left: 8px;
+      padding-right: 8px; } }
+  @media (min-width: 992px) {
+    .wishlist__cell {
+      width: 33.333333%; } }
+
+.wishlist-goods-tile {
+  padding-top: 36px;
+  padding-left: 16px;
+  padding-right: 16px; }
+
+.wishlist-goods-tile .goods-tile__labels {
+  top: 30px; }
+  @media (min-width: 480px) {
+    .wishlist-goods-tile .goods-tile__labels {
+      top: 36px; } }
+
+.wishlist-goods-tile .buy-button {
+  display: block;
+  width: 100%; }
+
+.goods-tile__foot-actions {
+  margin-top: 8px; }
+
+.wishlist-remove-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  font-size: 10px;
+  color: #898989;
+  background-color: #ededed;
+  transition: all .25s ease-out; }
+  .wishlist-remove-btn:hover {
+    color: #fff;
+    background-color: #696b70; }
+  @media (min-width: 480px) {
+    .wishlist-remove-btn {
+      top: 8px;
+      right: 8px; } }
+  .wishlist-remove-btn > svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.wishlist-message {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.wishlist-message__heading {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 18px; }
 
 /* ==========================================================================
    #FOOTER

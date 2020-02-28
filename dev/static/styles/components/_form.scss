@@ -104,7 +104,6 @@
 }
 
 .form__message {
-  display: none;
   position: relative;
   margin-bottom: 2rem;
   padding: 1.5rem 1.5rem 1.5rem 2rem;
@@ -112,10 +111,6 @@
   border-left: 5px solid $red-dark;
   font-size: 1rem;
   background-color: $red-light;
-
-  &.is-active {
-    display: block;
-  }
 }
 
 

@@ -12,30 +12,31 @@
       tbody
         tr
           td
-            b #1234567
+            a(href="") <b>#1234567</b>
           td 1000₽
           td 2 шт.
           td 1000₽
           td.is-paid Оплачено
         tr
           td
-            b #1234567
+            a(href="") <b>#1234567</b>
           td 1000₽
           td 2 шт.
           td 1000₽
           td.is-paid Оплачено
         tr
           td
-            b #1234567
+            a(href="") <b>#1234567</b>
           td 1000₽
           td 2 шт.
           td 1000₽
           td Ожидает оплаты
 
-.orders-bottom
-  p.orders-bottom__text
-    | В вашей корзине имеются неоплаченые заказы
-  button.button.button--primary Оплатить
-
-
-
++pagination('catalog')
+  +pagination-item('1', '/1')
+  +pagination-item('...')
+  +pagination-item('4', '/4')
+  +pagination-item('5', '/5', true)
+  +pagination-item('6', '/6')
+  +pagination-item('...')
+  +pagination-item('999', '/999')
