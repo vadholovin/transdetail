@@ -1,0 +1,39 @@
+extends template/main
+
+block variables
+  - var title = 'Результаты поиска'
+  - var pageClass = 'search-page'
+
+block content
+  ul.breadcrumbs
+    li.breadcrumbs__item
+      a.breadcrumbs__title(href='#') Главная
+    li.breadcrumbs__item.breadcrumbs__item--active
+      span.breadcrumbs__title Результаты поиска
+
+  section.goods-list__wrapper
+    h2.section-title
+      | Результаты поиска по запросу: «6t»
+
+    ul.sort-list.sort-list--search
+      li.sort-item
+        button.button.button--outline.sort-button(type="button") 6F50, 6F55, 6T70, 6T75
+      li.sort-item
+        button.button.button--outline.sort-button(type="button") 6F50, 6F55, 6T70, 6T75
+      li.sort-item
+        button.button.button--outline.sort-button.is-active(type="button") 6F50, 6F55, 6T70, 6T75
+      li.sort-item
+        button.button.button--outline.sort-button(type="button") 6F50, 6F55, 6T70, 6T75
+    ul.goods-list
+      include modules/goods-item/goods-item
+      include modules/goods-item/goods-item-active
+      include modules/goods-item/goods-item-unavailable
+
+    +pagination('catalog')
+      +pagination-item('1', '/1')
+      +pagination-item('...')
+      +pagination-item('4', '/4')
+      +pagination-item('5', '/5', true)
+      +pagination-item('6', '/6')
+      +pagination-item('...')
+      +pagination-item('999', '/999')

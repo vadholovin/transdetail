@@ -1874,6 +1874,54 @@ a.highlight:hover {
   display: block; }
 
 /* ==========================================================================
+   #SORT-LIST
+   ========================================================================== */
+.sort-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -12px;
+  margin-left: -4px;
+  margin-right: -4px; }
+  @media (min-width: 768px) {
+    .sort-list {
+      margin-left: -15px;
+      margin-right: -15px; } }
+
+.sort-item {
+  width: 50%;
+  margin-top: 12px;
+  padding-left: 4px;
+  padding-right: 4px; }
+  @media (min-width: 480px) {
+    .sort-item {
+      width: 33.333333%; } }
+  @media (min-width: 768px) {
+    .sort-item {
+      width: 25%;
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.sort-button {
+  display: block;
+  width: 100%;
+  border-color: #ea6020;
+  overflow: hidden; }
+  @media (max-width: 991.98px) {
+    .sort-button {
+      font-size: 12px; } }
+  .sort-button.is-active {
+    border-color: #00b7f4; }
+    .sort-button.is-active:hover {
+      color: #fff;
+      background-color: #00b7f4; }
+
+.sort-list--search {
+  margin-bottom: 70px; }
+  @media (min-width: 992px) {
+    .sort-list--search {
+      margin-bottom: 110px; } }
+
+/* ==========================================================================
    #HEADER
    ========================================================================== */
 .header {
