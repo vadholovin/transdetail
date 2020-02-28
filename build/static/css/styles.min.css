@@ -296,6 +296,11 @@ body {
     text-decoration: none;
     border-color: transparent; }
 
+.link-colored {
+  color: #00b7f4; }
+  .link-colored:hover, .link-colored:focus {
+    color: #378ff2; }
+
 .d-flex {
   display: flex;
   flex-wrap: wrap; }
@@ -360,7 +365,8 @@ a.highlight:hover {
   .button:focus {
     outline: 0; }
   .button--block {
-    display: block; }
+    display: block;
+    width: 100%; }
   .button--primary {
     color: #ffffff;
     background-color: #ea6020;
@@ -379,9 +385,10 @@ a.highlight:hover {
     color: inherit;
     border: 1px solid #2c2f38;
     background-color: rgba(0, 0, 0, 0);
-    transition: color 0.25s ease-out, background-color 0.25s ease-out; }
+    transition: color 0.25s ease-out, background-color 0.25s ease-out, border-color 0.25s ease-out; }
     .button--outline:hover {
       color: #fff;
+      border-color: #ea6020;
       background-color: #ea6020; }
   .button--outline.button--outline-secondary {
     color: inherit;
@@ -854,6 +861,12 @@ a.highlight:hover {
 .form-input__wrapper {
   position: relative; }
 
+.form__row + .form__row {
+  margin-top: 20px; }
+  @media (min-width: 992px) {
+    .form__row + .form__row {
+      margin-top: 40px; } }
+
 .form-label {
   position: absolute;
   top: 16px;
@@ -930,6 +943,18 @@ a.highlight:hover {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 8px 7px; }
+
+.form__message {
+  display: none;
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 1.5rem 1.5rem 1.5rem 2rem;
+  border-radius: 5px;
+  border-left: 5px solid #e01f19;
+  font-size: 1rem;
+  background-color: #fce8e8; }
+  .form__message.is-active {
+    display: block; }
 
 .select-css {
   display: block;
@@ -4663,6 +4688,26 @@ a.promo-label {
   @media (min-width: 992px) {
     .signup-tab__cell {
       margin-bottom: 40px; } }
+
+/*------------------------------------*\
+  #SIGNIN-FORM
+\*------------------------------------*/
+.signin-form {
+  width: 100%;
+  max-width: 408px; }
+
+.signin-form__restore {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px; }
+  .signin-form__restore .form-checkbox__wrapper {
+    margin-right: auto; }
+
+.signin-form__form-buttons {
+  text-align: center; }
+  .signin-form__form-buttons .link-colored {
+    display: inline-block;
+    margin-top: 16px; }
 
 /*------------------------------------*\
   #ORDERS

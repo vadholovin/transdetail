@@ -1,0 +1,53 @@
+extends template/main
+
+block variables
+  - var title = 'Авторизация'
+  - var pageClass = 'signin-page'
+
+block content
+  ul.breadcrumbs
+    li.breadcrumbs__item
+      a.breadcrumbs__title(href='#') Главная
+    li.breadcrumbs__item.breadcrumbs__item--active
+      span.breadcrumbs__title Авторизация
+
+  h1.page-title Авторизация
+  form.signin-form#signin-form
+    .form__message.is-active
+      | Неверный логин или пароль
+    .form__row
+      .form-input__wrapper
+        label.form-label.form-label--require(
+          for="user-login"
+        ) Номер телефона или Email
+        input.form-input(
+          type="text",
+          id="user-login"
+        )
+    .form__row
+      .form-input__wrapper
+        label.form-label.form-label--require(
+          for="user-password"
+        ) Пароль
+        input.form-input(
+          type="text",
+          id="user-password"
+        )
+    .form__row.signin-form__restore
+      .form-checkbox__wrapper
+        input.form-checkbox.visuallyhidden(
+          type="checkbox",
+          id="user-remember",
+        )
+        label.form-checkbox__label(
+          for="user-remember"
+        )
+          .form-checkbox__mask
+          .form-checkbox__label-content
+            | Запомнить меня
+      a.link-colored(href="http://1233334.transdetail.ru/personal/?forgot_password=yes") Забыли пароль?
+    .form__row.signin-form__form-buttons
+      button.button.button--primary.button--block(
+        type="submit"
+      ) Войти
+      a.link-colored(href="http://1233334.transdetail.ru/personal/?register=yes") Зарегистрироваться

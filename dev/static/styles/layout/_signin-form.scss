@@ -1,0 +1,29 @@
+/*------------------------------------*\
+  #SIGNIN-FORM
+\*------------------------------------*/
+
+.signin-form {
+  width: 100%;
+  max-width: 408px;
+}
+
+.signin-form__restore {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+  .form-checkbox__wrapper {
+    margin-right: auto;
+  }
+}
+
+.signin-form__form-buttons {
+  text-align: center;
+
+  .link-colored {
+    display: inline-block;
+    margin-top: 16px;
+  }
+}
+
+

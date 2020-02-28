@@ -24,6 +24,7 @@
 
   &--block {
     display: block;
+    width: 100%;
   }
 
 
@@ -58,10 +59,11 @@
     color: inherit;
     border: 1px solid #2c2f38;
     background-color: rgba(0, 0, 0, 0);
-    transition: color 0.25s ease-out, background-color 0.25s ease-out;
+    transition: color 0.25s ease-out, background-color 0.25s ease-out, border-color 0.25s ease-out;
 
     &:hover {
       color: #fff;
+      border-color: $orange;
       background-color: $orange;
     }
   }

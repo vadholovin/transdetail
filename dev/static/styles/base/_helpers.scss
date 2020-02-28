@@ -116,6 +116,15 @@
   }
 }
 
+.link-colored {
+  color: $cerulean;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+}
+
 .d-flex {
   display: flex;
   flex-wrap: wrap;
