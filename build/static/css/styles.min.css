@@ -3649,6 +3649,12 @@ a.promo-label {
   font-weight: 600;
   font-size: 0.875rem; }
 
+.goods-item__feature-value.opened {
+  font-weight: bold;
+  font-size: 15px;
+  color: #1d3045;
+  white-space: nowrap; }
+
 .goods-item__quantity {
   display: inline-block;
   font-size: 0;

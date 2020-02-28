@@ -98,6 +98,13 @@
   font-size: rem(14);
 }
 
+.goods-item__feature-value.opened {
+  font-weight: bold;
+  font-size: 15px;
+  color: #1d3045;
+  white-space: nowrap;
+}
+
 .goods-item__quantity {
   display: inline-block;
   font-size: 0;
