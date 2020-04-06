@@ -44,12 +44,18 @@
 .product-cell {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .product-cell__img-wrapper {
   position: relative;
   display: block;
   border: 1px solid $alto;
+  height: 180px;
+
+  @media (min-width: 768px) {
+    height: 220px;
+  }
 }
 
 .product-cell__slider {
@@ -100,10 +106,8 @@
 .product-cell__slide {
   position: relative;
   height: 180px;
-}
 
-@media (min-width: 768px) {
-  .product-cell__slide {
+  @media (min-width: 768px) {
     height: 220px;
   }
 }
@@ -114,7 +118,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   height: auto;
-  max-height: 180px;
+  max-height: 170px;
   max-width: 100%;
 }
 

@@ -5,44 +5,42 @@
 .schemes-grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -8px;
-  margin-right: -8px;
+  margin: -16px -8px 60px -8px;
 
   @media (min-width: 576px) {
     margin-left: -15px;
     margin-right: -15px;
+    margin-top: -30px;
   }
 }
 
 .schemes-cell {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  margin-bottom: 16px;
-  padding-left: 8px;
-  padding-right: 8px;
-  flex: 0 0 50%;
-  max-width: 50%;
+  margin-top: 16px;
+  padding-left: 4px;
+  padding-right: 4px;
+  width: 50%;
 
   @media (min-width: 576px) {
-    flex: 0 0 33.3333334%;
-    max-width: 33.3333334%;
-    margin-bottom: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 33.3333334%;
+    margin-top: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   @media (min-width: 768px) {
-    flex: 0 0 25%;
-    max-width: 25%;
+    width: 25%;
   }
 
   @media (min-width: 992px) {
-    flex: 0 0 20%;
-    max-width: 20%;
+    width: 20%;
   }
 
-  @media (min-width: 1280px) {
-    flex: 0 0 16.66666667%;
-    max-width: 16.66666667%;
+  @media (min-width: 1024px) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -55,19 +53,25 @@
   &__image {
     position: relative;
     display: block;
-    height: 167px;
+    height: 100px;
     border: 1px solid #dadada;
     text-align: center;
     overflow: hidden;
+
+    @media (min-width: 768px) {
+      height: 116px;
+    }
+    @media (min-width: 1280px) {
+      height: 182px;
+    }
 
     img {
       position: absolute;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
       transform: translate(-50%,-50%);
-      max-height: 167px;
+      // max-height: 167px;
+      max-height: 90%;
       max-width: 100%;
       vertical-align: middle;
     }
@@ -110,5 +114,43 @@
     color: #fff;
     font-weight: 600;
     background-color: $blue;
+  }
+}
+
+
+.schemes-list__wrapper {
+  position: relative;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  @media (min-width: 1024px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.schemes-list-slider .slick-track {
+  display: flex;
+  flex-direction: row;
+}
+
+.schemes-list-slider.slick-initialized {
+  margin-top: 0;
+
+  .schemes-cell {
+    display: flex;
+    float: none;
+    width: 100%;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 0;
+    padding-right: 0;
+    height: inherit !important;
+    margin-top: 0;
+
+    @media (min-width: 576px) {
+      margin-left: 8px;
+      margin-right: 8px;
+    }
   }
 }

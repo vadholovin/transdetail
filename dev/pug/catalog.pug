@@ -13,128 +13,346 @@ block content
     li.breadcrumbs__item.breadcrumbs__item--active
       span.breadcrumbs__title Железо
 
-  .schemes-list.schemes-grid
-    .schemes-cell
-      a.schemes-item(href='#')
-        .schemes-item__image
-          img(src='static/images/content/schemes/scheme-1.jpg', alt='')
-        .schemes-item__title
-          span.schemes-item__title-name Hubs/Center Support
-    .schemes-cell
-      a.schemes-item(href='#')
-        .schemes-item__image
-          img(src='static/images/content/schemes/scheme-2.jpg', alt='')
-        .schemes-item__title
-          span.schemes-item__title-name Case
-    .schemes-cell
-      a.schemes-item(href='#')
-        .schemes-item__image
-          img(src='static/images/content/schemes/scheme-3.jpg', alt='')
-        .schemes-item__title
-          span.schemes-item__title-name Pump/Drums
-    .schemes-cell
-      a.schemes-item(href='#')
-        .schemes-item__image
-          img(src='static/images/content/schemes/scheme-4.jpg', alt='')
-        .schemes-item__title
-          span.schemes-item__title-name Gear Train
-    .schemes-cell
-      a.schemes-item(href='#')
-        .schemes-item__image
-          img(src='static/images/content/schemes/scheme-5.jpg', alt='')
-        .schemes-item__title
-          span.schemes-item__title-name Output Shaft
+  .schemes-list__wrapper
+    .schemes-list.schemes-grid.schemes-list-slider.js-schemes-list
+      .schemes-cell
+        a.schemes-item(href='#')
+          .schemes-item__image
+            img(src='static/images/content/schemes/scheme-1.jpg', alt='')
+          .schemes-item__title
+            span.schemes-item__title-name Hubs/Center Support
+      .schemes-cell
+        a.schemes-item(href='#')
+          .schemes-item__image
+            img(src='static/images/content/schemes/scheme-2.jpg', alt='')
+          .schemes-item__title
+            span.schemes-item__title-name Case
+      .schemes-cell
+        a.schemes-item(href='#')
+          .schemes-item__image
+            img(src='static/images/content/schemes/scheme-3.jpg', alt='')
+          .schemes-item__title
+            span.schemes-item__title-name Pump/Drums
+      .schemes-cell
+        a.schemes-item(href='#')
+          .schemes-item__image
+            img(src='static/images/content/schemes/scheme-4.jpg', alt='')
+          .schemes-item__title
+            span.schemes-item__title-name Gear Train
+      .schemes-cell
+        a.schemes-item(href='#')
+          .schemes-item__image
+            img(src='static/images/content/schemes/scheme-5.jpg', alt='')
+          .schemes-item__title
+            span.schemes-item__title-name Output Shaft
 
   .categories-list__wrapper
-    .categories-list
+    h2.section-title Категории товаров
+    .categories-list.js-categories-list
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-1.jpg', alt='')
-          span.categories-item__title
-            | Комплекты прокладок, фрикционных
-            br
-            | дисков, стальных дисков
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-1.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Комплекты прокладок, фрикционных дисков, стальных дисков
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-2.jpg', alt='')
-          span.categories-item__title Фрикционные, стальные, опорные диски
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-2.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Фрикционные, стальные, опорные диски
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-3.jpg', alt='')
-          span.categories-item__title Поршни
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-3.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Поршни
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-4.jpg', alt='')
-          span.categories-item__title Фильтра, прокладки поддона
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-4.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Фильтра, прокладки поддона
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-4.jpg', alt='')
-          span.categories-item__title
-            | Сальники, уплотнительные 
-            br
-            | кольца, прокладки
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-4.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Сальники, уплотнительные кольца, прокладки
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-5.jpg', alt='')
-          span.categories-item__title Втулки, шайбы, подшипники
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-5.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Втулки, шайбы, подшипники
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-6.jpg', alt='')
-          span.categories-item__title Гидравлические блоки управления
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-6.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Гидравлические блоки управления
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-7.jpg', alt='')
-          span.categories-item__title Электрические компоненты
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-7.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Электрические компоненты
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-8.jpg', alt='')
-          span.categories-item__title Железо
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-8.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Железо
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-9.jpg', alt='')
-          span.categories-item__title Гидротрансформаторы
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-9.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Гидротрансформаторы
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-10.jpg', alt='')
-          span.categories-item__title Радиаторы охлаждения и прочее
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-10.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Радиаторы охлаждения и прочее
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-11.jpg', alt='')
-          span.categories-item__title SONNAX
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-11.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title SONNAX
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-12.jpg', alt='')
-          span.categories-item__title Инструмент
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-12.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Инструмент
       a.categories-item(href='#')
-        .categories-item__content
-          span.categories-item__img
-            img(src='static/images/content/categories/image-13.jpg', alt='')
-          span.categories-item__title Присадки, смазки, герметик
-    
+        figure.categories-item__img
+          img(src='static/images/content/categories/image-13.jpg', alt='')
+        .categories-item__heading
+          .categories-item__title Присадки, смазки, герметик
+
   section.goods-list__wrapper
     h2.section-title.section-title--value
       | Железо
       span.section-title__value
-        | Всего 
+        | Всего
         b 256
         | товаров
-    ul.goods-list
-      include modules/goods-item/goods-item
-      include modules/goods-item/goods-item-active
-      include modules/goods-item/goods-item-unavailable
+    ul.goods-table
+      .goods-thead
+        .goods-tr
+          .goods-th
+          .goods-th Наименование
+          .goods-th Артикул
+          .goods-th Тех. номер
+          .goods-th Тех. описание
+          .goods-th Тех. характеристики
+          .goods-th Кол-во
+          .goods-th Цена
+          .goods-th
+
+
+      .goods-tbody
+        .goods-table__item
+          .goods-tr.goods-tr-info
+            .goods-td
+              figure.goods-table__item-picture(href='#')
+                a(href="")
+                img(src='static/images/content/catalog/placeholder.jpg', alt='')
+            .goods-td
+              p <a href=''><b>Втулка насоса</b></a>
+            .goods-td
+              p 129034
+            .goods-td
+              p 144100-155
+            .goods-td
+              p 6е40e/ f35 СЦЕПЛЕНИЕ 4-5-6
+            .goods-td
+              p.
+                Диаметр внутр. 94 мм.<br>
+                Диаметр нар. 122 мм.<br>
+                Кол-во зубьев 24<br>
+                Толщина 1,55 мм.
+
+              p Состояние: Новый
+            .goods-td
+              +product-quantity('goods-table-desktop')
+              p.goods-td__availability.goods-td__availability--available В наличии
+            .goods-td
+              p <b>0, 000 Р</b>
+            .goods-td
+              .d-flex.align-items-center
+                button.wish-button.js-wish-button(
+                  type="button"
+                  aria-label='Добавить в избранное',
+                )
+                  svg.ic.ic-phone(aria-hidden='true')
+                    use(xlink:href='#heart-o')
+                button.goods-table__item-buy.js-buy-button(type="button") Купить
+                
+
+
+          .goods-tr.goods-tr-more
+            .goods-td
+              table.goods-more-table
+                tr
+                  th Артикул:
+                  td 129034
+                tr
+                  th Тех. описание:
+                  td 6е40e/ f35 СЦЕПЛЕНИЕ 4-5-6
+                tr
+                  th Тех. номер:
+                  td 129034
+                tr
+                  th Состояние:
+                  td Новый
+                tr
+                  th Тех. х-ки:
+                  td.
+                    Диаметр внутр. 94 мм.<br>
+                    Диаметр нар. 122 мм.<br>
+                    Кол-во зубьев 24<br>
+                    Толщина 1,55 мм.
+
+          .goods-tr.goods-tr-contols
+            .goods-td
+              button.button.goods-table__more-btn.js-goods-more-btn(type='button')
+            .goods-td
+              +product-quantity
+            .goods-td
+              button.button.goods-table__buy-btn.js-buy-button(type="button") Купить
+        
+        .goods-table__item
+          .goods-tr.goods-tr-info
+            .goods-td
+              figure.goods-table__item-picture(href='#')
+                a(href="")
+                img(src='static/images/content/catalog/placeholder.jpg', alt='')
+            .goods-td
+              p <a href=''><b>Втулка насоса</b></a>
+            .goods-td
+              p 129034
+            .goods-td
+              p 144100-155
+            .goods-td
+              p 6е40e/ f35 СЦЕПЛЕНИЕ 4-5-6
+            .goods-td
+              p.
+                Диаметр внутр. 94 мм.<br>
+                Диаметр нар. 122 мм.<br>
+                Кол-во зубьев 24<br>
+                Толщина 1,55 мм.
+
+              p Состояние: Новый
+            .goods-td
+              +product-quantity('goods-table-desktop')
+              p.goods-td__availability.goods-td__availability--available В наличии
+            .goods-td
+              p <b>0, 000 Р</b>
+            .goods-td
+              .d-flex.align-items-center
+                button.wish-button.js-wish-button(
+                  type="button"
+                  aria-label='Добавить в избранное',
+                )
+                  svg.ic.ic-phone(aria-hidden='true')
+                    use(xlink:href='#heart-o')
+                button.goods-table__item-buy.js-buy-button(type="button") Купить
+                
+
+
+          .goods-tr.goods-tr-more
+            .goods-td
+              table.goods-more-table
+                tr
+                  th Артикул:
+                  td 129034
+                tr
+                  th Тех. описание:
+                  td 6е40e/ f35 СЦЕПЛЕНИЕ 4-5-6
+                tr
+                  th Тех. номер:
+                  td 129034
+                tr
+                  th Состояние:
+                  td Новый
+                tr
+                  th Тех. х-ки:
+                  td.
+                    Диаметр внутр. 94 мм.<br>
+                    Диаметр нар. 122 мм.<br>
+                    Кол-во зубьев 24<br>
+                    Толщина 1,55 мм.
+
+          .goods-tr.goods-tr-contols
+            .goods-td
+              button.button.goods-table__more-btn.js-goods-more-btn(type='button')
+            .goods-td
+              +product-quantity
+            .goods-td
+              button.button.goods-table__buy-btn.js-buy-button(type="button") Купить
+        
+        .goods-table__item
+          .goods-tr.goods-tr-info
+            .goods-td
+              figure.goods-table__item-picture(href='#')
+                a(href="")
+                img(src='static/images/content/catalog/placeholder.jpg', alt='')
+            .goods-td
+              p <a href=''><b>Втулка насоса</b></a>
+            .goods-td
+              p 129034
+            .goods-td
+              p 144100-155
+            .goods-td
+              p 6е40e/ f35 СЦЕПЛЕНИЕ 4-5-6
+            .goods-td
+              p.
+                Диаметр внутр. 94 мм.<br>
+                Диаметр нар. 122 мм.<br>
+                Кол-во зубьев 24<br>
+                Толщина 1,55 мм.
+
+              p Состояние: Новый
+            .goods-td
+              +product-quantity('goods-table-desktop')
+              p.goods-td__availability.goods-td__availability--available В наличии
+            .goods-td
+              p <b>0, 000 Р</b>
+            .goods-td
+              .d-flex.align-items-center
+                button.wish-button.js-wish-button(
+                  type="button"
+                  aria-label='Добавить в избранное',
+                )
+                  svg.ic.ic-phone(aria-hidden='true')
+                    use(xlink:href='#heart-o')
+                button.goods-table__item-buy.is-in-cart.js-buy-button(type="button") В корзине
+                
+
+
+          .goods-tr.goods-tr-more
+            .goods-td
+              table.goods-more-table
+                tr
+                  th Артикул:
+                  td 129034
+                tr
+                  th Тех. описание:
+                  td 6е40e/ f35 СЦЕПЛЕНИЕ 4-5-6
+                tr
+                  th Тех. номер:
+                  td 129034
+                tr
+                  th Состояние:
+                  td Новый
+                tr
+                  th Тех. х-ки:
+                  td.
+                    Диаметр внутр. 94 мм.<br>
+                    Диаметр нар. 122 мм.<br>
+                    Кол-во зубьев 24<br>
+                    Толщина 1,55 мм.
+
+          .goods-tr.goods-tr-contols
+            .goods-td
+              button.button.goods-table__more-btn.js-goods-more-btn(type='button')
+            .goods-td
+              +product-quantity
+            .goods-td
+              button.button.goods-table__buy-btn.is-in-cart.js-buy-button(type="button") В корзине
+
+
 
     +pagination('catalog')
       +pagination-item('1', '/1')

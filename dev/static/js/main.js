@@ -105,6 +105,112 @@ $(function () {
 
 
 /**
+ * #CATEGORIES SLIDER
+ */
+$(function () {
+  var settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    prevArrow: '<button class="slider-btn slider-btn--prev" aria-label="Предыдущий слайд" type="button" style=""></button>',
+    nextArrow: '<button class="slider-btn slider-btn--next" aria-label="Следующий слайд" type="button" style=""></button>',
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 1023,
+        settings: 'unslick'
+      },
+    ],
+  };
+
+  var sl =  $('.js-categories-list').slick(settings);
+    
+  $(window).on('resize', function () {
+    if ($(window).width() < 1024 && !sl.hasClass('slick-initialized')) {
+      sl.slick(settings);
+    }
+  });
+});
+
+
+/**
+ * #SCHEMES SLIDER
+ */
+$(function () {
+  var settings = {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    prevArrow: '<button class="slider-btn slider-btn--prev" aria-label="Предыдущий слайд" type="button" style=""></button>',
+    nextArrow: '<button class="slider-btn slider-btn--next" aria-label="Следующий слайд" type="button" style=""></button>',
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 0,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 1023,
+        settings: 'unslick'
+      },
+    ],
+  };
+
+  var sl =  $('.js-schemes-list').slick(settings);
+    
+  $(window).on('resize', function () {
+    if ($(window).width() < 1024 && !sl.hasClass('slick-initialized')) {
+      sl.slick(settings);
+    }
+  });
+});
+
+
+/**
  * #PRODUCT SLIDER
  */
 $(function () {
@@ -314,7 +420,7 @@ $(function () {
   $(document).on('click', '.js-buy-button', function (e) { 
     e.preventDefault();
     var button = $(this);
-    var stateClass = 'buy-button--in-cart';
+    var stateClass = 'is-in-cart';
     if (!button.hasClass(stateClass)) {
       button.addClass(stateClass);
     }
@@ -482,4 +588,18 @@ $(function () {
   }
   
   findVideos();
+});
+
+
+/**
+ * #SHOW MORE GOODS INFO
+ */
+$(function () {
+  $(document).on('click', '.js-goods-more-btn', function () {
+    var button = $(this);
+    var block = button.parents('.goods-tr-contols').siblings('.goods-tr-more');
+
+    button.toggleClass('is-active');
+    block.toggleClass('is-open');
+  })
 });
