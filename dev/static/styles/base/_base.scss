@@ -17,7 +17,7 @@ html, body {
   min-height: 100vh;
   overflow-x: hidden;
 
-  &.is-overflowed {
+  &.is-modal-open {
     overflow: hidden;
   }
 }

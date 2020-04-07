@@ -493,40 +493,56 @@ $(function () {
         url : 'mail.php',
         type: 'POST',
         data: $(this).serialize(),
-      }).done(function(resp) {
-        answer(resp);
+        success: function () {
+          $.magnificPopup.open({
+            items: {
+              src: '#modal-success-request',
+            },
+            fixedContentPos: false,
+            autoFocusLast: false,
+            callbacks: {
+              open: function () {
+                $('html').addClass('is-modal-open');
+                $('body').addClass('is-modal-open');
+              },
+              close: function () {
+                $('html').removeClass('is-modal-open');
+                $('body').removeClass('is-modal-open');
+              }
+            },
+          });
+        },
+        error: function () {
+          $.magnificPopup.open({
+            items: {
+              src: '#modal-fail-request',
+            },
+            fixedContentPos: false,
+            autoFocusLast: false,
+            callbacks: {
+              open: function () {
+                $('html').addClass('is-modal-open');
+                $('body').addClass('is-modal-open');
+              },
+              close: function () {
+                $('html').removeClass('is-modal-open');
+                $('body').removeClass('is-modal-open');
+              }
+            },
+          });
+        },
       });
     }
   });
+});
 
-
-  // Answers
-  var resp = {
-    success: {
-      title: 'Заявка отправлена!',
-      text: 'Ваша заявка отправлена, наши менеджеры свяжуться с вами в ближайшее время.'
-    },
-    fail: {
-      title: 'Произошла ошибка!',
-      text: 'Попробуйте позже'
-    }
-  };
-
-  function answer(resp) {
-    var respTitle = document.querySelector('.modal--answer .answer-title');
-    var respText = document.querySelector('.modal--answer .answer-text');
-
-    if(res == "done"){
-      respTitle.textContent = resp.success.title;
-      respText.textContent = resp.success.text;
-    }
-    if(res == "error"){
-      respTitle.textContent = resp.fail.title;
-      respText.textContent = resp.fail.text;
-    }
-
-    // MicroModal.show('modal-answer');
-  }
+/**
+ * #MODALS
+ */
+$(document).ready(function () {
+  $(document).on('click', '.js-modal-close', function () {
+    $.magnificPopup.close();
+  });
 });
 
 
