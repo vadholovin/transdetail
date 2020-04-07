@@ -1,4 +1,4 @@
-.modal-wrapper.modal-form-request.mfp-hide#modal-success-request
+.modal-wrapper.modal-request.mfp-hide#modal-success-request
   .modal-inner
     p.modal-title Заявка отправлена!
     p.modal-text.
@@ -7,9 +7,25 @@
     button.button.button--primary.js-modal-close(type="button") Продолжить
 
 
-.modal-wrapper.modal-form-request.mfp-hide#modal-fail-request
+.modal-wrapper.modal-request.mfp-hide#modal-fail-request
   .modal-inner
     p.modal-title Ошибка отправки!
     p.modal-text.
       Попробуйте позже, пожалуйста.
+    button.button.button--primary.js-modal-close(type="button") Продолжить
+
+.modal-wrapper.modal-request.mfp-hide#modal-to-cart-request
+  .modal-inner
+    p.modal-title Успешно!
+    p.modal-text.
+      Ваш товар <span class="text-underline">01020034</span> успешно добавлен в корзину.
+      <br>
+      Кол-во: 1 шт.
+    button.button.button--primary.js-modal-close(type="button") Продолжить
+
+.modal-wrapper.modal-request.mfp-hide#modal-to-wish-request
+  .modal-inner
+    p.modal-title Успешно!
+    p.modal-text.
+      Ваш товар <span class="text-underline">01020034</span> успешно добавлен в избранное.
     button.button.button--primary.js-modal-close(type="button") Продолжить

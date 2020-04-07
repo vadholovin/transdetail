@@ -432,6 +432,25 @@ $(function () {
         .addClass(stateClass)
         .find('use')
         .attr('xlink:href', '#heart');
+
+      // Show success popup
+      $.magnificPopup.open({
+        items: {
+          src: '#modal-to-wish-request',
+        },
+        fixedContentPos: false,
+        autoFocusLast: false,
+        callbacks: {
+          open: function () {
+            $('html').addClass('is-modal-open');
+            $('body').addClass('is-modal-open');
+          },
+          close: function () {
+            $('html').removeClass('is-modal-open');
+            $('body').removeClass('is-modal-open');
+          }
+        },
+      });
     }
   });
 });
@@ -447,6 +466,29 @@ $(function () {
     var stateClass = 'is-in-cart';
     if (!button.hasClass(stateClass)) {
       button.addClass(stateClass);
+
+      if (button.is('.goods-table__item-buy')) {
+        button.text('В корзине');
+      }
+
+      // Show success popup
+      $.magnificPopup.open({
+        items: {
+          src: '#modal-to-cart-request',
+        },
+        fixedContentPos: false,
+        autoFocusLast: false,
+        callbacks: {
+          open: function () {
+            $('html').addClass('is-modal-open');
+            $('body').addClass('is-modal-open');
+          },
+          close: function () {
+            $('html').removeClass('is-modal-open');
+            $('body').removeClass('is-modal-open');
+          }
+        },
+      });
     }
   });
 });
