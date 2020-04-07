@@ -10,16 +10,40 @@ $(function() {
 });
 
 
+
 /**
- * #MOBILE SEARCH
+ * #SEARCH
  */
 $(function () {
   $(document).on('click', '.js-search-trigger, .js-mobile-search-close', function (e) {
     e.preventDefault();
     $('.mobile-search').toggleClass('is-open');
+    $('.search-suggest').toggleClass('is-open');
+    $('#mobile-search-form').trigger('reset');
 
     if ($(this).is('.js-search-trigger')) {
-      $('.mobile-search [type=text]').focus();
+      $('.mobile-search .search-form__input').focus();
+    }
+  });
+
+  $('.search-form__input').on('focus keyup', function () {
+    var value = $(this).val(),
+        suggest = $(this).parents('form').find('.search-suggest');
+
+    if (value.length > 0) {
+      suggest.addClass('is-open');
+    } else {
+      suggest.removeClass('is-open');
+    }
+  });
+
+  $(document).on('click', function (e) {
+    var target = $(e.target);
+        isTargetParent = target.parents('.header-main__search').length,
+        suggest = $('.header-main__search .search-suggest');
+
+    if (!suggest.is(':hidden') && !isTargetParent) {
+      suggest.removeClass('is-open');
     }
   });
 });

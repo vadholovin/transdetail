@@ -154,6 +154,38 @@
                   <input class="search-form__input" id="header-search" autocomplete="off" name="s" type="text" placeholder="Поиск деталей для вашего АКПП..." area-label="Введите поисковой запрос деталей АКПП">
                 </div>
                 <button class="search-form__btn" type="submit">Найти</button>
+                <div class="search-suggest">
+                  <ul class="suggest-list">
+                    <li>
+                      <p class="search-suggest__heading">Найденые трансмиссии: 3</p>
+                      <ul class="search-suggest__group">
+                        <li class="search-suggest__item">
+                          <a class="search-suggest__item-text" href="">AAAA</a>
+                        </li>
+                        <li class="search-suggest__item">
+                          <a class="search-suggest__item-text" href="">BBBB</a>
+                        </li>
+                        <li class="search-suggest__item">
+                          <a class="search-suggest__item-text" href="">CCCC</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p class="search-suggest__heading">Найденые товары: 3</p>
+                      <ul class="search-suggest__group">
+                        <li class="search-suggest__item">
+                          <a class="search-suggest__item-text" href="">AAAA</a>
+                        </li>
+                        <li class="search-suggest__item">
+                          <a class="search-suggest__item-text" href="">BBBB</a>
+                        </li>
+                        <li class="search-suggest__item">
+                          <a class="search-suggest__item-text" href="">CCCC</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </form>
               <ul class="header-controls">
                 <li class="header-control header-control--wish" aria-label="Добавлено в">
@@ -258,20 +290,50 @@
       </div>
       <div class="mobile-search">
         <div class="mobile-search__overlay js-mobile-search-close"></div>
-        <form class="search-form search-form--mobile" role="search" action="/" method="get">
+        <form class="search-form search-form--mobile" id="mobile-search-form" role="search" action="/" method="get">
           <div class="search-form__input-wrapper">
             <input class="search-form__input" autocomplete="off" name="s" type="text" placeholder="Поиск деталей для вашего АКПП..." area-label="Введите поисковой запрос деталей АКПП">
           </div>
           <button class="mobile-search__close js-mobile-search-close" type="button" aria-label="Закрыть форму поиска">
-            <svg class="ic" aria-hidden="true">
-              <use xlink:href="#times"></use>
+            <svg class="ic ic-search" aria-hidden="true"><use xlink:href="#times"></use>
             </svg>
           </button>
           <button class="mobile-search__submit" type="submit" aria-label="Искать">
-            <svg class="ic ic-search" aria-hidden="true">
-              <use xlink:href="#search"></use>
+            <svg class="ic ic-search" aria-hidden="true"><use xlink:href="#search"></use>
             </svg>
           </button>
+          <div class="search-suggest">
+            <ul class="suggest-list">
+              <li>
+                <p class="search-suggest__heading">Найденые трансмиссии: 3</p>
+                <ul class="search-suggest__group">
+                  <li class="search-suggest__item">
+                    <a class="search-suggest__item-text" href="">AAAA</a>
+                  </li>
+                  <li class="search-suggest__item">
+                    <a class="search-suggest__item-text" href="">BBBB</a>
+                  </li>
+                  <li class="search-suggest__item">
+                    <a class="search-suggest__item-text" href="">CCCC</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <p class="search-suggest__heading">Найденые товары: 3</p>
+                <ul class="search-suggest__group">
+                  <li class="search-suggest__item">
+                    <a class="search-suggest__item-text" href="">AAAA</a>
+                  </li>
+                  <li class="search-suggest__item">
+                    <a class="search-suggest__item-text" href="">BBBB</a>
+                  </li>
+                  <li class="search-suggest__item">
+                    <a class="search-suggest__item-text" href="">CCCC</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </form>
       </div>
     </header>

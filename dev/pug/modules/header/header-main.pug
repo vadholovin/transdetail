@@ -16,6 +16,26 @@
           .search-form__input-wrapper
             input.search-form__input#header-search(autocomplete='off', name='s', type='text', placeholder='Поиск деталей для вашего АКПП...', area-label="Введите поисковой запрос деталей АКПП")
           button.search-form__btn(type="submit") Найти
+          .search-suggest
+            ul.suggest-list
+              li
+                p.search-suggest__heading Найденые трансмиссии: 3
+                ul.search-suggest__group
+                  li.search-suggest__item
+                    a.search-suggest__item-text(href="") AAAA
+                  li.search-suggest__item
+                    a.search-suggest__item-text(href="") BBBB
+                  li.search-suggest__item
+                    a.search-suggest__item-text(href="") CCCC
+              li
+                p.search-suggest__heading Найденые товары: 3
+                ul.search-suggest__group
+                  li.search-suggest__item
+                    a.search-suggest__item-text(href="") AAAA
+                  li.search-suggest__item
+                    a.search-suggest__item-text(href="") BBBB
+                  li.search-suggest__item
+                    a.search-suggest__item-text(href="") CCCC
 
         ul.header-controls
           li.header-control.header-control--wish(aria-label="Добавлено в")
